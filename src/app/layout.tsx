@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from 'src/components/Header/Header'
+import { poppins } from 'src/styles/font'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +14,11 @@ const RootLayout = ({
   children: React.ReactNode
 }>): JSX.Element => {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className={poppins.className}>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
