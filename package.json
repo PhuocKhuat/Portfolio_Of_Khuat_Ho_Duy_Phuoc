@@ -47,13 +47,25 @@
     "typescript": "^5"
   },
   "lint-staged": {
+    "*.js": [
+      "yarn lint",
+      "yarn prettier",
+      "git add ."
+    ],
+    "*.mjs": [
+      "yarn lint",
+      "yarn prettier",
+      "git add ."
+    ],
     "*.ts": [
       "yarn lint",
-      "yarn prettier"
+      "yarn prettier",
+      "git add ."
     ],
     "*.tsx": [
       "yarn lint",
-      "yarn prettier"
+      "yarn prettier",
+      "git add ."
     ]
   }
 }
