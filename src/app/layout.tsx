@@ -14,7 +14,7 @@ const RootLayout = ({
   children: React.ReactNode
 }>): JSX.Element => {
   return (
-    <html lang='en' className={avant_Grade.variable}>
+    <html lang='en' className={avant_Grade.className}>
       <body>
         <Header />
         {children}
