@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import '../styles/globals.css'
 import Header from 'src/components/Header/Header'
-import { avant_Grade, poppins } from '@/styles/font'
+import { avant_Grade } from '@/styles/font'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +14,7 @@ const RootLayout = ({
   children: React.ReactNode
 }>): JSX.Element => {
   return (
-    <html lang='en' className={poppins.className}>
+    <html lang='en' className={avant_Grade.className}>
       <body>
         <Header />
         {children}
