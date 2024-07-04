@@ -1,0 +1,7 @@
+.menuWrapper {
+  @apply py-5;
+}
+
+.menuFlex {
+  @apply w-full py-5;
+}
