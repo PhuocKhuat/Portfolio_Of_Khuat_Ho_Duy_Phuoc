@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import Header from 'src/components/Header/Header'
 import { avant_Grade } from '@/styles/font'
 
@@ -14,7 +14,7 @@ const RootLayout = ({
   children: React.ReactNode
 }>): JSX.Element => {
   return (
-    <html lang='en' className={avant_Grade.className}>
+    <html lang='en' className={avant_Grade.variable}>
       <body>
         <Header />
         {children}
