@@ -1,11 +1,12 @@
 'use client'
 
-import React, { FC } from 'react'
+import { FC } from 'react'
 import header from './header.module.css'
 import styles from '@/styles/styles'
 import Link from 'next/link'
 import Image from 'next/image'
 import avatar from '/public/imgs/profile-pic.png'
+import ModeToggle from '@/components/Themes/Toggle'
 
 const Header: FC = () => {
   return (
@@ -20,10 +21,10 @@ const Header: FC = () => {
                   window.location.href = '/'
                 }}
               >
-                <Image alt='Phuoc`s avatar' src={avatar} width={80} height={80} quality={80} />
+                <Image alt='Phuoc`s avatar' src={avatar} width={80} height={80} quality={80} priority={true} />
               </Link>
               <div className={styles.flexGap}>
-                <div>
+                <div className='bg-warning'>
                   <Link href='/'>Home</Link>
                 </div>
                 <div>
@@ -37,7 +38,9 @@ const Header: FC = () => {
                 </div>
               </div>
               <div className={styles.flexGap}>
-                <div>Theme</div>
+                <div>
+                  <ModeToggle />
+                </div>
                 <div>Language</div>
               </div>
             </div>

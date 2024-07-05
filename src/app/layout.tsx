@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import Header from 'src/components/Header/Header'
 import { avant_Grade } from '@/styles/font'
+import ThemeProvider from '@/components/Themes/Theme'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,10 +15,12 @@ const RootLayout = ({
   children: React.ReactNode
 }>): JSX.Element => {
   return (
-    <html lang='en' className={avant_Grade.className}>
+    <html lang='en' className={avant_Grade.className} suppressHydrationWarning>
       <body>
-        <Header />
-        {children}
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
