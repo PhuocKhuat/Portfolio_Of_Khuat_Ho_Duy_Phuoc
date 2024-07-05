@@ -24,7 +24,7 @@ const Header: FC = () => {
                 <Image alt='Phuoc`s avatar' src={avatar} width={80} height={80} quality={80} priority={true} />
               </Link>
               <div className={styles.flexGap}>
-                <div className='bg-warning'>
+                <div>
                   <Link href='/'>Home</Link>
                 </div>
                 <div>

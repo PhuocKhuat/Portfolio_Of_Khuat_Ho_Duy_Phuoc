@@ -1,3 +1,7 @@
 {
-  "cSpell.words": ["clsx", "shadcn", "tailwindcss", "types"]
+  "cSpell.words": ["clsx", "shadcn", "tailwindcss", "types"],
+  "css.lint.unknownAtRules": "ignore",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
