@@ -4,4 +4,5 @@ interface I_Styles {
   flexCenter: string
   flexBetween: string
   flexGap: string
+  borderImage: string
 }

@@ -9,12 +9,13 @@ import avatar from '/public/imgs/profile-pic.png'
 import ModeToggle from '@/components/Themes/Toggle'
 import Locale from '@/components/Locales/Locale'
 import { useTranslations } from 'next-intl'
+import { montserrat } from '@/styles/font'
 
 const Header: FC = () => {
   console.log('🚀 ~ Header')
   const trans = useTranslations('Components.Header.navbar')
   return (
-    <>
+    <section className={montserrat.className}>
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={header.menuWrapper}>
@@ -26,7 +27,7 @@ const Header: FC = () => {
                   window.location.href = '/'
                 }}
               >
-                <Image alt='Phuoc`s avatar' src={avatar} width={80} height={80} quality={80} priority={true} />
+                <Image alt='Phuoc`s avatar' src={avatar} quality={80} priority={true} className={header.circleImage} />
               </Link>
               {/* NAVBAR */}
               <div className={styles.flexGap}>
@@ -57,7 +58,7 @@ const Header: FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

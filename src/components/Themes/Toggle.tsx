@@ -6,7 +6,13 @@ import { useTheme } from 'next-themes'
 import theme from './theme.module.css'
 
 import { Button } from '@/components/ui/button'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu'
 import { DARK, LIGHT } from '@/constants/theme'
 
 const ModeToggle = (): JSX.Element => {
@@ -22,6 +28,7 @@ const ModeToggle = (): JSX.Element => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
+        <DropdownMenuLabel>Choose Theme</DropdownMenuLabel>
         <DropdownMenuItem onClick={() => setTheme(LIGHT)}>Light</DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme(DARK)}>Dark</DropdownMenuItem>
       </DropdownMenuContent>

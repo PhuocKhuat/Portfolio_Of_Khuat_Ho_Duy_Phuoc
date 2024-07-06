@@ -1,3 +1,7 @@
 .menuWrapper {
   @apply py-5;
 }
+
+.circleImage {
+  @apply rounded-full w-16 h-16;
+}
