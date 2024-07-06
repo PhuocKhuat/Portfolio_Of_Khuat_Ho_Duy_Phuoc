@@ -1,0 +1,15 @@
+{
+  "Components": {
+    "Header": {
+      "navbar": {
+        "home": "Home",
+        "about": "About",
+        "work": "Work",
+        "contact": "Contact"
+      }
+    }
+  },
+  "NotFoundPage": {
+    "title": "Not found page!"
+  }
+}

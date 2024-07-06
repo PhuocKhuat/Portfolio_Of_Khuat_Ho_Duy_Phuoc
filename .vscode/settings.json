@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["clsx", "shadcn", "tailwindcss", "types"],
+  "cSpell.words": ["clsx", "Công", "Liên", "shadcn", "tailwindcss", "types", "việc"],
   "css.lint.unknownAtRules": "ignore",
   "files.associations": {
     "*.css": "tailwindcss"

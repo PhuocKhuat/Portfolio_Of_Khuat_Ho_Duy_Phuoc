@@ -7,14 +7,19 @@ import Link from 'next/link'
 import Image from 'next/image'
 import avatar from '/public/imgs/profile-pic.png'
 import ModeToggle from '@/components/Themes/Toggle'
+import Locale from '@/components/Locales/Locale'
+import { useTranslations } from 'next-intl'
 
 const Header: FC = () => {
+  console.log('🚀 ~ Header')
+  const trans = useTranslations('Components.Header.navbar')
   return (
     <>
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={header.menuWrapper}>
             <div className={styles.flexBetween}>
+              {/* LOGO */}
               <Link
                 href={'/'}
                 onClick={() => {
@@ -23,26 +28,31 @@ const Header: FC = () => {
               >
                 <Image alt='Phuoc`s avatar' src={avatar} width={80} height={80} quality={80} priority={true} />
               </Link>
+              {/* NAVBAR */}
               <div className={styles.flexGap}>
                 <div>
-                  <Link href='/'>Home</Link>
+                  <Link href='/'>{trans('home')}</Link>
                 </div>
                 <div>
-                  <Link href='/'>About</Link>
+                  <Link href='/'>{trans('about')}</Link>
                 </div>
                 <div>
-                  <Link href='/'>Work</Link>
+                  <Link href='/'>{trans('work')}</Link>
                 </div>
                 <div>
-                  <Link href='/'>Contact</Link>
+                  <Link href='/'>{trans('contact')}</Link>
                 </div>
               </div>
+              {/* UTILS */}
               <div className={styles.flexGap}>
                 <div>
                   <ModeToggle />
                 </div>
-                <div>Language</div>
+                <div>
+                  <Locale />
+                </div>
               </div>
+              {/*  */}
             </div>
           </div>
         </div>

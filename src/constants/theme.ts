@@ -1,3 +1,5 @@
-export const LIGHT = 'light'
-export const DARK = 'dark'
-export const SYSTEM = 'system'
+const LIGHT = 'light'
+const DARK = 'dark'
+const SYSTEM = 'system'
+
+export { LIGHT, DARK, SYSTEM }

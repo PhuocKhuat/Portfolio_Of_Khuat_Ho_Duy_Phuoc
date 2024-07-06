@@ -1,7 +1,7 @@
-import { FC } from 'react'
+import { redirect } from 'next/navigation'
 
-const Home: FC = () => {
-  return <></>
+const RootPage = (): string => {
+  redirect('/en')
 }
 
-export default Home
+export default RootPage

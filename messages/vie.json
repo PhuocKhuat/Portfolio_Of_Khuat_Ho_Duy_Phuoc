@@ -1,0 +1,15 @@
+{
+  "Components": {
+    "Header": {
+      "navbar": {
+        "home": "Trang chủ",
+        "about": "Về tôi",
+        "work": "Công việc",
+        "contact": "Liên hệ"
+      }
+    }
+  },
+  "NotFoundPage": {
+    "title": "Không tìm thấy trang"
+  }
+}
