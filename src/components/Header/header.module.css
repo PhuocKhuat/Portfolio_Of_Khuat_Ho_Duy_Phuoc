@@ -3,5 +3,17 @@
 }
 
 .circleImage {
-  @apply rounded-full w-16 h-16;
+  @apply rounded-full w-16 h-14;
+}
+
+.menuItem {
+  @apply block mds:flex;
+}
+
+.utilItem {
+  @apply block mds:flex;
+}
+
+.showMobileNav {
+  @apply block mds:hidden;
 }

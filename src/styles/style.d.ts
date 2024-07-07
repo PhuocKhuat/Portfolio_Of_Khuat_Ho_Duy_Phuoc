@@ -3,6 +3,6 @@ interface I_Styles {
   containerWrapper: string
   flexCenter: string
   flexBetween: string
-  flexGap: string
-  borderImage: string
+  // flexGap: string
+  gap: string
 }

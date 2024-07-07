@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import theme from './theme.module.css'
@@ -14,6 +13,7 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import { DARK, LIGHT } from '@/constants/theme'
+import { memo } from 'react'
 
 const ModeToggle = (): JSX.Element => {
   const { setTheme } = useTheme()
@@ -36,4 +36,4 @@ const ModeToggle = (): JSX.Element => {
   )
 }
 
-export default ModeToggle
+export default memo(ModeToggle)

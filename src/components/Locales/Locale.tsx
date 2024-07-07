@@ -1,4 +1,4 @@
-import { useTransition } from 'react'
+import { memo, useTransition } from 'react'
 
 import {
   DropdownMenu,
@@ -24,6 +24,7 @@ const Locale = (): JSX.Element => {
       router.replace(`/${value}`)
     })
   }
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -47,4 +48,4 @@ const Locale = (): JSX.Element => {
   )
 }
 
-export default Locale
+export default memo(Locale)

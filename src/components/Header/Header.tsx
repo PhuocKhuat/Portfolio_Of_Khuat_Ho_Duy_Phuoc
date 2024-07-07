@@ -10,10 +10,11 @@ import ModeToggle from '@/components/Themes/Toggle'
 import Locale from '@/components/Locales/Locale'
 import { useTranslations } from 'next-intl'
 import { montserrat } from '@/styles/font'
+import MobileNav from '@/components/Header/MobileNav'
 
 const Header: FC = () => {
-  console.log('🚀 ~ Header')
   const trans = useTranslations('Components.Header.navbar')
+
   return (
     <section className={montserrat.className}>
       <div className={styles.container}>
@@ -30,7 +31,7 @@ const Header: FC = () => {
                 <Image alt='Phuoc`s avatar' src={avatar} quality={80} priority={true} className={header.circleImage} />
               </Link>
               {/* NAVBAR */}
-              <div className={styles.flexGap}>
+              <div className={`${styles.gap} ${header.menuItem}`}>
                 <div>
                   <Link href='/'>{trans('home')}</Link>
                 </div>
@@ -45,7 +46,7 @@ const Header: FC = () => {
                 </div>
               </div>
               {/* UTILS */}
-              <div className={styles.flexGap}>
+              <div className={`${styles.gap} ${header.utilItem}`}>
                 <div>
                   <ModeToggle />
                 </div>
@@ -53,7 +54,8 @@ const Header: FC = () => {
                   <Locale />
                 </div>
               </div>
-              {/*  */}
+              {/* MOBILE */}
+              <MobileNav />
             </div>
           </div>
         </div>

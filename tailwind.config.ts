@@ -5,6 +5,9 @@ const config: Config = {
   content: ['./components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        mds: '960px'
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
