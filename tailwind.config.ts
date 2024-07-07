@@ -6,7 +6,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        mds: '960px'
+        mds: '960px',
+        mdm: '1000px'
       },
       colors: {
         border: 'hsl(var(--border))',

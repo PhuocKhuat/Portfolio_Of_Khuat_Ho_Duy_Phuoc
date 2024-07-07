@@ -1,0 +1,7 @@
+.backgroundSize {
+  @apply bg-slate-300 bg-opacity-10 w-24 h-auto px-1.5 py-2.5 text-center;
+}
+
+.flexWrap {
+  @apply flex flex-wrap;
+}

@@ -14,6 +14,7 @@ import { Languages } from 'lucide-react'
 import { useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { ENG, VIE } from '@/constants/locale'
+import styles from '@/styles/styles'
 
 const Locale = (): JSX.Element => {
   const [isPending, startTransiton] = useTransition()
@@ -28,7 +29,7 @@ const Locale = (): JSX.Element => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' size='icon'>
+        <Button variant='outline' size='sm' className={styles.boxLGSize}>
           <Languages />
         </Button>
       </DropdownMenuTrigger>

@@ -6,6 +6,7 @@ import ThemeProvider from '@/app/theme'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { playfairDisplay } from '@/styles/font'
+import styles from '@/styles/styles'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 const LocaleLayout = async ({ children, params: { locale } }: Readonly<I_RootLayout_Props>): Promise<JSX.Element> => {
   const messages = await getMessages()
   return (
-    <html lang={locale} className={playfairDisplay.className} suppressHydrationWarning>
+    <html lang={locale} className={`${playfairDisplay.className} ${styles.textSize}`} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>

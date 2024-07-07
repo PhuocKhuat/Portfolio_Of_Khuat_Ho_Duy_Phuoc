@@ -1,3 +1,3 @@
-interface I_Props_MobileNav {
-  locale: string
-}
+// interface I_Props_MobileNav {
+//   locale: string
+// }
