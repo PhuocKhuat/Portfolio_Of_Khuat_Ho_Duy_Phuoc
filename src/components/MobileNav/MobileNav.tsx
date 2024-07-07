@@ -8,30 +8,35 @@ import {
   NavigationMenuTrigger
 } from '@/components/ui/navigation-menu'
 import { Menu } from 'lucide-react'
-import Locale from '@/components/Locales/Locale'
-import Toggle from '@/components/Themes/Toggle'
 import Navbar from '@/components/Navbar/Navbar'
 import mobileNav from './mobileNav.module.css'
 import styles from '@/styles/styles'
+import MobiTheme from '@/components/Themes/MobiTheme'
+import MobiLocale from '@/components/Locales/MobiLocale'
 
 const MobileNav: FC = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
+          {/* MENU */}
           <NavigationMenuTrigger>
             <Menu />
           </NavigationMenuTrigger>
-          <NavigationMenuContent className={`${mobileNav.backgroundSize} ${styles.gridGap}`}>
+          <NavigationMenuContent className={`${mobileNav.backgroundSize} ${styles.gridGap} ${styles.textCenter}`}>
+            {/* NAVBAR */}
             <NavigationMenuLink>
               <Navbar />
             </NavigationMenuLink>
-            <NavigationMenuLink className={mobileNav.flexWrap}>
-              <Toggle />
-            </NavigationMenuLink>
+            {/* MOBI THEME */}
             <NavigationMenuLink>
-              <Locale />
+              <MobiTheme />
             </NavigationMenuLink>
+            {/* MOBI LOCALE */}
+            <NavigationMenuLink>
+              <MobiLocale />
+            </NavigationMenuLink>
+            {/*  */}
           </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>

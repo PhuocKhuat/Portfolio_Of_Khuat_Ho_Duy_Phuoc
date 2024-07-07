@@ -1,4 +1,4 @@
-import { memo, useTransition } from 'react'
+import { FC, memo, useTransition } from 'react'
 
 import {
   DropdownMenu,
@@ -14,9 +14,8 @@ import { Languages } from 'lucide-react'
 import { useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { ENG, VIE } from '@/constants/locale'
-import styles from '@/styles/styles'
 
-const Locale = (): JSX.Element => {
+const Locale: FC = () => {
   const [isPending, startTransiton] = useTransition()
   const router = useRouter()
   const localeActive = useLocale()
@@ -29,7 +28,7 @@ const Locale = (): JSX.Element => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' size='sm' className={styles.boxLGSize}>
+        <Button variant='outline' size='icon'>
           <Languages />
         </Button>
       </DropdownMenuTrigger>

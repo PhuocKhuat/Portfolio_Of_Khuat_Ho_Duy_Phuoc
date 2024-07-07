@@ -1,8 +1,8 @@
 'use client'
 
-import React from 'react'
+import React, { FC } from 'react'
 
-const NotFound = (): JSX.Element => {
+const NotFound: FC = () => {
   return (
     <html>
       <body>

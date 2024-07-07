@@ -24,14 +24,14 @@ const Header: FC = () => {
                   window.location.href = '/'
                 }}
               >
-                <Image alt='Phuoc`s avatar' src={avatar} quality={80} priority={true} className={header.circleImage} />
+                <Image alt='Phuoc`s avatar' src={avatar} quality={80} priority className={header.circleImage} />
               </button>
               {/* NAVBAR */}
-              <div className={`${styles.gap} ${header.hideItem}`}>
+              <div className={`${styles.gap8} ${header.hideItem}`}>
                 <Navbar />
               </div>
               {/* UTILS */}
-              <div className={`${styles.gap} ${header.hideItem}`}>
+              <div className={`${styles.gap8} ${header.hideItem}`}>
                 <div>
                   <ModeToggle />
                 </div>

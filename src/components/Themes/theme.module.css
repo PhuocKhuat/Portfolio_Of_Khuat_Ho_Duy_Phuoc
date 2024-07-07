@@ -1,7 +1,10 @@
 .sizeSun {
-  @apply rotate-0 scale-100 transition-all;
+  @apply h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all;
+}
+.sizeMoon {
+  @apply absolute  h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all;
 }
 
-.sizeMoon {
-  @apply absolute rotate-90 scale-0 transition-all;
+.hideItem {
+  @apply hidden md:block;
 }

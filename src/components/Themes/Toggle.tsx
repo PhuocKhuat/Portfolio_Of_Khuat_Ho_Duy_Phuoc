@@ -2,8 +2,6 @@
 
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
-import theme from './theme.module.css'
-
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -14,7 +12,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { DARK, LIGHT } from '@/constants/theme'
 import { memo } from 'react'
-import styles from '@/styles/styles'
+import theme from './theme.module.css'
 
 const ModeToggle = (): JSX.Element => {
   const { setTheme } = useTheme()
@@ -22,7 +20,7 @@ const ModeToggle = (): JSX.Element => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' size='sm' className={styles.boxLGSize}>
+        <Button variant='outline' size='icon'>
           <Sun className={`${theme.sizeSun} dark:-rotate-90 dark:scale-0`} />
           <Moon className={`${theme.sizeMoon} dark:rotate-0 dark:scale-100`} />
           <span className='sr-only'>Toggle theme</span>
