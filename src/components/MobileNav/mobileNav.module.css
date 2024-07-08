@@ -1,3 +1,11 @@
 .backgroundSize {
-  @apply bg-slate-300 bg-opacity-10 w-24 h-auto px-1.5 py-2.5;
+  @apply bg-opacity-10;
+}
+
+.customSize {
+  @apply w-32 h-auto px-1.5 py-2;
+}
+
+.transitions {
+  @apply me-10;
 }

@@ -18,12 +18,12 @@ const MobileNav: FC = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
+        <NavigationMenuItem className={mobileNav.transitions}>
           {/* MENU */}
           <NavigationMenuTrigger>
             <Menu />
           </NavigationMenuTrigger>
-          <NavigationMenuContent className={`${mobileNav.backgroundSize} ${styles.gridGap} ${styles.textCenter}`}>
+          <NavigationMenuContent className={`${mobileNav.backgroundSize} ${mobileNav.customSize} ${styles.textCenter}`}>
             {/* NAVBAR */}
             <NavigationMenuLink>
               <Navbar />

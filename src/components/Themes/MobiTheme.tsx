@@ -6,19 +6,18 @@ import { useTheme } from 'next-themes'
 import React, { FC } from 'react'
 
 const MobiTheme: FC = () => {
-  const { setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
   return (
     <>
-      <div className={styles.lineBottom}>
-        <div className={`${styles.pointer} ${styles.flex} `} onClick={() => setTheme(LIGHT)}>
+      <div className={`${styles.flexCol} ${styles.gap2} ${styles.lineBottom}`}>
+        <button className={`${styles.flexCenter}`} onClick={() => setTheme(LIGHT)} disabled={theme === LIGHT}>
           <Dot color={black} />
           Light
-        </div>
-        <br />
-        <div className={`${styles.pointer} ${styles.flex} `} onClick={() => setTheme(DARK)}>
+        </button>
+        <button className={`${styles.flexCenter}`} onClick={() => setTheme(DARK)} disabled={theme === DARK}>
           <Dot color={black} />
           Dark
-        </div>
+        </button>
       </div>
     </>
   )

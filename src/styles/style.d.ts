@@ -2,9 +2,9 @@ interface I_Styles {
   container: string
   containerWrapper: string
   flex: string
+  flexCol: string
   flexCenter: string
   flexBetween: string
-  gridGap: string
   gap2: string
   gap8: string
   textSize: string
@@ -12,4 +12,6 @@ interface I_Styles {
   iconSize: string
   lineBottom: string
   pointer: string
+  notAllowed: string
+  spaceTB: string
 }
