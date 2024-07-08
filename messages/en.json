@@ -1,12 +1,12 @@
 {
   "Components": {
     "Header": {
-      "navbar": {
-        "home": "Home",
-        "about": "About",
-        "work": "Work",
-        "contact": "Contact"
-      }
+      "home": "Home",
+      "about": "About",
+      "work": "Work",
+      "contact": "Contact",
+      "light": "Light",
+      "dark": "Dark"
     }
   },
   "NotFoundPage": {

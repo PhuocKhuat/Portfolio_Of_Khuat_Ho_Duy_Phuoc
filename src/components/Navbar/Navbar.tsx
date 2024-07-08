@@ -1,23 +1,23 @@
-import { useTranslations } from 'next-intl'
 import Link from 'next/link'
-import React from 'react'
+import React, { FC } from 'react'
 import styles from '@/styles/styles'
+import { I_Props_Translate } from '@/components/Header/Header'
+import { ABOUT, CONTACT, HOME, WORK } from '@/constants/locale'
 
-const Navbar = (): JSX.Element => {
-  const trans = useTranslations('Components.Header.navbar')
+const Navbar: FC<I_Props_Translate> = ({ translate }) => {
   return (
     <>
       <div className={styles.lineBottom}>
-        <Link href='/'>{trans('home')}</Link>
+        <Link href='/'>{translate(HOME)}</Link>
       </div>
       <div className={styles.lineBottom}>
-        <Link href='/'>{trans('about')}</Link>
+        <Link href='/'>{translate(ABOUT)}</Link>
       </div>
       <div className={styles.lineBottom}>
-        <Link href='/'>{trans('work')}</Link>
+        <Link href='/'>{translate(WORK)}</Link>
       </div>
       <div className={styles.lineBottom}>
-        <Link href='/'>{trans('contact')}</Link>
+        <Link href='/'>{translate(CONTACT)}</Link>
       </div>
     </>
   )

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Header from 'src/components/Header/Header'
-
 import ThemeProvider from '@/app/theme'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'

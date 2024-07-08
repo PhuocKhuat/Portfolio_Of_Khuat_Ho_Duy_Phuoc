@@ -13,8 +13,9 @@ import mobileNav from './mobileNav.module.css'
 import styles from '@/styles/styles'
 import MobiTheme from '@/components/Themes/MobiTheme'
 import MobiLocale from '@/components/Locales/MobiLocale'
+import { I_Props_Translate } from '@/components/Header/Header'
 
-const MobileNav: FC = () => {
+const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -26,7 +27,7 @@ const MobileNav: FC = () => {
           <NavigationMenuContent className={`${mobileNav.backgroundSize} ${mobileNav.customSize} ${styles.textCenter}`}>
             {/* NAVBAR */}
             <NavigationMenuLink>
-              <Navbar />
+              <Navbar translate={translate} />
             </NavigationMenuLink>
             {/* MOBI THEME */}
             <NavigationMenuLink>

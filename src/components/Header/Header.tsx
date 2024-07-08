@@ -1,17 +1,23 @@
 'use client'
 
 import { FC } from 'react'
-import header from './header.module.css'
-import styles from '@/styles/styles'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import avatar from '/public/imgs/profile-pic.png'
-import ModeToggle from '@/components/Themes/Toggle'
-import Locale from '@/components/Locales/Locale'
-import { montserrat } from '@/styles/font'
-import MobileNav from '@/components/MobileNav/MobileNav'
 import Navbar from '@/components/Navbar/Navbar'
+import Theme from '@/components/Themes/Theme'
+import Locale from '@/components/Locales/Locale'
+import MobileNav from '@/components/MobileNav/MobileNav'
+import header from './header.module.css'
+import { montserrat } from '@/styles/font'
+import styles from '@/styles/styles'
+
+export interface I_Props_Translate {
+  translate: (key: string) => string
+}
 
 const Header: FC = () => {
+  const translate = useTranslations('Components.Header')
   return (
     <section className={montserrat.className}>
       <div className={styles.container}>
@@ -28,20 +34,16 @@ const Header: FC = () => {
               </button>
               {/* NAVBAR */}
               <div className={`${styles.gap8} ${header.hideItem}`}>
-                <Navbar />
+                <Navbar translate={translate} />
               </div>
               {/* UTILS */}
               <div className={`${styles.gap8} ${header.hideItem}`}>
-                <div>
-                  <ModeToggle />
-                </div>
-                <div>
-                  <Locale />
-                </div>
+                <Theme />
+                <Locale />
               </div>
               {/* MOBILE NAV */}
               <div className={header.showMobileNav}>
-                <MobileNav />
+                <MobileNav translate={translate} />
               </div>
               {/*  */}
             </div>

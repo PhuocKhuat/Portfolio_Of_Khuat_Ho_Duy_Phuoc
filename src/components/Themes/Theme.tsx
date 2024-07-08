@@ -14,7 +14,7 @@ import { DARK, LIGHT } from '@/constants/theme'
 import { memo } from 'react'
 import themes from './theme.module.css'
 
-const ModeToggle = (): JSX.Element => {
+const Theme = (): JSX.Element => {
   const { theme, setTheme } = useTheme()
 
   return (
@@ -39,4 +39,4 @@ const ModeToggle = (): JSX.Element => {
   )
 }
 
-export default memo(ModeToggle)
+export default memo(Theme)

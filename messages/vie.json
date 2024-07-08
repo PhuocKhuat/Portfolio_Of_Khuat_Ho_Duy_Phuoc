@@ -1,12 +1,12 @@
 {
   "Components": {
     "Header": {
-      "navbar": {
-        "home": "Trang chủ",
-        "about": "Về tôi",
-        "work": "Công việc",
-        "contact": "Liên hệ"
-      }
+      "home": "Trang chủ",
+      "about": "Về tôi",
+      "work": "Công việc",
+      "contact": "Liên hệ",
+      "light": "Sáng",
+      "dark": "Tối"
     }
   },
   "NotFoundPage": {
