@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 import { ENG, VIE } from '@/constants/locale'
 import { useLocale } from 'next-intl'
 
-const MobiLocale: FC = () => {
+const MobiLocale: FC<I_Props_Translate> = ({ translate }) => {
   const [isPending, startTransiton] = useTransition()
   const localeActive = useLocale()
   const router = useRouter()
@@ -25,14 +25,14 @@ const MobiLocale: FC = () => {
         <button data-value={ENG} onClick={handleLocale} disabled={isPending || localeActive === ENG}>
           <span className={`${styles.flexCenter} ${styles.gap2}`}>
             <Image alt='england flag' src={englishFlag} className={styles.iconSize} quality={65} priority />
-            Eng
+            {translate(ENG)}
           </span>
         </button>
         {/* VIE */}
         <button data-value={VIE} onClick={handleLocale} disabled={isPending || localeActive === VIE}>
           <span className={`${styles.flexCenter} ${styles.gap2}`}>
             <Image alt='vietnam flag' src={vietnamFlag} className={styles.iconSize} quality={65} priority />
-            Vie
+            {translate(VIE)}
           </span>
         </button>
         {/*  */}

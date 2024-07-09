@@ -4,3 +4,6 @@ interface I_RootLayout_Props {
     locale: string
   }
 }
+interface I_Props_Translate {
+  translate: (key: string) => string
+}

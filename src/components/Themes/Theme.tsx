@@ -11,10 +11,10 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import { DARK, LIGHT } from '@/constants/theme'
-import { memo } from 'react'
+import { FC, memo } from 'react'
 import themes from './theme.module.css'
 
-const Theme = (): JSX.Element => {
+const Theme: FC<I_Props_Translate> = ({ translate }) => {
   const { theme, setTheme } = useTheme()
 
   return (
@@ -27,12 +27,12 @@ const Theme = (): JSX.Element => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
-        <DropdownMenuLabel>Choose Theme</DropdownMenuLabel>
+        <DropdownMenuLabel>{translate('choose-theme')}</DropdownMenuLabel>
         <DropdownMenuItem onClick={() => setTheme(LIGHT)} disabled={theme === LIGHT}>
-          Light
+          {translate(LIGHT)}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme(DARK)} disabled={theme === DARK}>
-          Dark
+          {translate(DARK)}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

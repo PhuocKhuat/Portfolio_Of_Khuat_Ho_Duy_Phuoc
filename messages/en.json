@@ -5,8 +5,12 @@
       "about": "About",
       "work": "Work",
       "contact": "Contact",
+      "choose-theme": "Choose Theme",
       "light": "Light",
-      "dark": "Dark"
+      "dark": "Dark",
+      "choose-languages": "Choose languages",
+      "en": "English",
+      "vie": "Vietnam"
     }
   },
   "NotFoundPage": {

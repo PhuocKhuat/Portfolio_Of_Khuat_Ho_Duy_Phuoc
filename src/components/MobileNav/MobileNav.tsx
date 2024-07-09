@@ -13,7 +13,6 @@ import mobileNav from './mobileNav.module.css'
 import styles from '@/styles/styles'
 import MobiTheme from '@/components/Themes/MobiTheme'
 import MobiLocale from '@/components/Locales/MobiLocale'
-import { I_Props_Translate } from '@/components/Header/Header'
 
 const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
   return (
@@ -31,11 +30,11 @@ const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
             </NavigationMenuLink>
             {/* MOBI THEME */}
             <NavigationMenuLink>
-              <MobiTheme />
+              <MobiTheme translate={translate} />
             </NavigationMenuLink>
             {/* MOBI LOCALE */}
             <NavigationMenuLink>
-              <MobiLocale />
+              <MobiLocale translate={translate} />
             </NavigationMenuLink>
             {/*  */}
           </NavigationMenuContent>

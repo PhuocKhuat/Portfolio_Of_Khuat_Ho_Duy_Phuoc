@@ -5,8 +5,12 @@
       "about": "Về tôi",
       "work": "Công việc",
       "contact": "Liên hệ",
+      "choose-theme": "Chọn màu nền",
       "light": "Sáng",
-      "dark": "Tối"
+      "dark": "Tối",
+      "choose-languages": "Chọn ngôn ngữ",
+      "en": "Anh",
+      "vie": "Việt"
     }
   },
   "NotFoundPage": {

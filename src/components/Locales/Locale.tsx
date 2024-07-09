@@ -15,7 +15,7 @@ import { useLocale } from 'next-intl'
 import { useRouter } from 'next/navigation'
 import { ENG, VIE } from '@/constants/locale'
 
-const Locale: FC = () => {
+const Locale: FC<I_Props_Translate> = ({ translate }) => {
   const [isPending, startTransiton] = useTransition()
   const router = useRouter()
   const localeActive = useLocale()
@@ -37,10 +37,10 @@ const Locale: FC = () => {
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={localeActive} onValueChange={handleChangeValue}>
           <DropdownMenuRadioItem value={ENG} disabled={isPending}>
-            English
+            {translate(ENG)}
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem value={VIE} disabled={isPending}>
-            Vietnamese
+            {translate(VIE)}
           </DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>

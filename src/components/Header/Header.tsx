@@ -9,12 +9,8 @@ import Theme from '@/components/Themes/Theme'
 import Locale from '@/components/Locales/Locale'
 import MobileNav from '@/components/MobileNav/MobileNav'
 import header from './header.module.css'
-import { montserrat } from '@/styles/font'
+import { montserrat } from '@/fonts/font'
 import styles from '@/styles/styles'
-
-export interface I_Props_Translate {
-  translate: (key: string) => string
-}
 
 const Header: FC = () => {
   const translate = useTranslations('Components.Header')
@@ -38,8 +34,8 @@ const Header: FC = () => {
               </div>
               {/* UTILS */}
               <div className={`${styles.gap8} ${header.hideItem}`}>
-                <Theme />
-                <Locale />
+                <Theme translate={translate} />
+                <Locale translate={translate} />
               </div>
               {/* MOBILE NAV */}
               <div className={header.showMobileNav}>

@@ -4,7 +4,7 @@ import Header from 'src/components/Header/Header'
 import ThemeProvider from '@/app/theme'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import { playfairDisplay } from '@/styles/font'
+import { playfairDisplay } from '@/fonts/font'
 import styles from '@/styles/styles'
 
 export const metadata: Metadata = {
