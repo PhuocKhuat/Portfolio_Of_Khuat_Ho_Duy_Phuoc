@@ -75,6 +75,13 @@
   }
   /* MOUSE */
   .mouse {
-    @apply bg-red-500 h-8 w-8 rounded-[50%] fixed top-0 left-0;
+    @apply bg-red-500 h-5 w-5 rounded-[50%] fixed top-0 left-0 transition-[width,height,opacity,background]
+    duration-300 ease-custom-ease select-none
+    pointer-events-none mix-blend-difference
+    flex items-center justify-center
+    bg-clip-padding z-[990];
+  }
+  .link-super-large {
+    @apply w-[11.25rem] h-[11.25rem] bg-white;
   }
 }

@@ -1,32 +1,45 @@
 'use client'
 
-import { FC, useEffect, useState } from 'react'
+import { FC, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { mouseVariants } from '@/lib/motion'
 
 const Mouse: FC = () => {
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0
-  })
+  const cursorRef = useRef<HTMLDivElement | null>(null)
+
   useEffect(() => {
-    const mouseMove = (e: MouseEvent) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY
-      })
+    const updateCursorPosition = ({ clientX, clientY }: MouseEvent) => {
+      if (cursorRef.current) {
+        const { clientWidth, clientHeight, style } = cursorRef.current
+        style.transform = `translate(${clientX - clientWidth / 2}px, ${clientY - clientHeight / 2}px)`
+      }
     }
-    window.addEventListener('mousemove', mouseMove)
+
+    const handleMouseLeave = () => cursorRef.current?.classList.remove('link-super-large')
+    const handleMouseEnter = () => cursorRef.current?.classList.add('link-super-large')
+
+    const addListeners = (element: Element) => {
+      element.addEventListener('mouseleave', handleMouseLeave)
+      element.addEventListener('mousemove', handleMouseEnter)
+    }
+
+    const removeListeners = (element: Element) => {
+      element.removeEventListener('mouseleave', handleMouseLeave)
+      element.removeEventListener('mousemove', handleMouseEnter)
+    }
+
+    document.addEventListener('mousemove', updateCursorPosition)
+
+    const cursorScaleElements = document.querySelectorAll('.cursor-scale')
+    cursorScaleElements.forEach(addListeners)
+
     return () => {
-      window.removeEventListener('mousemove', mouseMove)
+      document.removeEventListener('mousemove', updateCursorPosition)
+      cursorScaleElements.forEach(removeListeners)
     }
   }, [])
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16
-    }
-  }
-  return <motion.div className='mouse' variants={variants} animate='default'></motion.div>
+
+  return <motion.div className='mouse' ref={cursorRef} variants={mouseVariants} animate='default' />
 }
 
 export default Mouse

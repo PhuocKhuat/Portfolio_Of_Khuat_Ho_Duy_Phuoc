@@ -30,7 +30,7 @@ const Header: FC = () => {
                 <Image alt='Phuoc`s logo' src={logo} quality={80} priority className={header.circleImage} />
               </button>
               {/* NAVBAR */}
-              <div className={`${styles.gap8} ${header.hideItem}`}>
+              <div className='hidden md:block'>
                 <Navbar translate={translate} />
               </div>
               {/* UTILS */}

@@ -1,0 +1,6 @@
+.handleFlex {
+  @apply flex flex-col md:flex-row;
+}
+.handleGap {
+  @apply gap-0 md:gap-8;
+}
