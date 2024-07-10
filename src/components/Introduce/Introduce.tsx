@@ -15,7 +15,7 @@ const Introduce: FC = () => {
               <p>I am Phuoc, a</p>
               <p className='mt-1 mb-3'>Web Developer</p>
               <p className={`${introduce.noteSize}`}>
-                With a passion for UX/UI design, I want to provide the best user experience.
+                With a passion for UX/UI design, I want to provide the best user experience
               </p>
             </div>
             <div>

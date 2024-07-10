@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar/Navbar'
 import Theme from '@/components/Themes/Theme'
 import Locale from '@/components/Locales/Locale'
 import MobileNav from '@/components/Navbar/MobileNav'
-import header from '@/styles/header.module.css'
+import header from './header.module.css'
 import { montserrat } from '@/fonts/font'
 import styles from '@/styles/styles'
 import { COMPONENTS } from '@/constants/locale'
@@ -16,7 +16,7 @@ import { COMPONENTS } from '@/constants/locale'
 const Header: FC = () => {
   const translate = useTranslations(`${COMPONENTS}.Header`)
   return (
-    <section className={montserrat.className}>
+    <header className={montserrat.className}>
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={header.menuWrapper}>
@@ -47,7 +47,7 @@ const Header: FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   )
 }
 

@@ -1,4 +1,4 @@
-const RootLayout = ({
+const NotFoundLayout = ({
   children
 }: Readonly<{
   children: React.ReactNode
@@ -6,4 +6,4 @@ const RootLayout = ({
   return children
 }
 
-export default RootLayout
+export default NotFoundLayout

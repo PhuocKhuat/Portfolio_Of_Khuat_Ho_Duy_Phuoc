@@ -19,25 +19,23 @@ const MobiLocale: FC<I_Props_Translate> = ({ translate }) => {
     })
   }
   return (
-    <>
-      <div className={`${styles.flexCol} ${styles.gap2} ${styles.spaceTB}`}>
-        {/* ENG */}
-        <button data-value={ENG} onClick={handleLocale} disabled={isPending || localeActive === ENG}>
-          <span className={`${styles.flexCenter} ${styles.gap2}`}>
-            <Image alt='england flag' src={englishFlag} className={styles.iconSize} quality={65} priority />
-            {translate(ENG)}
-          </span>
-        </button>
-        {/* VIE */}
-        <button data-value={VIE} onClick={handleLocale} disabled={isPending || localeActive === VIE}>
-          <span className={`${styles.flexCenter} ${styles.gap2}`}>
-            <Image alt='vietnam flag' src={vietnamFlag} className={styles.iconSize} quality={65} priority />
-            {translate(VIE)}
-          </span>
-        </button>
-        {/*  */}
-      </div>
-    </>
+    <div className={`${styles.flexCol} ${styles.gap2} ${styles.spaceTB}`}>
+      {/* ENG */}
+      <button data-value={ENG} onClick={handleLocale} disabled={isPending || localeActive === ENG}>
+        <span className={`${styles.flexCenter} ${styles.gap2}`}>
+          <Image alt='england flag' src={englishFlag} className={styles.iconSize} quality={65} priority />
+          {translate(ENG)}
+        </span>
+      </button>
+      {/* VIE */}
+      <button data-value={VIE} onClick={handleLocale} disabled={isPending || localeActive === VIE}>
+        <span className={`${styles.flexCenter} ${styles.gap2}`}>
+          <Image alt='vietnam flag' src={vietnamFlag} className={styles.iconSize} quality={65} priority />
+          {translate(VIE)}
+        </span>
+      </button>
+      {/*  */}
+    </div>
   )
 }
 
