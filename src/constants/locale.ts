@@ -1,4 +1,5 @@
 const ENG = 'en'
 const VIE = 'vie'
+const COMPONENTS = 'Components'
 
-export { ENG, VIE }
+export { ENG, VIE, COMPONENTS }

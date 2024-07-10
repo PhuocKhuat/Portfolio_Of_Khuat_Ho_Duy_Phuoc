@@ -1,0 +1,11 @@
+.leftSize {
+  @apply text-4xl font-bold w-80;
+}
+
+.noteSize {
+  @apply text-sm font-medium w-3/4;
+}
+
+.avatarSize {
+  @apply w-[42.8rem] h-[30.8rem];
+}

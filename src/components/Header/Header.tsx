@@ -3,17 +3,18 @@
 import { FC } from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import avatar from '/public/imgs/profile-pic.png'
+import logo from '/public/imgs/header/profile-pic.png'
 import Navbar from '@/components/Navbar/Navbar'
 import Theme from '@/components/Themes/Theme'
 import Locale from '@/components/Locales/Locale'
-import MobileNav from '@/components/MobileNav/MobileNav'
-import header from './header.module.css'
+import MobileNav from '@/components/Navbar/MobileNav'
+import header from '@/styles/header.module.css'
 import { montserrat } from '@/fonts/font'
 import styles from '@/styles/styles'
+import { COMPONENTS } from '@/constants/locale'
 
 const Header: FC = () => {
-  const translate = useTranslations('Components.Header')
+  const translate = useTranslations(`${COMPONENTS}.Header`)
   return (
     <section className={montserrat.className}>
       <div className={styles.container}>
@@ -26,7 +27,7 @@ const Header: FC = () => {
                   window.location.href = '/'
                 }}
               >
-                <Image alt='Phuoc`s avatar' src={avatar} quality={80} priority className={header.circleImage} />
+                <Image alt='Phuoc`s logo' src={logo} quality={80} priority className={header.circleImage} />
               </button>
               {/* NAVBAR */}
               <div className={`${styles.gap8} ${header.hideItem}`}>

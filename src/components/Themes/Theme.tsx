@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { DARK, LIGHT } from '@/constants/theme'
 import { FC, memo } from 'react'
-import themes from './theme.module.css'
+import themes from '@/styles/theme.module.css'
 
 const Theme: FC<I_Props_Translate> = ({ translate }) => {
   const { theme, setTheme } = useTheme()

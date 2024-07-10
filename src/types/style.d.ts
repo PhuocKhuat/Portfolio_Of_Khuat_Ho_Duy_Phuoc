@@ -9,6 +9,7 @@ interface I_Styles {
   gap8: string
   textSize: string
   textCenter: string
+  bigTitle: string
   iconSize: string
   lineBottom: string
   pointer: string
