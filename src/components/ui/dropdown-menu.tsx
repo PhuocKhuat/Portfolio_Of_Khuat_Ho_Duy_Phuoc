@@ -1,5 +1,3 @@
-'use client'
-
 import { forwardRef, ElementRef, ComponentPropsWithoutRef, HTMLAttributes } from 'react'
 import {
   Root as DropdownMenu,

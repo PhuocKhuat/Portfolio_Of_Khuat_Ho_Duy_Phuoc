@@ -81,7 +81,7 @@
     flex items-center justify-center
     bg-clip-padding z-[990];
   }
-  .link-super-large {
-    @apply w-[11.25rem] h-[11.25rem] bg-white;
+  .linkSuperLarge {
+    @apply w-[10.25rem] h-[10.25rem] bg-white;
   }
 }
