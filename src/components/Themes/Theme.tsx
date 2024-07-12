@@ -1,6 +1,4 @@
-'use client'
-
-import { Moon, Sun } from 'lucide-react'
+import React, { FC, memo } from 'react'
 import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import {
@@ -10,9 +8,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
+import { Moon, Sun } from 'lucide-react'
 import { DARK, LIGHT } from '@/constants/theme'
-import { FC, memo } from 'react'
-import themes from './theme.module.css'
+import { themes } from '@/styles/home'
 
 const Theme: FC<I_Props_Translate> = ({ translate }) => {
   const { theme, setTheme } = useTheme()

@@ -1,5 +1,3 @@
-'use client'
-
 import styles from '@/styles/styles'
 import Image from 'next/image'
 import React, { FC, useTransition } from 'react'

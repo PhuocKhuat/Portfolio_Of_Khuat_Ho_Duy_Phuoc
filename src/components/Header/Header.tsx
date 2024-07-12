@@ -1,19 +1,19 @@
 'use client'
 
-import { FC } from 'react'
+import React from 'react'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
-import logo from '/public/imgs/header/profile-pic.png'
 import Navbar from '@/components/Navbar/Navbar'
 import Theme from '@/components/Themes/Theme'
 import Locale from '@/components/Locales/Locale'
 import MobileNav from '@/components/Navbar/MobileNav'
-import header from './header.module.css'
+import Image from 'next/image'
+import logo from '/public/imgs/header/profile-pic.png'
 import { montserrat } from '@/fonts/font'
-import styles from '@/styles/styles'
 import { COMPONENTS } from '@/constants/locale'
+import styles from '@/styles/styles'
+import { header } from '@/styles/home'
 
-const Header: FC = () => {
+const Header: React.FC = () => {
   const translate = useTranslations(`${COMPONENTS}.Header`)
   return (
     <header className={montserrat.className}>

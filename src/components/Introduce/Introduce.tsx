@@ -1,21 +1,21 @@
-import React, { FC } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import avatar_2 from 'public/imgs/introduce/avatar_portfolio_2.png'
-import styles from '@/styles/styles'
-import introduce from './introduce.module.css'
 import { montserrat } from '@/fonts/font'
-import { Scroll, TextGoUp } from '@/components/Custom'
+import { FirstAppears, Scroll, SecondAppears, ThirdAppears } from '@/components/Custom'
+import styles from '@/styles/styles'
+import { introduce } from '@/styles/home'
 
-const Introduce: FC = () => {
+const Introduce: React.FC = () => {
   return (
     <Scroll>
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={`${styles.flexCenter} relative`}>
-            <div className={`absolute top-10 left-44 ${introduce.leftSize}`}>
-              <TextGoUp name='I am Phuoc, a' />
-              <TextGoUp job='Web Developer' />
-              <TextGoUp passion='With a passion for UX/UI design, I want to provide the best user experience' />
+            <div className={`absolute top-10 left-44 ${introduce.leftText}`}>
+              <FirstAppears name='I am Phuoc, a' />
+              <SecondAppears job='Web Developer' />
+              <ThirdAppears passion='With a passion for UX/UI design, I want to provide the best user experience' />
             </div>
             <div>
               <Image alt='Phuoc' src={avatar_2} quality={80} priority className={introduce.avatarSize} />

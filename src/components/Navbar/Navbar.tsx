@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 import { motion } from 'framer-motion'
 import styles from '@/styles/styles'
-import navbar from './navbar.module.css'
+import { navbar } from '@/styles/home'
 
 const Navbar: FC<I_Props_Translate> = ({ translate }) => {
   return (
@@ -23,4 +23,4 @@ const Navbar: FC<I_Props_Translate> = ({ translate }) => {
   )
 }
 
-export default Navbar
+export default memo(Navbar)

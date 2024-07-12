@@ -7,23 +7,23 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger
 } from '@/components/ui/navigation-menu'
-import { Menu } from 'lucide-react'
 import Navbar from '@/components/Navbar/Navbar'
-import mobileNav from './mobileNav.module.css'
 import styles from '@/styles/styles'
 import MobiTheme from '@/components/Themes/MobiTheme'
 import MobiLocale from '@/components/Locales/MobiLocale'
+import { Menu } from 'lucide-react'
+import { mobileNav } from '@/styles/home'
 
 const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem className={mobileNav.transitions}>
+        <NavigationMenuItem className='me-10'>
           {/* MENU */}
           <NavigationMenuTrigger>
             <Menu />
           </NavigationMenuTrigger>
-          <NavigationMenuContent className={`${mobileNav.backgroundSize} ${mobileNav.customSize} ${styles.textCenter}`}>
+          <NavigationMenuContent className={`bg-opacity-10 ${mobileNav.customSize} ${styles.textCenter}`}>
             {/* NAVBAR */}
             <NavigationMenuLink>
               <Navbar translate={translate} />
