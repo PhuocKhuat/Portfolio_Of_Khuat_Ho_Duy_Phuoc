@@ -13,6 +13,18 @@
       "vie": "Việt"
     }
   },
+  "HomePage": {
+    "name": "Chào, tôi là Phước, một nhà",
+    "job": "phát triển web",
+    "passion": "Với niềm đam mê thiết kế UX/UI, tôi mong muốn mang lại trải nghiệm tốt nhất dành cho người dùng",
+    "full-name": "Họ tên của tôi là Khuất Hồ Duy Phước",
+    "education": "Tôi đã học và tốt nghiệp học viện CyberSoft",
+    "habitat": "Tôi hiện đang sống ở thành phố Hồ Chí Minh",
+    "work": "Tôi chuyên phát triển cả Front-End và Back-End",
+    "role": "Chủ yếu sử dụng React JS và Node JS",
+    "title-about": "VỀ TÔI",
+    "title-work": "CÔNG VIỆC CỦA TÔI"
+  },
   "NotFoundPage": {
     "title": "Không tìm thấy trang"
   }

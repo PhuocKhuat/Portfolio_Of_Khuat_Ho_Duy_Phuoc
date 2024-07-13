@@ -15,6 +15,7 @@ interface I_Style_Header {
   circleImage: type_string
   showMobileNav: type_string
   hideItem: type_string
+  hideNav: type_string
 }
 interface I_Style_Navbar {
   handleFlex: type_string

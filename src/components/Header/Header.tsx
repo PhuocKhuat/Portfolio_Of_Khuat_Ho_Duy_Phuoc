@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import { FC } from 'react'
 import { useTranslations } from 'next-intl'
 import Navbar from '@/components/Navbar/Navbar'
 import Theme from '@/components/Themes/Theme'
@@ -9,12 +9,11 @@ import MobileNav from '@/components/Navbar/MobileNav'
 import Image from 'next/image'
 import logo from '/public/imgs/header/profile-pic.png'
 import { montserrat } from '@/fonts/font'
-import { COMPONENTS } from '@/constants/locale'
 import styles from '@/styles/styles'
 import { header } from '@/styles/home'
 
-const Header: React.FC = () => {
-  const translate = useTranslations(`${COMPONENTS}.Header`)
+const Header: FC = () => {
+  const translate = useTranslations(`Components.Header`)
   return (
     <header className={montserrat.className}>
       <div className={styles.container}>
@@ -30,7 +29,7 @@ const Header: React.FC = () => {
                 <Image alt='Phuoc`s logo' src={logo} quality={80} priority className={header.circleImage} />
               </button>
               {/* NAVBAR */}
-              <div className='hidden md:block'>
+              <div className={header.hideNav}>
                 <Navbar translate={translate} />
               </div>
               {/* UTILS */}

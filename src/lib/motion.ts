@@ -9,7 +9,7 @@ const TextAppearVariants = (y: number, delay: number) => ({
     }
   }
 })
-
-export const FirstAppearVariants = TextAppearVariants(20, 0.2)
+export const FirstAppearVariants = TextAppearVariants(20, 0.4)
 export const SecondAppearVariants = TextAppearVariants(30, 0.8)
 export const ThirdAppearVariants = TextAppearVariants(40, 1.2)
+export const TitleVariants = TextAppearVariants(0, 0.2)

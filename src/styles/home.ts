@@ -2,7 +2,8 @@ export const header: I_Style_Header = {
   menuWrapper: 'py-5',
   circleImage: 'rounded-full w-16 h-14',
   showMobileNav: 'block md:hidden',
-  hideItem: 'hidden md:flex'
+  hideItem: 'hidden md:flex',
+  hideNav: 'hidden md:block'
 }
 export const navbar: I_Style_Navbar = {
   handleFlex: 'flex flex-col md:flex-row',

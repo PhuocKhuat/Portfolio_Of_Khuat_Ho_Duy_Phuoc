@@ -1,26 +1,31 @@
 'use client'
 
-import React from 'react'
+import { FC } from 'react'
 import { motion } from 'framer-motion'
-import { FirstAppearVariants, SecondAppearVariants, ThirdAppearVariants } from '@/lib/motion'
+import { FirstAppearVariants, SecondAppearVariants, ThirdAppearVariants, TitleVariants } from '@/lib/motion'
 import { CURSORSCALE } from '@/constants/mouse'
 import { introduce } from '@/styles/home'
 
-export const Scroll: React.FC<ScrollProps> = ({ children }) => (
+export const Scroll: FC<ScrollProps> = ({ children }) => (
   <motion.section className={CURSORSCALE}>{children}</motion.section>
 )
-export const FirstAppears: React.FC<I_Props_FirstAppears> = ({ name }) => (
+export const FirstAppears: FC<I_Props_Text> = ({ text }) => (
   <motion.p variants={FirstAppearVariants} initial='hidden' whileInView='show'>
-    {name && <>{name}</>}
+    {text}
   </motion.p>
 )
-export const SecondAppears: React.FC<I_Props_SecondAppears> = ({ job }) => (
+export const SecondAppears: FC<I_Props_Text> = ({ text }) => (
   <motion.p variants={SecondAppearVariants} initial='hidden' whileInView='show' className='mt-1 mb-3'>
-    {job && <>{job}</>}
+    {text}
   </motion.p>
 )
-export const ThirdAppears: React.FC<I_Props_ThirdAppears> = ({ passion }) => (
+export const ThirdAppears: FC<I_Props_Text> = ({ text }) => (
   <motion.p variants={ThirdAppearVariants} initial='hidden' whileInView='show' className={introduce.thirdChildText}>
-    {passion && <>{passion}</>}
+    {text}
   </motion.p>
+)
+export const Title: FC<I_Props_Text> = ({ text }) => (
+  <motion.h2 variants={TitleVariants} initial='hidden' whileInView='show' className='text-2xl text-orange-500'>
+    {text}
+  </motion.h2>
 )
