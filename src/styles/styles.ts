@@ -13,8 +13,7 @@ const styles: I_Styles = {
   iconSize: 'w-4 h-4',
   lineBottom: 'py-2 md:py-0 border-b-2 md:border-b-0',
   pointer: 'cursor-pointer',
-  notAllowed: 'cursor-not-allowed',
-  spaceTB: 'p-2.5'
+  notAllowed: 'cursor-not-allowed'
 }
 
 export default styles

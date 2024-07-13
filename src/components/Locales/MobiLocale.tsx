@@ -17,7 +17,7 @@ const MobiLocale: FC<I_Props_Translate> = ({ translate }) => {
     })
   }
   return (
-    <div className={`${styles.flexCol} ${styles.gap2} ${styles.spaceTB}`}>
+    <div className={`${styles.flexCol} ${styles.gap2} p-[2.5]`}>
       {/* ENG */}
       <button data-value={ENG} onClick={handleLocale} disabled={isPending || localeActive === ENG}>
         <span className={`${styles.flexCenter} ${styles.gap2}`}>

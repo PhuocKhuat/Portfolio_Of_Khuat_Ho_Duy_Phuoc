@@ -22,13 +22,17 @@ const Introduce: FC<I_Props_Translate> = ({ translate }) => {
             </div>
             <div className={`absolute top-50 right-0 w-96 ${montserrat.className}`}>
               <Title text={translate('title-about')} />
-              <FirstAppears text={translate('full-name')} />
-              <SecondAppears text={translate('education')} />
-              <ThirdAppears text={translate('habitat')} />
+              <div className='leading-[1.3]'>
+                <FirstAppears text={translate('full-name')} />
+                <SecondAppears text={translate('education')} />
+                <ThirdAppears text={translate('habitat')} />
+              </div>
               <br />
               <Title text={translate('title-work')} />
-              <FirstAppears text={translate('work')} />
-              <SecondAppears text={translate('role')} />
+              <div className='leading-[1.3]'>
+                <FirstAppears text={translate('work')} />
+                <SecondAppears text={translate('role')} />
+              </div>
             </div>
           </div>
         </div>
