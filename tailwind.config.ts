@@ -7,7 +7,8 @@ const config: Config = {
     extend: {
       screens: {
         mds: '960px',
-        mdm: '1000px'
+        mdm: '1000px',
+        mdn: '1200px'
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -59,6 +60,9 @@ const config: Config = {
       },
       transitionTimingFunction: {
         'custom-ease': 'cubic-bezier(.44,.15,0,1.54)'
+      },
+      translate: {
+        up2: '-0.5rem'
       }
     }
   },

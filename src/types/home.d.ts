@@ -30,7 +30,10 @@ interface I_Style_Theme {
   hideItem: type_string
 }
 interface I_Style_Introduce {
+  parentItem: type_string
   leftText: type_string
+  rightText: type_string
+  imgItem: type_string
   thirdChildText: type_string
   avatarSize: type_string
 }

@@ -1,25 +1,22 @@
 import Link from 'next/link'
 import React, { FC, memo } from 'react'
-import { motion } from 'framer-motion'
 import styles from '@/styles/styles'
 import { navbar } from '@/styles/home'
+import { Hover } from '@/components/Custom'
 
 const Navbar: FC<I_Props_Translate> = ({ translate }) => {
+  const links = ['home', 'about', 'work', 'contact']
+
   return (
-    <motion.nav className={`${navbar.handleFlex} ${navbar.handleGap}`}>
-      <div className={styles.lineBottom}>
-        <Link href='/'>{translate('home')}</Link>
-      </div>
-      <div className={styles.lineBottom}>
-        <Link href='/'>{translate('about')}</Link>
-      </div>
-      <div className={styles.lineBottom}>
-        <Link href='/'>{translate('work')}</Link>
-      </div>
-      <div className={styles.lineBottom}>
-        <Link href='/'>{translate('contact')}</Link>
-      </div>
-    </motion.nav>
+    <nav className={`${navbar.handleFlex} ${navbar.handleGap}`}>
+      {links.map((link) => (
+        <div key={link} className={styles.lineBottom}>
+          <Link href={`/${link === 'home' ? '' : link}`}>
+            <Hover text={translate(link)} />
+          </Link>
+        </div>
+      ))}
+    </nav>
   )
 }
 
