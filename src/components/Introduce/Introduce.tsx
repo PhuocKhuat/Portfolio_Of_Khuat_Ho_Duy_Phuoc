@@ -1,7 +1,7 @@
 import { FC } from 'react'
+import { FirstAppears, Scroll, SecondAppears, ThirdAppears, Title } from '@/components/Custom'
 import Image from 'next/image'
 import avatar_2 from 'public/imgs/introduce/avatar_portfolio_2.png'
-import { FirstAppears, Scroll, SecondAppears, ThirdAppears, Title } from '@/components/Custom'
 import styles from '@/styles/styles'
 import { introduce } from '@/styles/home'
 
