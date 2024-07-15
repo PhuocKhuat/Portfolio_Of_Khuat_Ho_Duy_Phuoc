@@ -4,8 +4,10 @@ import Image from 'next/image'
 import avatar_2 from 'public/imgs/introduce/avatar_portfolio_2.png'
 import styles from '@/styles/styles'
 import { introduce } from '@/styles/home'
+import waitLoading from '@/lib/loading'
 
-const Introduce: FC<I_Props_Translate> = ({ translate }) => {
+const Introduce: FC<I_Props_Translate> = async ({ translate }) => {
+  await waitLoading(2000)
   return (
     <Scroll>
       <div className={styles.container}>

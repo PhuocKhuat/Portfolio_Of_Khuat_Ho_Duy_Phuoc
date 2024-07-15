@@ -34,3 +34,23 @@ export const hoverVariants = {
     }
   }
 }
+
+export const loadingVariants = {
+  hidden: {
+    opacity: 0,
+    y: 200,
+    transition: {
+      type: 'spring',
+      stiffness: 800
+    }
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 100,
+      damping: 10
+    }
+  }
+}

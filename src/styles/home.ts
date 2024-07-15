@@ -27,3 +27,7 @@ export const introduce: I_Style_Introduce = {
   thirdChildText: 'text-sm font-medium',
   avatarSize: 'w-[42.8rem] h-[30.8rem]'
 }
+export const loading = {
+  screen: 'w-screen h-screen bg-red-400 fixed top-0 left-0 z-10',
+  between: 'flex justify-center items-center z-10'
+}

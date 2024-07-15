@@ -5,20 +5,31 @@ import { motion } from 'framer-motion'
 import {
   firstAppearVariants,
   hoverVariants,
+  loadingVariants,
   secondAppearVariants,
   thirdAppearVariants,
   titleVariants
 } from '@/lib/motion'
 import { CURSORSCALE } from '@/constants/mouse'
-import { introduce } from '@/styles/home'
+import { introduce, loading } from '@/styles/home'
 
 export const Hover: FC<I_Props_Text> = ({ text }) => (
   <motion.span variants={hoverVariants} initial='initial' whileHover='hover' className='block'>
     {text}
   </motion.span>
 )
+export const LoadingUp: FC = () => (
+  <motion.section
+    variants={loadingVariants}
+    initial='hidden'
+    animate='show'
+    className={`${loading.screen} ${loading.between}`}
+  >
+    Loading
+  </motion.section>
+)
 export const Scroll: FC<ScrollProps> = ({ children }) => (
-  <motion.section className={CURSORSCALE}>{children}</motion.section>
+  <motion.section className={`${CURSORSCALE} z-30 relative`}>{children}</motion.section>
 )
 export const FirstAppears: FC<I_Props_Text> = ({ text }) => (
   <motion.p variants={firstAppearVariants} initial='hidden' whileInView='show'>

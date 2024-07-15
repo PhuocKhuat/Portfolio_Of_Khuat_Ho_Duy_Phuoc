@@ -37,3 +37,7 @@ interface I_Style_Introduce {
   thirdChildText: type_string
   avatarSize: type_string
 }
+interface I_Style_Loading {
+  screen: type_string
+  between: type_string
+}

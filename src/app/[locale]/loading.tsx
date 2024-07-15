@@ -1,7 +1,8 @@
+import { LoadingUp } from '@/components/Custom'
 import React, { FC } from 'react'
 
 const Loading: FC = () => {
-  return <div className='text-5xl text-white'>Loading</div>
+  return <LoadingUp />
 }
 
 export default Loading
