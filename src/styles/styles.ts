@@ -2,7 +2,7 @@
 // mdm: min-width: 1000px
 const styles: I_Styles = {
   container: 'max-w-full mx-auto',
-  containerWrapper: 'w-full px-8 mdm:px-10',
+  containerWrapper: 'w-full px-6 mdm:px-10',
   flex: 'flex',
   flexCol: 'flex flex-col',
   flexCenter: 'flex justify-center items-center',

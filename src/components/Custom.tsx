@@ -14,7 +14,7 @@ import { CURSORSCALE } from '@/constants/mouse'
 import { introduce, loading } from '@/styles/home'
 
 export const Hover: FC<I_Props_Text> = ({ text }) => (
-  <motion.span variants={hoverVariants} initial='initial' whileHover='hover' className='block'>
+  <motion.span variants={hoverVariants} initial='hidden' whileHover='show' className='block'>
     {text}
   </motion.span>
 )
@@ -22,14 +22,16 @@ export const LoadingUp: FC = () => (
   <motion.section
     variants={loadingVariants}
     initial='hidden'
-    animate='show'
+    whileInView='show'
     className={`${loading.screen} ${loading.between}`}
   >
     Loading
   </motion.section>
 )
 export const Scroll: FC<ScrollProps> = ({ children }) => (
-  <motion.section className={`${CURSORSCALE} z-30 relative`}>{children}</motion.section>
+  <motion.section className={`${CURSORSCALE} z-30 relative`} id='home'>
+    {children}
+  </motion.section>
 )
 export const FirstAppears: FC<I_Props_Text> = ({ text }) => (
   <motion.p variants={firstAppearVariants} initial='hidden' whileInView='show'>
@@ -47,7 +49,7 @@ export const ThirdAppears: FC<I_Props_Text> = ({ text }) => (
   </motion.p>
 )
 export const Title: FC<I_Props_Text> = ({ text }) => (
-  <motion.h2 variants={titleVariants} initial='hidden' whileInView='show' className='text-2xl text-orange-500'>
+  <motion.h2 variants={titleVariants} initial='hidden' whileInView='show' className='text-2xl text-red-500'>
     {text}
   </motion.h2>
 )

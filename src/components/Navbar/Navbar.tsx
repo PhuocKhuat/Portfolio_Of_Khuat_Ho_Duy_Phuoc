@@ -11,7 +11,7 @@ const Navbar: FC<I_Props_Translate> = ({ translate }) => {
     <nav className={`${navbar.handleFlex} ${navbar.handleGap}`}>
       {links.map((link) => (
         <div key={link} className={styles.lineBottom}>
-          <Link href={`/${link === 'home' ? '' : link}`}>
+          <Link href={`/#${link}`}>
             <Hover text={translate(link)} />
           </Link>
         </div>

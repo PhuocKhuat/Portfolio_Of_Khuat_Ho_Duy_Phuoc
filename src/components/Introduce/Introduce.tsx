@@ -7,7 +7,7 @@ import { introduce } from '@/styles/home'
 import waitLoading from '@/lib/loading'
 
 const Introduce: FC<I_Props_Translate> = async ({ translate }) => {
-  await waitLoading(2000)
+  await waitLoading(1000)
   return (
     <Scroll>
       <div className={styles.container}>

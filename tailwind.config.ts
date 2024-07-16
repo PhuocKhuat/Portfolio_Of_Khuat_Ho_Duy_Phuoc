@@ -6,8 +6,9 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        xsm: '415px',
         mds: '960px',
-        mdm: '1000px',
+        mdm: '992px',
         mdn: '1200px'
       },
       colors: {

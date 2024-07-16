@@ -23,7 +23,7 @@ export const introduce: I_Style_Introduce = {
   parentItem: 'mdn:flex justify-center items-center md:grid md:grid-cols-2 relative',
   leftText: 'col-span-1 absolute top-10 mdn:left-44 md:left-0 text-4xl font-bold w-64',
   imgItem: 'col-span-1 col-start-2 md:block hidden',
-  rightText: 'col-span-1 absolute top-52 bottom-10 mdn:right-0 w-96',
+  rightText: 'col-span-1 absolute mdn:top-52 top-64 bottom-10 mdn:right-0 xsm:w-96 w-80',
   thirdChildText: 'text-sm font-medium',
   avatarSize: 'w-[42.8rem] h-[30.8rem]'
 }
