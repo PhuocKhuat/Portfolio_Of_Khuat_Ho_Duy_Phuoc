@@ -1,0 +1,58 @@
+{
+  "technicalSkills": [
+    {
+      "category": "Languages",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "img": "/public/imgs/skills/js.png"
+        },
+        {
+          "name": "TypeScript",
+          "img": "/public/imgs/skills/ts.png"
+        },
+        {
+          "name": "HTML5",
+          "img": "/public/imgs/skills/html5.png"
+        },
+        {
+          "name": "CSS3",
+          "img": "/public/imgs/skills/css3.png"
+        }
+      ]
+    },
+    {
+      "category": "Front-End Development",
+      "skills": [
+        {
+          "name": "React JS",
+          "img": "/public/imgs/skills/react.png"
+        },
+        {
+          "name": "Next JS",
+          "img": "/public/imgs/skills/TS.png"
+        },
+        {
+          "name": "Bootstrap 5",
+          "img": "/public/imgs/skills/HTML5.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "img": "/public/imgs/skills/CSS3.png"
+        },
+        {
+          "name": "SASS/SCSS",
+          "img": "/public/imgs/skills/CSS3.png"
+        },
+        {
+          "name": "Ant Design",
+          "img": "/public/imgs/skills/CSS3.png"
+        },
+        {
+          "name": "Material UI",
+          "img": "/public/imgs/skills/CSS3.png"
+        }
+      ]
+    }
+  ]
+}

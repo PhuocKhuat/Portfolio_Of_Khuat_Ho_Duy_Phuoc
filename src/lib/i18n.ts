@@ -14,7 +14,7 @@ export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale)) {
     notFound()
   }
-  const importedMessages = (await import(`@/messages/${locale}.json`)) as ImportResult
+  const importedMessages = (await import(`/public/messages/${locale}.json`)) as ImportResult
 
   const messages = importedMessages.default
   return {

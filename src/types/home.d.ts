@@ -11,7 +11,6 @@ interface I_Props_Translate {
 }
 
 interface I_Style_Header {
-  menuWrapper: type_string
   circleImage: type_string
   showMobileNav: type_string
   hideItem: type_string

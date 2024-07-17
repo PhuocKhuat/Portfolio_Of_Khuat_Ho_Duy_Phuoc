@@ -7,10 +7,10 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger
 } from '@/components/ui/navigation-menu'
-import Navbar from '@/components/Navbar/Navbar'
+import Navbar from '@/components/Header/Navbar/Navbar'
 import styles from '@/styles/styles'
-import MobiTheme from '@/components/Themes/MobiTheme'
-import MobiLocale from '@/components/Locales/MobiLocale'
+import MobiTheme from '@/components/Header/Themes/MobiTheme'
+import MobiLocale from '@/components/Header/Locales/MobiLocale'
 import { Menu } from 'lucide-react'
 import { mobileNav } from '@/styles/home'
 

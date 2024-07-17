@@ -29,7 +29,7 @@ export const LoadingUp: FC = () => (
   </motion.section>
 )
 export const Scroll: FC<ScrollProps> = ({ children }) => (
-  <motion.section className={`${CURSORSCALE} z-30 relative`} id='home'>
+  <motion.section className={`${CURSORSCALE} z-30 relative h-[32.3rem]`} id='home'>
     {children}
   </motion.section>
 )

@@ -1,6 +1,5 @@
 // md: min-width: 768px
 export const header: I_Style_Header = {
-  menuWrapper: 'py-5',
   circleImage: 'rounded-full w-16 h-14',
   showMobileNav: 'md:hidden block',
   hideItem: 'md:flex hidden',
@@ -28,6 +27,6 @@ export const introduce: I_Style_Introduce = {
   avatarSize: 'w-[42.8rem] h-[30.8rem]'
 }
 export const loading = {
-  screen: 'w-screen h-screen bg-red-400 fixed top-0 left-0 z-10',
+  screen: 'w-screen h-screen bg-red-400 fixed top-0 left-0 z-40',
   between: 'flex justify-center items-center z-10'
 }

@@ -35,12 +35,15 @@ const Locale: FC<I_Props_Translate> = ({ translate }) => {
         <DropdownMenuLabel>Choose languages</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={localeActive} onValueChange={handleChangeValue}>
+          {/* ENG */}
           <DropdownMenuRadioItem value={ENG} disabled={isPending}>
             {translate(ENG)}
           </DropdownMenuRadioItem>
+          {/* VIE */}
           <DropdownMenuRadioItem value={VIE} disabled={isPending}>
             {translate(VIE)}
           </DropdownMenuRadioItem>
+          {/*  */}
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
