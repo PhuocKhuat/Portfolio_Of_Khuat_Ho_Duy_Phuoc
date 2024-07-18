@@ -14,10 +14,14 @@ interface I_Props_Skill_Item {
   techSkill: SkillCategory[]
   error: Error | null
 }
+interface I_Props_Skill_Tooltip {
+  skill: Skill
+}
 
 interface I_Style_Skill {
   customCategory: type_string
   makeUpCategory: type_string
+  category: type_string
   customSkill: type_string
   makeUpSkill: type_string
 }

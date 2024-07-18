@@ -9,7 +9,8 @@ export const introduce: I_Style_Introduce = {
 }
 export const skills: I_Style_Skill = {
   customCategory: 'flex gap-8 items-center',
-  makeUpCategory: 'border-b border-gray-300 p-2 mb-3 shadow-md',
+  makeUpCategory: 'border-b border-gray-300 p-2 mb-2 shadow-md',
+  category: 'text-xl w-1/4 text-slate-300',
   customSkill: 'flex justify-center items-center gap-5',
-  makeUpSkill: 'p-2 border-2 rounded-lg transform transition-transform hover:scale-105 hover:shadow-lg'
+  makeUpSkill: 'p-2 border-2 mb-0 rounded-lg transform transition-transform hover:scale-105 hover:shadow-lg'
 }

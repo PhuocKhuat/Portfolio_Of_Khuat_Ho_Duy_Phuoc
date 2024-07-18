@@ -24,8 +24,8 @@ const Skills: FC = () => {
   }, [])
 
   return (
-    <div>
-      <Title text={'TECHNICAL SKILL'} />
+    <div className='mb-5'>
+      <Title text={'Technical skill'} />
       <Item techSkill={techSkill} error={error} />
     </div>
   )

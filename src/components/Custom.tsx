@@ -55,7 +55,7 @@ export const Title: FC<I_Props_Text> = ({ text }) => (
     variants={titleVariants}
     initial='hidden'
     whileInView='show'
-    className={`${playfairDisplay.className} text-2xl text-red-500`}
+    className={`${playfairDisplay.className} text-3xl font-bold mb-3 uppercase`}
   >
     {text}
   </motion.h2>
