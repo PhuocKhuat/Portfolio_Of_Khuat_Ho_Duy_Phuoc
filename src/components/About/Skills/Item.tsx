@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import Image from 'next/image'
-import styles from '@/styles/styles'
+import { skills } from '@/styles/body'
 
 const Item: FC<I_Props_Skill_Item> = ({ techSkill, error }) => {
   const renderSkills = () => {
@@ -8,12 +8,12 @@ const Item: FC<I_Props_Skill_Item> = ({ techSkill, error }) => {
       return <div>Error loading skills: {error.message}</div>
     }
     return techSkill.map((item) => (
-      <div key={item.category}>
-        <h3>{item.category}</h3>
-        <div className={`${styles.flex} ${styles.gap8}`}>
+      <div key={item.category} className={`${skills.customCategory} ${skills.makeUpCategory}`}>
+        <h3 className='text-xl'>{item.category}</h3>
+        <div className={skills.customSkill}>
           {item.skills.map((skill) => (
-            <div key={skill.name}>
-              <Image alt={skill.name} src={skill.img} width={60} height={60} priority />
+            <div key={skill.name} className={skills.makeUpSkill}>
+              <Image alt={skill.name} src={skill.img} width={50} height={50} priority />
             </div>
           ))}
         </div>

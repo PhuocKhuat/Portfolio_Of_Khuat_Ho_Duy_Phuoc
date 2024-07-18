@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { FirstAppears, SecondAppears, ThirdAppears, Title } from '@/components/Custom'
 import Image from 'next/image'
 import avatar_2 from 'public/imgs/introduce/avatar_portfolio_2.png'
-import { introduce } from '@/styles/home'
+import { introduce } from '@/styles/body'
 
 const Item: FC<I_Props_Translate> = ({ translate }) => {
   return (

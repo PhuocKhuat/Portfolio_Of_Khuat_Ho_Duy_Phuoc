@@ -4,13 +4,13 @@ import { FC } from 'react'
 import { useTranslations } from 'next-intl'
 import Navbar from '@/components/Header/Navbar/Navbar'
 import Theme from '@/components/Header/Themes/Theme'
-import Locale from '@/components/Header/Locales/Locale'
+import Locale from '@/components/Header/Locales/Locale/Locale'
 import MobileNav from '@/components/Header/Navbar/MobileNav'
 import Image from 'next/image'
 import logo from '/public/imgs/header/profile-pic.png'
 import { montserrat } from '@/fonts/font'
 import styles from '@/styles/styles'
-import { header } from '@/styles/home'
+import { header } from '@/styles/header'
 
 const Header: FC = () => {
   const translate = useTranslations(`Components.Header`)

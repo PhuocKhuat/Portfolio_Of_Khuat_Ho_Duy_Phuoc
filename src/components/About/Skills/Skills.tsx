@@ -2,6 +2,7 @@
 
 import React, { FC, useEffect, useState } from 'react'
 import Item from '@/components/About/Skills/Item'
+import { Title } from '@/components/Custom'
 
 const Skills: FC = () => {
   const [techSkill, setTechSkill] = useState<SkillCategory[]>([])
@@ -22,7 +23,12 @@ const Skills: FC = () => {
       })
   }, [])
 
-  return <Item techSkill={techSkill} error={error} />
+  return (
+    <div>
+      <Title text={'TECHNICAL SKILL'} />
+      <Item techSkill={techSkill} error={error} />
+    </div>
+  )
 }
 
 export default Skills

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { FC, memo } from 'react'
 import styles from '@/styles/styles'
-import { navbar } from '@/styles/home'
+import { navbar } from '@/styles/header'
 import { Hover } from '@/components/Custom'
 
 const Navbar: FC<I_Props_Translate> = ({ translate }) => {

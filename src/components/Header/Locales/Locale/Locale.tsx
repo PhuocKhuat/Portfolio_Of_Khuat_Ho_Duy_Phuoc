@@ -4,26 +4,22 @@ import {
   DropdownMenuContent,
   DropdownMenuLabel,
   DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
 import { Languages } from 'lucide-react'
-import { useLocale } from 'next-intl'
+import Item from './Item'
 import { useRouter } from 'next/navigation'
-import { ENG, VIE } from '@/constants/locale'
+import { useLocale } from 'next-intl'
 
 const Locale: FC<I_Props_Translate> = ({ translate }) => {
   const [isPending, startTransiton] = useTransition()
   const router = useRouter()
   const localeActive = useLocale()
   const handleChangeValue = (value: string) => {
-    startTransiton(() => {
-      router.replace(`/${value}`)
-    })
+    startTransiton(() => router.replace(`/${value}`))
   }
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -35,15 +31,7 @@ const Locale: FC<I_Props_Translate> = ({ translate }) => {
         <DropdownMenuLabel>Choose languages</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={localeActive} onValueChange={handleChangeValue}>
-          {/* ENG */}
-          <DropdownMenuRadioItem value={ENG} disabled={isPending}>
-            {translate(ENG)}
-          </DropdownMenuRadioItem>
-          {/* VIE */}
-          <DropdownMenuRadioItem value={VIE} disabled={isPending}>
-            {translate(VIE)}
-          </DropdownMenuRadioItem>
-          {/*  */}
+          <Item translate={translate} isPending={isPending} localeActive={localeActive} />
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>

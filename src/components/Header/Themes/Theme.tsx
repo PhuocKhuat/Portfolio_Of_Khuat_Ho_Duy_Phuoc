@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Moon, Sun } from 'lucide-react'
 import { DARK, LIGHT } from '@/constants/theme'
-import { themes } from '@/styles/home'
+import { themes } from '@/styles/header'
 
 const Theme: FC<I_Props_Translate> = ({ translate }) => {
   const { theme, setTheme } = useTheme()

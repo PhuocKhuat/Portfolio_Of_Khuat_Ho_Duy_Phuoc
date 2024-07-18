@@ -12,7 +12,7 @@ import styles from '@/styles/styles'
 import MobiTheme from '@/components/Header/Themes/MobiTheme'
 import MobiLocale from '@/components/Header/Locales/MobiLocale'
 import { Menu } from 'lucide-react'
-import { mobileNav } from '@/styles/home'
+import { mobileNav } from '@/styles/header'
 
 const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
   return (

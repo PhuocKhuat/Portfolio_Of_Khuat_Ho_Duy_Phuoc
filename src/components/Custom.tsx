@@ -11,7 +11,9 @@ import {
   titleVariants
 } from '@/lib/motion'
 import { CURSORSCALE } from '@/constants/mouse'
-import { introduce, loading } from '@/styles/home'
+import { introduce } from '@/styles/body'
+import { loading } from '@/styles/header'
+import { playfairDisplay } from '@/fonts/font'
 
 export const Hover: FC<I_Props_Text> = ({ text }) => (
   <motion.span variants={hoverVariants} initial='hidden' whileHover='show' className='block'>
@@ -49,7 +51,12 @@ export const ThirdAppears: FC<I_Props_Text> = ({ text }) => (
   </motion.p>
 )
 export const Title: FC<I_Props_Text> = ({ text }) => (
-  <motion.h2 variants={titleVariants} initial='hidden' whileInView='show' className='text-2xl text-red-500'>
+  <motion.h2
+    variants={titleVariants}
+    initial='hidden'
+    whileInView='show'
+    className={`${playfairDisplay.className} text-2xl text-red-500`}
+  >
     {text}
   </motion.h2>
 )

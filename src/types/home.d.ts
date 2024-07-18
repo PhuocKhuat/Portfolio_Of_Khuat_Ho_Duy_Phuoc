@@ -6,9 +6,6 @@ interface I_Props_RootLayout {
     locale: type_string
   }
 }
-interface I_Props_Translate {
-  translate: (key: type_string) => type_string
-}
 
 interface I_Style_Header {
   circleImage: type_string
