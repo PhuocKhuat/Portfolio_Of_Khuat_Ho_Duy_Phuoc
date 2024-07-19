@@ -2,7 +2,8 @@
   "Components": {
     "Header": {
       "home": "Home",
-      "about": "About",
+      "skills": "Skill",
+      "information": "Information",
       "work": "Work",
       "contact": "Contact",
       "choose-theme": "Choose Theme",
@@ -14,8 +15,8 @@
     }
   },
   "HomePage": {
-    "name": "Hi, I am Phuoc,",
-    "job": "a Web Developer",
+    "name": "Hi, I am Phuoc, a",
+    "job": "Web Developer",
     "passion": "With a passion for UX/UI design, I want to provide the best user experience",
     "full-name": "My full name is Khuat Ho Duy Phuoc",
     "education": "I studied and graduated from CyberSoft Academy",

@@ -8,8 +8,8 @@ const Item: FC<I_Props_Translate> = ({ translate }) => {
   return (
     <div className={introduce.parentItem}>
       <div className={introduce.leftText}>
-        <FirstAppears text={translate('name')} />
-        <SecondAppears text={translate('job')} />
+        <Title text={translate('name')} />
+        <Title text={translate('job')} />
         <ThirdAppears text={translate('passion')} />
       </div>
       <div className={introduce.imgItem}>

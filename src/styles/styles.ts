@@ -3,6 +3,7 @@
 const styles: I_Styles = {
   container: 'max-w-full mx-auto',
   containerWrapper: 'w-full px-6 mdm:px-10',
+  verticalWrapper: 'pt-24 pb-8',
   flex: 'flex',
   flexCol: 'flex flex-col',
   flexCenter: 'flex justify-center items-center',

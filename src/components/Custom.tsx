@@ -7,13 +7,15 @@ import {
   hoverVariants,
   loadingVariants,
   secondAppearVariants,
+  shapeVariants,
   thirdAppearVariants,
   titleVariants
 } from '@/lib/motion'
 import { CURSORSCALE } from '@/constants/mouse'
-import { introduce } from '@/styles/body'
+import { introduce, skills } from '@/styles/body'
 import { loading } from '@/styles/header'
 import { playfairDisplay } from '@/fonts/font'
+import Image from 'next/image'
 
 export const Hover: FC<I_Props_Text> = ({ text }) => (
   <motion.span variants={hoverVariants} initial='hidden' whileHover='show' className='block'>
@@ -30,8 +32,8 @@ export const LoadingUp: FC = () => (
     Loading
   </motion.section>
 )
-export const Scroll: FC<ScrollProps> = ({ children }) => (
-  <motion.section className={`${CURSORSCALE} z-30 relative h-[32.3rem]`} id='home'>
+export const Scroll: FC<ScrollProps> = ({ children, id }) => (
+  <motion.section className={`${CURSORSCALE} z-30 relative h-[32.3rem]`} id={id}>
     {children}
   </motion.section>
 )
@@ -59,4 +61,9 @@ export const Title: FC<I_Props_Text> = ({ text }) => (
   >
     {text}
   </motion.h2>
+)
+export const Skills: FC<I_Props_Skill_Tooltip> = ({ skill }) => (
+  <motion.div variants={shapeVariants} initial='hidden' whileInView='show' className={skills.makeUpSkill}>
+    <Image alt={skill.name} src={skill.img} width={60} height={60} priority className='shadow-white' />
+  </motion.div>
 )

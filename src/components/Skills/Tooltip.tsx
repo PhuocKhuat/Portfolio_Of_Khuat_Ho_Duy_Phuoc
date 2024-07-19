@@ -1,13 +1,14 @@
-import { Tooltip as Tooltips, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import Image from 'next/image'
 import React, { FC } from 'react'
+import { Tooltip as Tooltips, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { Skills } from '@/components/Custom'
+import { skills } from '@/styles/body'
 
 const Tooltip: FC<I_Props_Skill_Tooltip> = ({ skill }) => {
   return (
     <TooltipProvider>
       <Tooltips>
-        <TooltipTrigger>
-          <Image alt={skill.name} src={skill.img} width={45} height={45} priority className='shadow-white' />
+        <TooltipTrigger className={skills.hoverSkill}>
+          <Skills skill={skill} />
         </TooltipTrigger>
         <TooltipContent className='mb-2'>
           <p>{skill.name}</p>

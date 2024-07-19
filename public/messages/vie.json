@@ -2,7 +2,8 @@
   "Components": {
     "Header": {
       "home": "Trang chủ",
-      "about": "Về tôi",
+      "skills": "Kỹ năng",
+      "information": "Thông tin",
       "work": "Công việc",
       "contact": "Liên hệ",
       "choose-theme": "Chọn màu nền",
@@ -14,8 +15,8 @@
     }
   },
   "HomePage": {
-    "name": "Chào, tôi là Phước, một nhà",
-    "job": "phát triển web",
+    "name": "Chào, tôi là Phước, một nhà phát",
+    "job": "triển web",
     "passion": "Với niềm đam mê thiết kế UX/UI, tôi mong muốn mang lại trải nghiệm tốt nhất dành cho người dùng",
     "full-name": "Họ tên của tôi là Khuất Hồ Duy Phước",
     "education": "Tôi đã học và tốt nghiệp học viện CyberSoft",

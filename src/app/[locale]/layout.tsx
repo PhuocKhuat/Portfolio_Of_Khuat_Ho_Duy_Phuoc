@@ -4,7 +4,7 @@ import Header from '@/components/Header/Header'
 import ThemeProvider from '@/app/theme'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import { playfairDisplay } from '@/fonts/font'
+import { montserrat } from '@/fonts/font'
 import styles from '@/styles/styles'
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const RootLayout = async ({ children, params: { locale } }: Readonly<I_Props_RootLayout>): Promise<JSX.Element> => {
   const messages = await getMessages()
   return (
-    <html lang={locale} className={`${playfairDisplay.className} ${styles.textSize}`} suppressHydrationWarning>
+    <html lang={locale} className={`${montserrat.className} ${styles.textSize}`} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>

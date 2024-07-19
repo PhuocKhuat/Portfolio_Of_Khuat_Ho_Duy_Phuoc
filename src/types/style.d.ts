@@ -1,6 +1,7 @@
 interface I_Styles {
   container: type_string
   containerWrapper: type_string
+  verticalWrapper: type_string
   flex: type_string
   flexCol: type_string
   flexCenter: type_string

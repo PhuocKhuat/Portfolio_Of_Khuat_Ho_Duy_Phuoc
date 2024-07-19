@@ -22,6 +22,7 @@ interface I_Style_Skill {
   customCategory: type_string
   makeUpCategory: type_string
   category: type_string
+  hoverSkill: type_string
   customSkill: type_string
   makeUpSkill: type_string
 }
