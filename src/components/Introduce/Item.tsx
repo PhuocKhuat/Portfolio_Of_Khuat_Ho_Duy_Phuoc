@@ -8,8 +8,15 @@ const Item: FC<I_Props_Translate> = ({ translate }) => {
   return (
     <div className={introduce.parentItem}>
       <div className={introduce.leftText}>
-        <Title text={translate('name')} />
-        <Title text={translate('job')} />
+        <div className='md:block hidden'>
+          <Title text={translate('name')} />
+        </div>
+        <div className='md:block hidden'>
+          <Title text={translate('job')} />
+        </div>
+        <div className='md:hidden block w-[80vw]'>
+          <Title text={translate('name&job')} />
+        </div>
         <ThirdAppears text={translate('passion')} />
       </div>
       <div className={introduce.imgItem}>
@@ -18,15 +25,31 @@ const Item: FC<I_Props_Translate> = ({ translate }) => {
       <div className={introduce.rightText}>
         <div className='leading-[1.3]'>
           <Title text={translate('title-about')} />
-          <FirstAppears text={translate('full-name')} />
-          <SecondAppears text={translate('education')} />
-          <ThirdAppears text={translate('habitat')} />
+          <div className='md:block hidden'>
+            <FirstAppears text={translate('full-name')} />
+          </div>
+          <div className='md:block hidden'>
+            <SecondAppears text={translate('education')} />
+          </div>
+          <div className='md:block hidden'>
+            <ThirdAppears text={translate('habitat')} />
+          </div>
+          <div className='md:hidden block w-[80vw]'>
+            <FirstAppears text={translate('full-about')} />
+          </div>
         </div>
         <br />
         <div className='leading-[1.3]'>
           <Title text={translate('title-work')} />
-          <FirstAppears text={translate('work')} />
-          <SecondAppears text={translate('role')} />
+          <div className='md:block hidden'>
+            <FirstAppears text={translate('work')} />
+          </div>
+          <div className='md:block hidden'>
+            <SecondAppears text={translate('role')} />
+          </div>
+          <div className='md:hidden block w-[80vw]'>
+            <FirstAppears text={translate('full-work')} />
+          </div>
         </div>
       </div>
     </div>

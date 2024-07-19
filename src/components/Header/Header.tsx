@@ -15,7 +15,7 @@ import { header } from '@/styles/header'
 const Header: FC = () => {
   const translate = useTranslations(`Components.Header`)
   return (
-    <header className={`${montserrat.className} h-20`}>
+    <header className={`${montserrat.className} h-20`} id='home'>
       <div className='fixed w-full z-[35]'>
         <div className={styles.container}>
           <div className={styles.containerWrapper}>

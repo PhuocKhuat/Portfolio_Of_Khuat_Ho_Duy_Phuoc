@@ -17,12 +17,15 @@
   "HomePage": {
     "name": "Hi, I am Phuoc, a",
     "job": "Web Developer",
+    "name&job": "Hi, I am Phuoc, a Web Developer",
     "passion": "With a passion for UX/UI design, I want to provide the best user experience",
     "full-name": "My full name is Khuat Ho Duy Phuoc",
     "education": "I studied and graduated from CyberSoft Academy",
     "habitat": "I am currently living in Ho Chi Minh City",
+    "full-about": "My full name is Khuat Ho Duy Phuoc. I studied and graduated from CyberSoft Academy. I am currently living in Ho Chi Minh City",
     "work": "I specialize in both Front-End and Back-End development",
     "role": "Primarily using React JS and Node JS",
+    "full-work": "I specialize in both Front-End and Back-End development. Primarily using React JS and Node JS.",
     "title-about": "ABOUT ME",
     "title-work": "MY WORK"
   },

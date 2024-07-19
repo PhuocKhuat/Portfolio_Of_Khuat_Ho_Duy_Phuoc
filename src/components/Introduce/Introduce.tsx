@@ -7,7 +7,7 @@ import Item from '@/components/Introduce/Item'
 const Introduce: FC<I_Props_Translate> = async ({ translate }) => {
   await waitLoading(1000)
   return (
-    <Scroll id='home'>
+    <Scroll id=''>
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className='py-3'>

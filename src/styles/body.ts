@@ -3,12 +3,12 @@ export const introduce: I_Style_Introduce = {
   parentItem: 'mdn:flex justify-center items-center md:grid md:grid-cols-2 relative',
   leftText: 'col-span-1 absolute top-10 mdn:left-44 md:left-0 text-4xl font-bold w-64',
   imgItem: 'col-span-1 col-start-2 md:block hidden',
-  rightText: 'col-span-1 absolute mdn:top-52 top-[18rem] bottom-10 mdn:right-0 xsm:w-96 w-80',
-  thirdChildText: 'text-sm font-medium',
+  rightText: 'col-span-1 absolute mdm:top-[13rem] md:top-52 top-44 mdn:right-0 xsm:w-96 w-80',
+  thirdChildText: 'text-sm font-medium md:w-full w-[80vw]',
   avatarSize: 'w-[42.8rem] h-[30.8rem]'
 }
 export const skills: I_Style_Skill = {
-  customCategory: 'flex gap-8 items-center',
+  customCategory: 'mdn:flex gap-8 items-center block',
   makeUpCategory: 'border-b border-gray-300 p-2 mb-2 shadow-md',
   category: 'text-xl w-1/4 text-slate-300',
   hoverSkill: 'transform transition-transform hover:scale-105 hover:shadow-xl',

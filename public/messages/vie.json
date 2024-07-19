@@ -17,12 +17,15 @@
   "HomePage": {
     "name": "Chào, tôi là Phước, một nhà phát",
     "job": "triển web",
+    "name&job": "Chào, tôi là Phước, một nhà phát triển web",
     "passion": "Với niềm đam mê thiết kế UX/UI, tôi mong muốn mang lại trải nghiệm tốt nhất dành cho người dùng",
     "full-name": "Họ tên của tôi là Khuất Hồ Duy Phước",
     "education": "Tôi đã học và tốt nghiệp học viện CyberSoft",
     "habitat": "Tôi hiện đang sống ở thành phố Hồ Chí Minh",
+    "full-about": "Họ tên của tôi là Khuất Hồ Duy Phước. Tôi đã học và tốt nghiệp học viện CyberSoft. Tôi hiện đang sống ở thành phố Hồ Chí Minh.",
     "work": "Tôi chuyên phát triển cả Front-End và Back-End",
     "role": "Chủ yếu sử dụng React JS và Node JS",
+    "full-work": "Tôi chuyên phát triển cả Front-End và Back-End. Chủ yếu sử dụng React JS và Node JS.",
     "title-about": "VỀ TÔI",
     "title-work": "CÔNG VIỆC CỦA TÔI"
   },

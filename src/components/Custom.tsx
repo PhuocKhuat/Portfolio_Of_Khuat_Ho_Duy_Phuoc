@@ -64,6 +64,6 @@ export const Title: FC<I_Props_Text> = ({ text }) => (
 )
 export const Skills: FC<I_Props_Skill_Tooltip> = ({ skill }) => (
   <motion.div variants={shapeVariants} initial='hidden' whileInView='show' className={skills.makeUpSkill}>
-    <Image alt={skill.name} src={skill.img} width={60} height={60} priority className='shadow-white' />
+    <Image alt={skill.name} src={skill.img} width={60} height={60} quality={60} priority />
   </motion.div>
 )
