@@ -32,6 +32,8 @@ interface I_Style_Introduce {
   imgItem: type_string
   thirdChildText: type_string
   avatarSize: type_string
+  hideItem: type_string
+  showItem: type_string
 }
 interface I_Style_Loading {
   screen: type_string

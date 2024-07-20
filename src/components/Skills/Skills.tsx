@@ -17,7 +17,6 @@ const Skills: FC = () => {
         await waitLoading(1000)
         const response = await fetch('/data/skills.json')
         if (!response.ok) throw new Error('Network response was not ok')
-
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         const data: SkillsData = await response.json()
         setTechSkill(data.technicalSkills)

@@ -10,7 +10,7 @@ const Tooltip: FC<I_Props_Skill_Tooltip> = ({ skill }) => {
         <TooltipTrigger className={skills.hoverSkill}>
           <Skills skill={skill} />
         </TooltipTrigger>
-        <TooltipContent className='mb-2'>
+        <TooltipContent side='bottom' className='relative bottom-5'>
           <p>{skill.name}</p>
         </TooltipContent>
       </Tooltips>

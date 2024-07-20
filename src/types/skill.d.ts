@@ -17,6 +17,9 @@ interface I_Props_Skill_Item {
 interface I_Props_Skill_Tooltip {
   skill: Skill
 }
+interface I_Props_Skill_Carousel {
+  item: SkillCategory
+}
 
 interface I_Style_Skill {
   customCategory: type_string

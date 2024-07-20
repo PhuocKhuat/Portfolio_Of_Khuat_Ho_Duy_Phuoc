@@ -3,15 +3,17 @@ export const introduce: I_Style_Introduce = {
   parentItem: 'mdn:flex justify-center items-center md:grid md:grid-cols-2 relative',
   leftText: 'col-span-1 absolute top-10 mdn:left-44 md:left-0 text-4xl font-bold w-64',
   imgItem: 'col-span-1 col-start-2 md:block hidden',
-  rightText: 'col-span-1 absolute mdm:top-[13rem] md:top-52 top-44 mdn:right-0 xsm:w-96 w-80',
+  rightText: 'col-span-1 absolute mdm:top-[13rem] md:top-52 top-44 mdn:right-0 xsm:w-96 w-80 leading-[1.3]',
   thirdChildText: 'text-sm font-medium md:w-full w-[80vw]',
-  avatarSize: 'w-[42.8rem] h-[30.8rem]'
+  avatarSize: 'w-[42.8rem] h-[30.8rem]',
+  hideItem: 'md:block hidden',
+  showItem: 'md:hidden block w-[80vw]'
 }
 export const skills: I_Style_Skill = {
   customCategory: 'mdn:flex gap-8 items-center block',
   makeUpCategory: 'border-b border-gray-300 p-2 mb-2 shadow-md',
-  category: 'text-xl w-1/4 text-slate-300',
-  hoverSkill: 'transform transition-transform hover:scale-105 hover:shadow-xl',
+  category: 'text-xl mdn:w-[30%] mdn:mb-0 text-slate-300 w-full mb-2',
+  hoverSkill: 'transform transition-transform hover:scale-95 hover:shadow-xl',
   customSkill: 'flex justify-center items-center gap-5',
   makeUpSkill: 'p-2 border-2 mb-0 rounded-lg'
 }

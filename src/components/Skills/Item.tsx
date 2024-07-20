@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { skills } from '@/styles/body'
-import Tooltip from '@/components/Skills/Tooltip'
+import Carousel from '@/components/Skills/Carousel'
 
 const Item: FC<I_Props_Skill_Item> = ({ techSkill, error }) => {
   const renderSkills = () => {
@@ -10,11 +10,7 @@ const Item: FC<I_Props_Skill_Item> = ({ techSkill, error }) => {
     return techSkill.map((item) => (
       <div key={item.category} className={`${skills.customCategory} ${skills.makeUpCategory}`}>
         <h3 className={skills.category}>{item.category}</h3>
-        <div className={skills.customSkill}>
-          {item.skills.map((skill) => (
-            <Tooltip key={skill.name} skill={skill} />
-          ))}
-        </div>
+        <Carousel item={item} />
       </div>
     ))
   }
