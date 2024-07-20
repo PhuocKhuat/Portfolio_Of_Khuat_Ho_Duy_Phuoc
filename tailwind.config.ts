@@ -7,6 +7,7 @@ const config: Config = {
     extend: {
       screens: {
         xsm: '415px',
+        xsn: '550px',
         mds: '960px',
         mdm: '992px',
         mdn: '1200px'

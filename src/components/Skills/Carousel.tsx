@@ -14,11 +14,14 @@ const Carousel: FC<I_Props_Skill_Carousel> = ({ item }) => {
       opts={{
         align: 'start'
       }}
-      className='w-full max-w-max'
+      className='mdn:w-full w-4/5 max-w-xl mdn:mx-0 mx-auto'
     >
-      <CarouselContent className='-ml-1'>
+      <CarouselContent className='-ms-1'>
         {item.skills.map((skill) => (
-          <CarouselItem key={skill.name} className='pl-5 basis-1/7'>
+          <CarouselItem
+            key={skill.name}
+            className='md:ps-5 md:basis-1/6 sm:basis-1/5 xsn:basis-1/4 xsm:basis-1/3 basis-1/2 ps-3'
+          >
             <Tooltip skill={skill} />
           </CarouselItem>
         ))}
