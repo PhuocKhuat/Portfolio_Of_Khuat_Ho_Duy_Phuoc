@@ -11,7 +11,7 @@ const Certification: FC = () => {
       (item): ReactElement => (
         <AccordionItem key={item.value} value={item.value}>
           <AccordionTrigger className='xsm:text-xl text-base'>{item.title}</AccordionTrigger>
-          <AccordionContent className='flex flex-wrap  justify-between text-blue-300'>
+          <AccordionContent className='flex flex-wrap justify-between text-blue-300'>
             <Link href={item.certificate} target='_blank' className='flex gap-6 text-blue-500'>
               View certificate <ChevronsLeft />
             </Link>

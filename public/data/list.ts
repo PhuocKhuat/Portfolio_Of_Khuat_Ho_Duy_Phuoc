@@ -1,4 +1,20 @@
 import { BE_CERTIFICATION, FE_CERTIFICATION } from '@/constants/certification'
+import { ENG, VIE } from '@/constants/locale'
+import englishFlag from '/public/imgs/header/englandFlag.png'
+import vietnamFlag from '/public/imgs/header/vietnamFlag.png'
+
+export const localeList = [
+  {
+    lang: ENG,
+    alt: 'england flag',
+    img: englishFlag
+  },
+  {
+    lang: VIE,
+    alt: 'vietnam flag',
+    img: vietnamFlag
+  }
+]
 
 export const certificationList = [
   {

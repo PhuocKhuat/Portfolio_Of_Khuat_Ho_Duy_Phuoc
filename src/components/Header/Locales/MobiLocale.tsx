@@ -1,11 +1,9 @@
 import styles from '@/styles/styles'
 import Image from 'next/image'
 import React, { FC, useTransition } from 'react'
-import englishFlag from '/public/imgs/header/englandFlag.png'
-import vietnamFlag from '/public/imgs/header/vietnamFlag.png'
 import { useRouter } from 'next/navigation'
-import { ENG, VIE } from '@/constants/locale'
 import { useLocale } from 'next-intl'
+import { localeList } from 'public/data/list'
 
 const MobiLocale: FC<I_Props_Translate> = ({ translate }) => {
   const [isPending, startTransiton] = useTransition()
@@ -16,25 +14,22 @@ const MobiLocale: FC<I_Props_Translate> = ({ translate }) => {
       router.replace(`/${e.currentTarget.dataset.value}`)
     })
   }
-  return (
-    <div className={`${styles.flexCol} ${styles.gap2} p-[2.5]`}>
-      {/* ENG */}
-      <button data-value={ENG} onClick={handleLocale} disabled={isPending || localeActive === ENG}>
+  const renderLocaleList = () =>
+    localeList.map((item) => (
+      <button
+        key={item.lang}
+        data-value={item.lang}
+        onClick={handleLocale}
+        disabled={isPending || localeActive === item.lang}
+        className='block mt-3'
+      >
         <span className={`${styles.flexCenter} ${styles.gap2}`}>
-          <Image alt='england flag' src={englishFlag} className={styles.iconSize} quality={65} priority />
-          {translate(ENG)}
+          <Image alt={item.alt} src={item.img} className={styles.iconSize} quality={65} priority />
+          {translate(item.lang)}
         </span>
       </button>
-      {/* VIE */}
-      <button data-value={VIE} onClick={handleLocale} disabled={isPending || localeActive === VIE}>
-        <span className={`${styles.flexCenter} ${styles.gap2}`}>
-          <Image alt='vietnam flag' src={vietnamFlag} className={styles.iconSize} quality={65} priority />
-          {translate(VIE)}
-        </span>
-      </button>
-      {/*  */}
-    </div>
-  )
+    ))
+  return <div className={styles.lineBottom}>{renderLocaleList()}</div>
 }
 
 export default MobiLocale

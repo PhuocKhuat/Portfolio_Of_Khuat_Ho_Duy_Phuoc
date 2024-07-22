@@ -6,11 +6,11 @@ import React, { FC } from 'react'
 const MobiTheme: FC<I_Props_Translate> = ({ translate }) => {
   const { theme, setTheme } = useTheme()
   return (
-    <div className={`${styles.flexCol} ${styles.gap2} ${styles.lineBottom}`}>
-      <button className={`${styles.flexCenter}`} onClick={() => setTheme(LIGHT)} disabled={theme === LIGHT}>
+    <div className={styles.lineBottom}>
+      <button onClick={() => setTheme(LIGHT)} disabled={theme === LIGHT} className='block'>
         {translate(LIGHT)}
       </button>
-      <button className={`${styles.flexCenter}`} onClick={() => setTheme(DARK)} disabled={theme === DARK}>
+      <button onClick={() => setTheme(DARK)} disabled={theme === DARK} className='mt-5'>
         {translate(DARK)}
       </button>
     </div>

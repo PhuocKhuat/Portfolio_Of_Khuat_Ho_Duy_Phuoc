@@ -27,7 +27,8 @@
     "role": "Primarily using React JS and Node JS",
     "full-work": "I specialize in both Front-End and Back-End development. Primarily using React JS and Node JS.",
     "title-about": "ABOUT ME",
-    "title-work": "MY WORK"
+    "title-work": "MY WORK",
+    "technical-skill": "Technical skill"
   },
   "NotFoundPage": {
     "title": "Not found page!"

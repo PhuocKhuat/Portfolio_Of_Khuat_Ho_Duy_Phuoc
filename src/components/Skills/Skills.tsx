@@ -24,7 +24,6 @@ const Skills: FC = () => {
         setError(error as Error)
       }
     }
-
     fetchData().catch((error) => setError(error as Error))
   }, [])
 
@@ -33,7 +32,7 @@ const Skills: FC = () => {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
-            <Title text='Technical skill' />
+            <Title text='Technical Skill' />
             <Item techSkill={techSkill} error={error} />
           </div>
         </div>

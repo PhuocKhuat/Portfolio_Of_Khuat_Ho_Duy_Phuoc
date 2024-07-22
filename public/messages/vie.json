@@ -7,8 +7,8 @@
       "work": "Công việc",
       "contact": "Liên hệ",
       "choose-theme": "Chọn màu nền",
-      "light": "Sáng",
-      "dark": "Tối",
+      "light": "Nền sáng",
+      "dark": "Nền tối",
       "choose-languages": "Chọn ngôn ngữ",
       "en": "Anh",
       "vie": "Việt"
@@ -27,7 +27,8 @@
     "role": "Chủ yếu sử dụng React JS và Node JS",
     "full-work": "Tôi chuyên phát triển cả Front-End và Back-End. Chủ yếu sử dụng React JS và Node JS.",
     "title-about": "VỀ TÔI",
-    "title-work": "CÔNG VIỆC CỦA TÔI"
+    "title-work": "CÔNG VIỆC CỦA TÔI",
+    "technical-skill": "Các kỹ năng công nghệ"
   },
   "NotFoundPage": {
     "title": "Không tìm thấy trang"

@@ -14,7 +14,7 @@ const styles: I_Styles = {
   textCenter: 'text-center',
   bigTitle: 'text-5xl font-medium',
   iconSize: 'w-4 h-4',
-  lineBottom: 'py-2 md:py-0 border-b-2 md:border-b-0',
+  lineBottom: 'py-5 md:py-0 border-b-2 md:border-b-0',
   pointer: 'cursor-pointer',
   notAllowed: 'cursor-not-allowed',
   secondAppears: 'mt-1 mb-3 text-slate-300',

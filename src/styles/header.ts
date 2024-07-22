@@ -9,9 +9,6 @@ export const navbar: I_Style_Navbar = {
   handleFlex: 'flex md:flex-row flex-col',
   handleGap: 'lg:gap-8 md:gap-5 gap-0'
 }
-export const mobileNav: I_Style_MobileNav = {
-  customSize: 'w-32 h-auto px-1.5 py-2'
-}
 export const themes: I_Style_Theme = {
   sizeSun: 'h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all',
   sizeMoon: 'absolute  h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all',

@@ -17,9 +17,6 @@ interface I_Style_Navbar {
   handleFlex: type_string
   handleGap: type_string
 }
-interface I_Style_MobileNav {
-  customSize: type_string
-}
 interface I_Style_Theme {
   sizeSun: type_string
   sizeMoon: type_string
