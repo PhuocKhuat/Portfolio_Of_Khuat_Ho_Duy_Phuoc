@@ -1,10 +1,9 @@
 // mdn: min-width: 1200px
 export const introduce: I_Style_Introduce = {
   parentItem: 'mdn:flex justify-center items-center md:grid md:grid-cols-2 relative',
-  leftText: 'col-span-1 absolute top-10 mdn:left-44 md:left-0 text-4xl font-bold w-64',
+  leftText: 'col-span-1 absolute top-10 mdn:left-44 md:left-0 text-4xl font-bold mdn:w-64 xsm:w-96 w-64',
   imgItem: 'col-span-1 col-start-2 md:block hidden',
-  rightText: 'col-span-1 absolute mdm:top-[13rem] md:top-52 top-44 mdn:right-0 xsm:w-96 w-80 leading-[1.3]',
-  thirdChildText: 'text-sm font-medium md:w-full w-[80vw]',
+  rightText: 'col-span-1 absolute mdm:top-[13rem] md:top-56 xsn:top-44 top-56 mdn:right-0 xsm:w-96 w-80 leading-[1.3]',
   avatarSize: 'w-[42.8rem] h-[30.8rem]',
   hideItem: 'md:block hidden',
   showItem: 'md:hidden block w-[80vw]'

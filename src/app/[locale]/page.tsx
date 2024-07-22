@@ -10,7 +10,7 @@ const Skills = lazy(() => import('@/components/Skills/Skills'))
 const Home = (): JSX.Element => {
   const translate = useTranslations('HomePage')
   return (
-    <section>
+    <main>
       <Suspense fallback={<Loading />}>
         <Introduce translate={translate} />
       </Suspense>
@@ -19,7 +19,7 @@ const Home = (): JSX.Element => {
       </Suspense>
       <Information />
       <Mouse />
-    </section>
+    </main>
   )
 }
 

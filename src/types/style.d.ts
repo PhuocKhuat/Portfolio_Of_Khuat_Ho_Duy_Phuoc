@@ -15,4 +15,7 @@ interface I_Styles {
   lineBottom: type_string
   pointer: type_string
   notAllowed: type_string
+  secondAppears: type_string
+  thirdAppears: type_string
+  title: type_string
 }

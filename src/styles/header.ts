@@ -7,7 +7,7 @@ export const header: I_Style_Header = {
 }
 export const navbar: I_Style_Navbar = {
   handleFlex: 'flex md:flex-row flex-col',
-  handleGap: 'md:gap-8 gap-0'
+  handleGap: 'lg:gap-8 md:gap-5 gap-0'
 }
 export const mobileNav: I_Style_MobileNav = {
   customSize: 'w-32 h-auto px-1.5 py-2'

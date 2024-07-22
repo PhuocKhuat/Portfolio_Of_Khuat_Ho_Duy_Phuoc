@@ -30,7 +30,6 @@ interface I_Style_Introduce {
   leftText: type_string
   rightText: type_string
   imgItem: type_string
-  thirdChildText: type_string
   avatarSize: type_string
   hideItem: type_string
   showItem: type_string

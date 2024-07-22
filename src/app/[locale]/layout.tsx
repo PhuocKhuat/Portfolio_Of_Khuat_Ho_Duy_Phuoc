@@ -20,7 +20,7 @@ const RootLayout = async ({ children, params: { locale } }: Readonly<I_Props_Roo
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           <NextIntlClientProvider messages={messages}>
             <Header />
-            <main>{children}</main>
+            {children}
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

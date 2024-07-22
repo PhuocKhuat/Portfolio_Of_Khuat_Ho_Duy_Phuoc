@@ -40,3 +40,17 @@ export const titleVariants = variants(0, 0, '', 0, 0, 1, 0, '', 0, 0, 0.4, 0.4)
 export const hoverVariants = variants(1, 0, 'spring', 500, 140, 0, -20, 'spring', 80, 10, 0.1, 0)
 export const loadingVariants = variants(0, 200, 'spring', 800, 0, 1, 0, 'spring', 100, 10, 0, 0)
 export const shapeVariants = variants(0, 10, 'spring', 100, 0, 1, 0, 'spring', 100, 10, 0.3, 1)
+export const chevronsLeftVariants = {
+  initial: { x: '100%' },
+  animate: {
+    x: '-100%',
+    transition: {
+      repeat: Infinity,
+      duration: 1.25,
+      repeatType: 'loop' as const,
+      ease: 'linear' as const
+    }
+  },
+  exit: { x: '100%' }
+}
+export const arrowTransition = {}
