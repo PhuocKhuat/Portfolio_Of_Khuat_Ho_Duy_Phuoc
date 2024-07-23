@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import { ChevronsLeft, Title } from '@/components/Custom'
+import { ChevronsLeft, Scroll, Title } from '@/components/Custom'
 import Link from 'next/link'
 
 import { certificationList } from 'public/data/list'
@@ -24,9 +24,11 @@ const Certification: FC = () => {
   return (
     <div>
       <Title text='Certification' />
-      <Accordion type='single' collapsible className='text-slate-300'>
-        {certification()}
-      </Accordion>
+      <Scroll cursor='cursorScaleOpen'>
+        <Accordion type='single' collapsible className='text-slate-300'>
+          {certification()}
+        </Accordion>
+      </Scroll>
     </div>
   )
 }

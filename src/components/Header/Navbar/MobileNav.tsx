@@ -15,7 +15,7 @@ import MobiLocale from '@/components/Header/Locales/MobiLocale'
 
 const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
   return (
-    <Drawer direction='left'>
+    <Drawer direction='bottom'>
       <DrawerTrigger>
         <Menu />
       </DrawerTrigger>

@@ -82,6 +82,6 @@
     bg-clip-padding z-[990];
   }
   .linkSuperLarge {
-    @apply w-[6.25rem] h-[6.25rem] bg-white;
+    @apply w-[6rem] h-[6rem] bg-white text-black uppercase;
   }
 }

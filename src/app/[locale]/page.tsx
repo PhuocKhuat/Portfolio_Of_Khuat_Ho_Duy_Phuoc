@@ -15,7 +15,7 @@ const Home = (): JSX.Element => {
         <Introduce translate={translate} />
       </Suspense>
       <Suspense fallback={<Loading />}>
-        <Skills />
+        <Skills translate={translate} />
       </Suspense>
       <Information />
       <Mouse />

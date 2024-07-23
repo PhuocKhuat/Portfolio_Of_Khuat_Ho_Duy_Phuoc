@@ -1,11 +1,12 @@
 'use client'
 
-import { FC, useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { FC, useEffect, useRef, useState } from 'react'
 import { LINKSUPERLARGE } from '@/constants/mouse'
 
 const Mouse: FC = () => {
   const cursorRef = useRef<HTMLDivElement | null>(null)
+  const [cursorText, setCursorText] = useState<string>('')
+
   useEffect(() => {
     const updateCursorPosition = ({ clientX, clientY }: MouseEvent) => {
       if (cursorRef.current) {
@@ -14,29 +15,52 @@ const Mouse: FC = () => {
       }
     }
 
-    const handleMouseLeave = () => cursorRef.current?.classList.remove(LINKSUPERLARGE)
-    const handleMouseEnter = () => cursorRef.current?.classList.add(LINKSUPERLARGE)
+    const handleMouseLeave = () => {
+      cursorRef.current?.classList.remove(LINKSUPERLARGE)
+      setCursorText('')
+    }
 
-    const addListeners = (element: Element) => {
+    const handleMouseEnterScroll = () => {
+      cursorRef.current?.classList.add(LINKSUPERLARGE)
+      setCursorText('scroll')
+    }
+
+    const handleMouseEnterOpen = () => {
+      cursorRef.current?.classList.add(LINKSUPERLARGE)
+      setCursorText('open')
+    }
+
+    const addListeners = (element: Element, handleMouseEnter: (event: Event) => void) => {
       element.addEventListener('mouseleave', handleMouseLeave)
-      element.addEventListener('mousemove', handleMouseEnter)
+      element.addEventListener('mouseenter', handleMouseEnter)
     }
-    const removeListeners = (element: Element) => {
-      element.removeEventListener('mouseleave', handleMouseLeave)
-      element.removeEventListener('mousemove', handleMouseEnter)
-    }
+
+    const cursorScaleElementsScroll = document.querySelectorAll('.cursorScaleScroll')
+    const cursorScaleElementsOpen = document.querySelectorAll('.cursorScaleOpen')
+
+    cursorScaleElementsScroll.forEach((element) => addListeners(element, handleMouseEnterScroll))
+    cursorScaleElementsOpen.forEach((element) => addListeners(element, handleMouseEnterOpen))
 
     document.addEventListener('mousemove', updateCursorPosition)
-    const cursorScaleElements = document.querySelectorAll('.cursorScale')
-    cursorScaleElements.forEach(addListeners)
 
     return () => {
       document.removeEventListener('mousemove', updateCursorPosition)
-      cursorScaleElements.forEach(removeListeners)
+      cursorScaleElementsScroll.forEach((element) => {
+        element.removeEventListener('mouseleave', handleMouseLeave)
+        element.removeEventListener('mouseenter', handleMouseEnterScroll)
+      })
+      cursorScaleElementsOpen.forEach((element) => {
+        element.removeEventListener('mouseleave', handleMouseLeave)
+        element.removeEventListener('mouseenter', handleMouseEnterOpen)
+      })
     }
   }, [])
 
-  return <motion.div className='mouse' ref={cursorRef} />
+  return (
+    <div className='mouse' ref={cursorRef}>
+      {cursorText}
+    </div>
+  )
 }
 
 export default Mouse

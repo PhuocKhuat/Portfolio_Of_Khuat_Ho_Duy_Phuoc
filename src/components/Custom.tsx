@@ -12,7 +12,6 @@ import {
   thirdAppearVariants,
   titleVariants
 } from '@/lib/motion'
-import { CURSORSCALE } from '@/constants/mouse'
 import { skills } from '@/styles/body'
 import { loading } from '@/styles/header'
 import { playfairDisplay } from '@/fonts/font'
@@ -35,10 +34,10 @@ export const LoadingUp: FC = () => (
     Loading
   </motion.section>
 )
-export const Scroll: FC<ScrollProps> = ({ children, id }) => (
-  <motion.section className={`${CURSORSCALE} z-30 relative lg:h-[32.3rem] h-[36rem]`} id={id}>
+export const Scroll: FC<ScrollProps> = ({ children, id, cursor }) => (
+  <motion.div className={`${cursor} z-30 relative lg:h-[32.3rem] h-[36rem]`} id={id}>
     {children}
-  </motion.section>
+  </motion.div>
 )
 export const FirstAppears: FC<I_Props_Text> = ({ text }) => (
   <motion.p variants={firstAppearVariants} initial='hidden' whileInView='show' className='text-slate-300'>

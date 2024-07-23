@@ -1,4 +1,3 @@
-const CURSORSCALE = 'cursorScale'
 const LINKSUPERLARGE = 'linkSuperLarge'
 
-export { CURSORSCALE, LINKSUPERLARGE }
+export { LINKSUPERLARGE }

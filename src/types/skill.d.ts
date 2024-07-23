@@ -11,8 +11,7 @@ interface SkillsData {
 }
 
 interface I_Props_Skill_Item {
-  techSkill: SkillCategory[]
-  error: Error | null
+  skillList: SkillCategory[]
 }
 interface I_Props_Skill_Tooltip {
   skill: Skill
@@ -28,4 +27,7 @@ interface I_Style_Skill {
   hoverSkill: type_string
   customSkill: type_string
   makeUpSkill: type_string
+}
+interface SkillsProps extends I_Props_Translate {
+  translateKey: string
 }

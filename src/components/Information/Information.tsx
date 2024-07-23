@@ -1,11 +1,10 @@
-import { Scroll } from '@/components/Custom'
 import Certification from '@/components/Information/Certification'
 import styles from '@/styles/styles'
 import React, { FC } from 'react'
 
 const Information: FC = () => {
   return (
-    <Scroll id='information'>
+    <section id='information'>
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
@@ -13,7 +12,7 @@ const Information: FC = () => {
           </div>
         </div>
       </div>
-    </Scroll>
+    </section>
   )
 }
 
