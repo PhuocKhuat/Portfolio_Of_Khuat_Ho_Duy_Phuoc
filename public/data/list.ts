@@ -16,6 +16,14 @@ export const localeList = [
   }
 ]
 
+export const educationList = [
+  {
+    value: 'item-1',
+    title: 'Bootcamp - Full-Stack JavaScript from Zero to Job',
+    academy: 'CyberSoft Academy',
+    time: 'July 2023 -  April 2024'
+  }
+]
 export const certificationList = [
   {
     value: 'item-1',

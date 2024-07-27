@@ -1,17 +1,16 @@
 import React, { FC, ReactElement } from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import { ChevronsLeft, Scroll, Title } from '@/components/Custom'
+import { ChevronsLeft, Open, Title } from '@/components/Custom'
 import Link from 'next/link'
+import { information } from '@/styles/body'
 
-import { certificationList } from 'public/data/list'
-
-const Certification: FC = () => {
+const Certification: FC<I_Props_Certification_List> = ({ certificationList }) => {
   const certification = (): ReactElement[] =>
     certificationList.map(
       (item): ReactElement => (
         <AccordionItem key={item.value} value={item.value}>
-          <AccordionTrigger className='xsm:text-xl text-base'>{item.title}</AccordionTrigger>
-          <AccordionContent className='flex flex-wrap justify-between text-blue-300'>
+          <AccordionTrigger className={information.title}>{item.title}</AccordionTrigger>
+          <AccordionContent className={information.content}>
             <Link href={item.certificate} target='_blank' className='flex gap-6 text-blue-500'>
               View certificate <ChevronsLeft />
             </Link>
@@ -24,11 +23,11 @@ const Certification: FC = () => {
   return (
     <div>
       <Title text='Certification' />
-      <Scroll cursor='cursorScaleOpen'>
+      <Open cursor='cursorScaleOpen'>
         <Accordion type='single' collapsible className='text-slate-300'>
           {certification()}
         </Accordion>
-      </Scroll>
+      </Open>
     </div>
   )
 }

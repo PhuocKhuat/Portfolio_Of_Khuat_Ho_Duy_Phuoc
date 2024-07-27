@@ -1,3 +1,5 @@
+// Write interface common CSS style
+
 interface I_Styles {
   container: type_string
   containerWrapper: type_string

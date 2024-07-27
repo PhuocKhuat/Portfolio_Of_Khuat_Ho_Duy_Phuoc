@@ -14,7 +14,7 @@ const Skills: FC<I_Props_Translate> = async ({ translate }) => {
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
             <Title text={translate('technical-skill')} />
-            <Item skillList={skillList} />
+            <Item skillList={skillList} translate={translate} />
           </div>
         </div>
       </div>

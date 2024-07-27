@@ -1,6 +1,8 @@
+// Name the categories the same in en.json and vie.json files for language translation.
+
 export const skillList = [
   {
-    category: 'Languages',
+    category: 'languages',
     skills: [
       {
         name: 'JavaScript',
@@ -25,7 +27,7 @@ export const skillList = [
     ]
   },
   {
-    category: 'Front-End Development',
+    category: 'front-end-development',
     skills: [
       {
         name: 'React JS',
@@ -58,7 +60,7 @@ export const skillList = [
     ]
   },
   {
-    category: 'Back-End Development',
+    category: 'back-end-development',
     skills: [
       {
         name: 'Node JS',
@@ -91,7 +93,7 @@ export const skillList = [
     ]
   },
   {
-    category: 'Tools & Software',
+    category: 'tools&software',
     skills: [
       {
         name: 'Postman',

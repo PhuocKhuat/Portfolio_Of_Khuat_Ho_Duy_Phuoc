@@ -17,7 +17,9 @@ const Home = (): JSX.Element => {
       <Suspense fallback={<Loading />}>
         <Skills translate={translate} />
       </Suspense>
-      <Information />
+      <Suspense fallback={<Loading />}>
+        <Information />
+      </Suspense>
       <Mouse />
     </main>
   )

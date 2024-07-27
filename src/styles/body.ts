@@ -16,3 +16,7 @@ export const skills: I_Style_Skill = {
   customSkill: 'flex justify-center items-center gap-5',
   makeUpSkill: 'p-2 border-2 mb-0 rounded-lg'
 }
+export const information = {
+  title: 'xsm:text-xl text-base',
+  content: 'flex flex-wrap justify-between text-blue-300'
+}
