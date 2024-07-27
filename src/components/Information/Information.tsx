@@ -1,10 +1,9 @@
 import React, { FC } from 'react'
-import Certification from '@/components/Information/Certification'
-import Education from '@/components/Information/Education'
 import waitLoading from '@/lib/loading'
 import styles from '@/styles/styles'
 import { certificationList } from 'public/data/list'
 import { educationList } from 'public/data/list'
+import InformationItem from '@/components/Information/InformationItem'
 
 const Information: FC = async () => {
   await waitLoading(1000)
@@ -13,8 +12,8 @@ const Information: FC = async () => {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
-            <Education educationList={educationList} />
-            <Certification certificationList={certificationList} />
+            <InformationItem list={educationList} title='Education' />
+            <InformationItem list={certificationList} title='Certification' />
           </div>
         </div>
       </div>

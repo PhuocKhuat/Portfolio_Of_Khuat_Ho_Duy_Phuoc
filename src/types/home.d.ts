@@ -83,26 +83,21 @@ interface I_Props_Item_Locale {
   isPending: boolean
   localeActive: string
 }
-// Education component props.
-interface I_Props_Education_Item {
+// Information component props.
+interface I_Props_Information_Item {
   value: type_string
   title: type_string
+  url: type_string
+  view: type_string
   academy: type_string
   time: type_string
 }
-interface I_Props_Education_List {
-  educationList: I_Props_Education_Item[]
-}
-// Certification component props.
-interface I_Props_Certification_Item {
-  value: type_string
+interface I_Props_Information_List {
+  list: I_Props_Information_Item[]
   title: type_string
-  certificate: type_string
-  academy: type_string
-  time: type_string
 }
-interface I_Props_Certification_List {
-  certificationList: I_Props_Certification_Item[]
+interface I_Props_AccordionItem {
+  item: I_Props_Information_Item
 }
 // Framer motion props.
 interface ScrollProps {

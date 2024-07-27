@@ -17,6 +17,6 @@ export const skills: I_Style_Skill = {
   makeUpSkill: 'p-2 border-2 mb-0 rounded-lg'
 }
 export const information = {
-  title: 'xsm:text-xl text-base',
+  title: 'sm:text-xl xsn:text-lg text-sm',
   content: 'flex flex-wrap justify-between text-blue-300'
 }
