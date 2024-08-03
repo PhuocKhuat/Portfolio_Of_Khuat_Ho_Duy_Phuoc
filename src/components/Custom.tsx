@@ -18,18 +18,14 @@ import { playfairDisplay } from '@/fonts/font'
 import Image from 'next/image'
 import { ChevronsLeftIcon } from 'lucide-react'
 import styles from '@/styles/styles'
+import Link from 'next/link'
 
 export const Hover: FC<I_Props_Text> = ({ text, link, drawerClose }) => (
-  <motion.a
-    href={`/#${link}`}
-    variants={hoverVariants}
-    initial='hidden'
-    whileHover='show'
-    className='block'
-    onClick={drawerClose}
-  >
-    {text}
-  </motion.a>
+  <motion.div variants={hoverVariants} initial='hidden' whileHover='show'>
+    <Link href={`/#${link}`} className='block' onClick={drawerClose}>
+      {text}
+    </Link>
+  </motion.div>
 )
 export const LoadingUp: FC = () => (
   <motion.section
