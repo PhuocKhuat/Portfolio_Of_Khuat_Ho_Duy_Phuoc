@@ -1,25 +1,21 @@
-import { useTranslations } from 'next-intl'
-import { lazy, Suspense } from 'react'
+import Work from '@/components/Work/Work'
 import Mouse from '@/components/Mouse/Mouse'
 import Loading from '@/app/[locale]/loading'
-import Information from '@/components/Information/Information'
+import { useTranslations } from 'next-intl'
+import dynamic from 'next/dynamic'
 
-const Introduce = lazy(() => import('@/components/Introduce/Introduce'))
-const Skills = lazy(() => import('@/components/Skills/Skills'))
+const Introduce = dynamic(() => import('@/components/Introduce/Introduce'), { loading: () => <Loading /> })
+const Skills = dynamic(() => import('@/components/Skills/Skills'), { loading: () => <Loading /> })
+const Information = dynamic(() => import('@/components/Information/Information'), { loading: () => <Loading /> })
 
 const Home = (): JSX.Element => {
   const translate = useTranslations('HomePage')
   return (
     <main>
-      <Suspense fallback={<Loading />}>
-        <Introduce translate={translate} />
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <Skills translate={translate} />
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <Information />
-      </Suspense>
+      <Introduce translate={translate} />
+      <Skills translate={translate} />
+      <Information />
+      <Work />
       <Mouse />
     </main>
   )

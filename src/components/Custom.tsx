@@ -21,11 +21,14 @@ import styles from '@/styles/styles'
 import Link from 'next/link'
 
 export const Hover: FC<I_Props_Text> = ({ text, link, drawerClose }) => (
-  <motion.div variants={hoverVariants} initial='hidden' whileHover='show'>
-    <Link href={`/#${link}`} className='block' onClick={drawerClose}>
+  <motion.span variants={hoverVariants} initial='hidden' whileHover='show' className='block'>
+    <Link href={`/#${link}`} className='hidden md:block' onClick={drawerClose}>
       {text}
     </Link>
-  </motion.div>
+    <a href={`/#${link}`} className='block md:hidden' onClick={drawerClose}>
+      {text}
+    </a>
+  </motion.span>
 )
 export const LoadingUp: FC = () => (
   <motion.section

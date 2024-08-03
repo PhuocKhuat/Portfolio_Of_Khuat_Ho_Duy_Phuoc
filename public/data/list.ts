@@ -44,3 +44,14 @@ export const certificationList = [
     time: '2024'
   }
 ]
+
+export const workList = [
+  {
+    value: 'item-1',
+    title: 'Front-End Developer',
+    url: 'www',
+    view: 'View product',
+    academy: 'Viet Tri Dao company',
+    time: 'July 2024 - August 2024'
+  }
+]
