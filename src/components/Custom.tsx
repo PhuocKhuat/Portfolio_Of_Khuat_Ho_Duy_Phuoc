@@ -19,10 +19,17 @@ import Image from 'next/image'
 import { ChevronsLeftIcon } from 'lucide-react'
 import styles from '@/styles/styles'
 
-export const Hover: FC<I_Props_Text> = ({ text }) => (
-  <motion.span variants={hoverVariants} initial='hidden' whileHover='show' className='block'>
+export const Hover: FC<I_Props_Text> = ({ text, link, drawerClose }) => (
+  <motion.a
+    href={`/#${link}`}
+    variants={hoverVariants}
+    initial='hidden'
+    whileHover='show'
+    className='block'
+    onClick={drawerClose}
+  >
     {text}
-  </motion.span>
+  </motion.a>
 )
 export const LoadingUp: FC = () => (
   <motion.section

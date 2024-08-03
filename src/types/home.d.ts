@@ -76,6 +76,7 @@ interface I_Style_Loading {
 // Translate props.
 interface I_Props_Translate {
   translate: (key: type_string) => type_string
+  drawerClose?: () => void
 }
 // Locale props.
 interface I_Props_Item_Locale {
@@ -111,4 +112,6 @@ interface OpenProps {
 }
 interface I_Props_Text {
   text: string
+  link?: string
+  drawerClose?: () => void
 }
