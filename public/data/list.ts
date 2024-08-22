@@ -54,6 +54,6 @@ export const workList: I_Item_WorkList[] = [
     view: 'View product',
     company: 'Viet Tri Dao company',
     time: 'July 2024 - August 2024',
-    typeOfWork: 'remote'
+    typeOfWork: 'Remote'
   }
 ]

@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const WorkItem = ({ workList }: I_Props_WorkList): JSX.Element => {
@@ -7,10 +6,11 @@ const WorkItem = ({ workList }: I_Props_WorkList): JSX.Element => {
       <div key={work.index} className='flex justify-between'>
         <div>
           <strong className='text-2xl'>{work.position}</strong>
-          <p>{work.company}</p>
+          <div>{work.company}</div>
         </div>
-        <div>
+        <div className='text-xs text-slate-400'>
           <div>{work.time}</div>
+          <div>{work.typeOfWork}</div>
         </div>
       </div>
     ))
