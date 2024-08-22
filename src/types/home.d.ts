@@ -33,7 +33,8 @@ interface I_Style_Introduce {
   hideItem: type_string
   showItem: type_string
 }
-// Write skill props.
+
+// Write interface props.
 interface Skill {
   name: type_string
   img: type_string
@@ -71,6 +72,9 @@ interface I_Style_Loading {
   screen: type_string
   between: type_string
 }
+interface I_Props_WorkList {
+  workList: I_Item_WorkList[]
+}
 
 // Write interface for object props.
 // Translate props.
@@ -84,7 +88,8 @@ interface I_Props_Item_Locale {
   isPending: boolean
   localeActive: string
 }
-// Information component props.
+
+// Information list props.
 interface I_Props_Information_Item {
   value: type_string
   title: type_string
@@ -100,6 +105,17 @@ interface I_Props_Information_List {
 interface I_Props_AccordionItem {
   item: I_Props_Information_Item
 }
+interface I_Item_WorkList {
+  index: number
+  value: string
+  position: string
+  url: string
+  view: string
+  company: string
+  time: string
+  typeOfWork: string
+}
+
 // Framer motion props.
 interface ScrollProps {
   children: ReactNode

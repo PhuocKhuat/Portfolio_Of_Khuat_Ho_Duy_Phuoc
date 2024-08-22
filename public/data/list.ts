@@ -45,13 +45,15 @@ export const certificationList = [
   }
 ]
 
-export const workList = [
+export const workList: I_Item_WorkList[] = [
   {
+    index: 1,
     value: 'item-1',
-    title: 'Front-End Developer',
+    position: 'Front-End Developer',
     url: 'www',
     view: 'View product',
-    academy: 'Viet Tri Dao company',
-    time: 'July 2024 - August 2024'
+    company: 'Viet Tri Dao company',
+    time: 'July 2024 - August 2024',
+    typeOfWork: 'remote'
   }
 ]
