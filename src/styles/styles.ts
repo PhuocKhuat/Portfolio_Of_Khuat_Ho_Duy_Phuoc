@@ -19,7 +19,7 @@ const styles: I_Styles = {
   notAllowed: 'cursor-not-allowed',
   secondAppears: 'mt-1 mb-3 text-slate-300',
   thirdAppears: 'text-sm font-medium md:w-full w-[80vw]text-yellow-300',
-  title: 'text-3xl font-bold mb-3 uppercase'
+  title: 'text-4xl font-bold mb-3 uppercase'
 }
 
 export default styles

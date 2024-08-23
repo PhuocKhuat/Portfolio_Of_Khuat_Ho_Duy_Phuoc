@@ -100,7 +100,6 @@ interface I_Props_Information_Item {
 }
 interface I_Props_Information_List {
   list: I_Props_Information_Item[]
-  title: type_string
 }
 interface I_Props_AccordionItem {
   item: I_Props_Information_Item
