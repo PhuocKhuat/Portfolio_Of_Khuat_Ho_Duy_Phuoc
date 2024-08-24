@@ -106,7 +106,6 @@ interface I_Props_AccordionItem {
 }
 interface I_Item_WorkList {
   index: number
-  value: string
   position: string
   url: string
   view: string

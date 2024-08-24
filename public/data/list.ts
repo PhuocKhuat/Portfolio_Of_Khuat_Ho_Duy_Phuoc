@@ -48,7 +48,6 @@ export const certificationList = [
 export const workList: I_Item_WorkList[] = [
   {
     index: 1,
-    value: 'item-1',
     position: 'Front-End Developer',
     url: 'www',
     view: 'View product',

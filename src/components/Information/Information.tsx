@@ -4,7 +4,7 @@ import styles from '@/styles/styles'
 import { certificationList } from 'public/data/list'
 import { educationList } from 'public/data/list'
 import InformationItem from '@/components/Information/InformationItem'
-import { Title } from '@/components/Custom'
+import { BigTitle } from '@/components/Custom'
 
 const Information: FC = async () => {
   await waitLoading(1000)
@@ -13,9 +13,9 @@ const Information: FC = async () => {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
-            <Title text='Education' />
+            <BigTitle text='Education.' />
             <InformationItem list={educationList} />
-            <Title text='Certification' />
+            <BigTitle text='Certification.' />
             <InformationItem list={certificationList} />
           </div>
         </div>

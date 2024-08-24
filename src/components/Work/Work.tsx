@@ -1,4 +1,4 @@
-import { Title } from '@/components/Custom'
+import { BigTitle } from '@/components/Custom'
 import WorkItem from '@/components/Work/WorkItem'
 import styles from '@/styles/styles'
 import { workList } from 'public/data/list'
@@ -10,7 +10,7 @@ const Work: FC = () => {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
-            <Title text='Experience' />
+            <BigTitle text='Experience.' />
             <WorkItem workList={workList} />
           </div>
         </div>

@@ -21,14 +21,14 @@ import styles from '@/styles/styles'
 import Link from 'next/link'
 
 export const Hover: FC<I_Props_Text> = ({ text, link, drawerClose }) => (
-  <motion.span variants={hoverVariants} initial='hidden' whileHover='show' className='block'>
+  <motion.div variants={hoverVariants} initial='hidden' whileHover='show'>
     <Link href={`/#${link}`} className='hidden md:block' onClick={drawerClose}>
       {text}
     </Link>
     <a href={`/#${link}`} className='block md:hidden' onClick={drawerClose}>
       {text}
     </a>
-  </motion.span>
+  </motion.div>
 )
 export const LoadingUp: FC = () => (
   <motion.section
@@ -69,6 +69,16 @@ export const Title: FC<I_Props_Text> = ({ text }) => (
     initial='hidden'
     whileInView='show'
     className={`${playfairDisplay.className} ${styles.title}`}
+  >
+    {text}
+  </motion.h2>
+)
+export const BigTitle: FC<I_Props_Text> = ({ text }) => (
+  <motion.h2
+    variants={titleVariants}
+    initial='hidden'
+    whileInView='show'
+    className={`${playfairDisplay.className} ${styles.bigTitle}`}
   >
     {text}
   </motion.h2>
