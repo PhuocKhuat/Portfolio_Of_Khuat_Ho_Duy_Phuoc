@@ -1,3 +1,4 @@
+import { Facebook, Github, Linkedin } from 'lucide-react'
 import { BE_CERTIFICATION, FE_CERTIFICATION, FULL_STACK_COURSE } from '@/constants/certification'
 import { ENG, VIE } from '@/constants/locale'
 import englishFlag from '/public/imgs/header/englandFlag.png'
@@ -54,5 +55,23 @@ export const workList: I_Item_WorkList[] = [
     company: 'Viet Tri Dao company',
     time: 'July 2024 - August 2024',
     typeOfWork: 'Remote'
+  }
+]
+
+export const iconList = [
+  {
+    index: 1,
+    name: Github,
+    link: 'https://github.com/PhuocKhuat'
+  },
+  {
+    index: 2,
+    name: Facebook,
+    link: 'https://www.facebook.com/phuoc.khuat.50'
+  },
+  {
+    index: 3,
+    name: Linkedin,
+    link: 'https://www.linkedin.com/in/phuoc-khuat/'
   }
 ]

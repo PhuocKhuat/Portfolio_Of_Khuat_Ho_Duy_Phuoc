@@ -73,13 +73,8 @@ export const Title: FC<I_Props_Text> = ({ text }) => (
     {text}
   </motion.h2>
 )
-export const BigTitle: FC<I_Props_Text> = ({ text }) => (
-  <motion.h2
-    variants={titleVariants}
-    initial='hidden'
-    whileInView='show'
-    className={`${playfairDisplay.className} ${styles.bigTitle}`}
-  >
+export const BigTitle: FC<I_Props_Text> = ({ text, className }) => (
+  <motion.h2 variants={titleVariants} initial='hidden' whileInView='show' className={className}>
     {text}
   </motion.h2>
 )

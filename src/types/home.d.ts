@@ -128,4 +128,5 @@ interface I_Props_Text {
   text: string
   link?: string
   drawerClose?: () => void
+  className?: string
 }

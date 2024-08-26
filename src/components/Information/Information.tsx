@@ -5,6 +5,7 @@ import { certificationList } from 'public/data/list'
 import { educationList } from 'public/data/list'
 import InformationItem from '@/components/Information/InformationItem'
 import { BigTitle } from '@/components/Custom'
+import { playfairDisplay } from '@/fonts/font'
 
 const Information: FC = async () => {
   await waitLoading(1000)
@@ -13,9 +14,9 @@ const Information: FC = async () => {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
-            <BigTitle text='Education.' />
+            <BigTitle text='Education.' className={`${playfairDisplay.className} ${styles.bigTitle}`} />
             <InformationItem list={educationList} />
-            <BigTitle text='Certification.' />
+            <BigTitle text='Certification.' className={`${playfairDisplay.className} ${styles.bigTitle}`} />
             <InformationItem list={certificationList} />
           </div>
         </div>

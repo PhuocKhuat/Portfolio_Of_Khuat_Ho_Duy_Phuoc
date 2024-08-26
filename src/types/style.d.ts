@@ -20,4 +20,5 @@ interface I_Styles {
   secondAppears: type_string
   thirdAppears: type_string
   title: type_string
+  textGmail: type_string
 }

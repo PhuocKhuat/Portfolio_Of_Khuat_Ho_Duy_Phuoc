@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import Item from '@/components/Skills/Item'
 import { BigTitle } from '@/components/Custom'
 import styles from '@/styles/styles'
-import { montserrat } from '@/fonts/font'
+import { montserrat, playfairDisplay } from '@/fonts/font'
 import waitLoading from '@/lib/loading'
 import { skillList } from 'public/data/skills'
 
@@ -13,7 +13,10 @@ const Skills: FC<I_Props_Translate> = async ({ translate }) => {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
-            <BigTitle text={translate('technical-skill')} />
+            <BigTitle
+              text={translate('technical-skill')}
+              className={`${playfairDisplay.className} ${styles.bigTitle}`}
+            />
             <Item skillList={skillList} translate={translate} />
           </div>
         </div>

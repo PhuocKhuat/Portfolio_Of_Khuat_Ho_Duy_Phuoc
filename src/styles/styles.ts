@@ -20,7 +20,8 @@ const styles: I_Styles = {
   // Font-size
   bigTitle: 'md:text-6xl sm:text-5xl text-4xl mb-8 uppercase',
   title: 'sm:text-3xl text-2xl font-bold mb-3 uppercase',
-  textSize: 'text-base md:text-lg lg:text-xl'
+  textSize: 'text-base md:text-lg lg:text-xl',
+  textGmail: 'xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-md font-extrabold'
 }
 
 export default styles

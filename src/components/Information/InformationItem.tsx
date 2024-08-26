@@ -2,11 +2,12 @@ import React, { FC, ReactElement } from 'react'
 import { Accordion } from '@/components/ui/accordion'
 import { Open } from '@/components/Custom'
 import AccordionItem from '@/components/Information/AccordionItem'
+import { montserratNormal } from '@/fonts/font'
 
 const InformationItem: FC<I_Props_Information_List> = ({ list }) => {
   const List = (): ReactElement[] => list.map((item) => <AccordionItem key={item.value} item={item} />)
   return (
-    <div className='mb-10'>
+    <div className={`mb-10 ${montserratNormal.className}`}>
       <Open cursor='cursorScaleOpen'>
         <Accordion type='single' collapsible className='text-slate-300'>
           {List()}
