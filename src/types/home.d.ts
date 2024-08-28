@@ -33,6 +33,18 @@ interface I_Style_Introduce {
   hideItem: type_string
   showItem: type_string
 }
+interface I_Style_Skill {
+  customCategory: type_string
+  makeUpCategory: type_string
+  category: type_string
+  hoverSkill: type_string
+  customSkill: type_string
+  makeUpSkill: type_string
+}
+interface I_Style_Loading {
+  screen: type_string
+  between: type_string
+}
 
 // Write interface props.
 interface Skill {
@@ -56,21 +68,8 @@ interface I_Props_Skill_Tooltip {
 interface I_Props_Skill_Carousel {
   item: SkillCategory
 }
-
-interface I_Style_Skill {
-  customCategory: type_string
-  makeUpCategory: type_string
-  category: type_string
-  hoverSkill: type_string
-  customSkill: type_string
-  makeUpSkill: type_string
-}
 interface SkillsProps extends I_Props_Translate {
   translateKey: string
-}
-interface I_Style_Loading {
-  screen: type_string
-  between: type_string
 }
 interface I_Props_WorkList {
   workList: I_Item_WorkList[]

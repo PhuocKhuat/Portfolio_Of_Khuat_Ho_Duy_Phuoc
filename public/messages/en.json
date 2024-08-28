@@ -32,7 +32,12 @@
     "languages": "Languages",
     "front-end-development": "Front-End Development",
     "back-end-development": "Back-End Development",
-    "tools&software": "Tools & Software"
+    "tools&software": "Tools & Softwares",
+    "educations": "Education.",
+    "work-intern-1": "Bootcamp - Full-Stack JavaScript from Zero to Job",
+    "view-course": "View course",
+    "academy": "CyberSoft Academy",
+    "certifications": "Certifications."
   },
   "NotFoundPage": {
     "title": "Not found page!"

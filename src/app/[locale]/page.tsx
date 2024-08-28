@@ -15,7 +15,7 @@ const Home = (): JSX.Element => {
     <main>
       <Introduce translate={translate} />
       <Skills translate={translate} />
-      <Information />
+      <Information translate={translate} />
       <Work />
       <Contact />
       <Mouse />

@@ -29,10 +29,15 @@
     "title-about": "VỀ TÔI",
     "title-work": "CÔNG VIỆC CỦA TÔI",
     "technical-skill": "Các kỹ năng công nghệ.",
-    "languages": "Ngôn ngữ",
+    "languages": "Các ngôn ngữ",
     "front-end-development": "Phát triển Front-End",
     "back-end-development": "Phát triển Back-End",
-    "tools&software": "Công cụ và phần mềm"
+    "tools&software": "Các công cụ và phần mềm",
+    "educations": "Giáo dục.",
+    "work-intern-1": "Bootcamp - JavaScript Full-Stack từ Zero đến Job",
+    "view-course": "Xem khoá học",
+    "academy": "Trung tâm đào tạo lập trình CyberSoft",
+    "certifications": "Các chứng chỉ."
   },
   "NotFoundPage": {
     "title": "Không tìm thấy trang"
