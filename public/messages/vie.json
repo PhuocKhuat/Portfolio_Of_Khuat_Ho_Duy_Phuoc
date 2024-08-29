@@ -37,7 +37,13 @@
     "work-intern-1": "Bootcamp - JavaScript Full-Stack từ Zero đến Job",
     "view-course": "Xem khoá học",
     "academy": "Trung tâm đào tạo lập trình CyberSoft",
-    "certifications": "Các chứng chỉ."
+    "internship-time": "T7/2023 -  T4/2024",
+    "certifications": "Các chứng chỉ.",
+    "certification-1": "Nhà phát triển Front-end JS chuyên nghiệp",
+    "certification-2": "Nhà phát triển Node JS chuyên nghiệp",
+    "view-certificate": "Xem chứng chỉ",
+    "study-time-FE": "T5/2024",
+    "study-time-node": "T5/2024"
   },
   "NotFoundPage": {
     "title": "Không tìm thấy trang"

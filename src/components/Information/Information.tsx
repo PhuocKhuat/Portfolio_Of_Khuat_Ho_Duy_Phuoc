@@ -15,12 +15,12 @@ const Information: FC<I_Props_Translate> = async ({ translate }: I_Props_Transla
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
             <BigTitle text={translate('educations')} className={`${playfairDisplay.className} ${styles.bigTitle}`} />
-            <InformationItem list={educationList} />
+            <InformationItem list={educationList} translate={translate} />
             <BigTitle
               text={translate('certifications')}
               className={`${playfairDisplay.className} ${styles.bigTitle}`}
             />
-            <InformationItem list={certificationList} />
+            <InformationItem list={certificationList} translate={translate} />
           </div>
         </div>
       </div>

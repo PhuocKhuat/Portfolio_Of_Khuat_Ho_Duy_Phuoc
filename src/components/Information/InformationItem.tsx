@@ -4,8 +4,9 @@ import { Open } from '@/components/Custom'
 import AccordionItem from '@/components/Information/AccordionItem'
 import { montserratNormal } from '@/fonts/font'
 
-const InformationItem: FC<I_Props_Information_List> = ({ list }) => {
-  const List = (): ReactElement[] => list.map((item) => <AccordionItem key={item.value} item={item} />)
+const InformationItem: FC<I_Props_Information_List> = ({ list, translate }) => {
+  const List = (): ReactElement[] =>
+    list.map((item) => <AccordionItem key={item.value} item={item} translate={translate} />)
   return (
     <div className={`mb-10 ${montserratNormal.className}`}>
       <Open cursor='cursorScaleOpen'>

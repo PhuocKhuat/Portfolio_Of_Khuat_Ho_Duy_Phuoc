@@ -37,7 +37,13 @@
     "work-intern-1": "Bootcamp - Full-Stack JavaScript from Zero to Job",
     "view-course": "View course",
     "academy": "CyberSoft Academy",
-    "certifications": "Certifications."
+    "internship-time": "July 2023 -  April 2024",
+    "certifications": "Certifications.",
+    "certification-1": "Professional Front-End Developer",
+    "certification-2": "Professional Node JS Developer",
+    "view-certificate": "View certificate",
+    "study-time-FE": "May 2024",
+    "study-time-node": "May 2024"
   },
   "NotFoundPage": {
     "title": "Not found page!"

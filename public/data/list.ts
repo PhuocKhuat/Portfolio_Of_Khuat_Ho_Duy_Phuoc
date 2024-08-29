@@ -20,29 +20,29 @@ export const localeList = [
 export const educationList = [
   {
     value: 'item-1',
-    title: 'Bootcamp - Full-Stack JavaScript from Zero to Job',
+    title: 'work-intern-1',
     url: FULL_STACK_COURSE,
-    view: 'View course',
-    academy: 'CyberSoft Academy',
-    time: 'July 2023 -  April 2024'
+    view: 'view-course',
+    academy: 'academy',
+    time: 'internship-time'
   }
 ]
 export const certificationList = [
   {
     value: 'item-1',
-    title: 'Professional Front-End Developer',
+    title: 'certification-1',
     url: FE_CERTIFICATION,
-    view: 'View certificate',
-    academy: 'CyberSoft Academy',
-    time: '2023 - 2024'
+    view: 'view-certificate',
+    academy: 'academy',
+    time: 'study-time-FE'
   },
   {
     value: 'item-2',
-    title: 'Professional Node JS Developer',
+    title: 'certification-2',
     url: BE_CERTIFICATION,
-    view: 'View certificate',
-    academy: 'CyberSoft Academy',
-    time: '2024'
+    view: 'view-certificate',
+    academy: 'academy',
+    time: 'study-time-node'
   }
 ]
 

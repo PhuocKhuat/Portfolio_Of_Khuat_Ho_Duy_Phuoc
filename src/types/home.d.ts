@@ -99,9 +99,11 @@ interface I_Props_Information_Item {
 }
 interface I_Props_Information_List {
   list: I_Props_Information_Item[]
+  translate: (key: string) => string
 }
 interface I_Props_AccordionItem {
   item: I_Props_Information_Item
+  translate: (key: string) => string
 }
 interface I_Item_WorkList {
   index: number
