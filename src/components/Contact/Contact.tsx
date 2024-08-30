@@ -9,8 +9,8 @@ const Contact: React.FC<I_Props_Translate> = ({ translate }) => {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
-            <InvitationContact />
-            <FooterContact />
+            <InvitationContact translate={translate} />
+            <FooterContact translate={translate} />
           </div>
         </div>
       </div>

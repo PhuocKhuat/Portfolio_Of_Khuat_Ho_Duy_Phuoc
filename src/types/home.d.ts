@@ -75,6 +75,10 @@ interface I_Props_WorkList {
   workList: I_Item_WorkList[]
   translate: (key: string) => string
 }
+interface I_Props_ProjectItem {
+  list: I_Item_ProjectList[]
+  // translate: (key: string) => string
+}
 
 // Write interface for object props.
 // Translate props.
@@ -114,6 +118,14 @@ interface I_Item_WorkList {
   company: string
   time: string
   typeOfWork: string
+}
+interface I_Item_ProjectList {
+  index: number
+  number: string
+  url: string
+  img: StaticImageData
+  time: string
+  name: string
 }
 
 // Framer motion props.

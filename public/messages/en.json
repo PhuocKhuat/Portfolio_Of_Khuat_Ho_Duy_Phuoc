@@ -5,6 +5,7 @@
       "skills": "Skill",
       "information": "Information",
       "work": "Work",
+      "project": "Project",
       "contact": "Contact",
       "choose-theme": "Choose Theme",
       "light": "Light",
@@ -48,7 +49,9 @@
     "work-role-1": "Front-end developer",
     "company-1": "Viet Tri Dao company",
     "work-time-1": "July 2024 - August 2024",
-    "job-type-1": "Remote"
+    "job-type-1": "Remote",
+    "question-1": "Have a project in mind ?",
+    "copyright": "© Phuoc Khuat 2024. All rights reserved."
   },
   "NotFoundPage": {
     "title": "Not found page!"

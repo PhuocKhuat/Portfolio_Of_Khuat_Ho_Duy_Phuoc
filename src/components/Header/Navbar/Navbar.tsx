@@ -5,7 +5,7 @@ import { Hover } from '@/components/Custom'
 import styles from '@/styles/styles'
 
 const Navbar: FC<I_Props_Translate> = ({ translate, drawerClose }) => {
-  const links = ['home', 'skills', 'information', 'work', 'contact']
+  const links = ['home', 'skills', 'information', 'project', 'work', 'contact']
   return (
     <nav className={`${navbar.handleFlex} ${navbar.handleGap}`}>
       {links.map((link) => (

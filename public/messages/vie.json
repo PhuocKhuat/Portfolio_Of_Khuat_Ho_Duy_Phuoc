@@ -5,6 +5,7 @@
       "skills": "Kỹ năng",
       "information": "Thông tin",
       "work": "Công việc",
+      "project": "Dự án",
       "contact": "Liên hệ",
       "choose-theme": "Chọn màu nền",
       "light": "Nền sáng",
@@ -48,7 +49,9 @@
     "work-role-1": "Lập trình viên Front-end",
     "company-1": "Công ty Việt Trí Đạo",
     "work-time-1": "T7/2024 - T8/2024",
-    "job-type-1": "Từ xa"
+    "job-type-1": "Từ xa",
+    "question-1": "Bạn có dự án nào trong tâm trí không ?",
+    "copyright": "© Phuoc Khuat 2024. Mọi quyền được bảo lưu."
   },
   "NotFoundPage": {
     "title": "Không tìm thấy trang"

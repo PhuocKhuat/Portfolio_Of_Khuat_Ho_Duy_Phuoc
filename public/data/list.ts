@@ -3,6 +3,8 @@ import { BE_CERTIFICATION, FE_CERTIFICATION, FULL_STACK_COURSE } from '@/constan
 import { ENG, VIE } from '@/constants/locale'
 import englishFlag from '/public/imgs/header/englandFlag.png'
 import vietnamFlag from '/public/imgs/header/vietnamFlag.png'
+import e_learning_img from '/public/imgs/projects/e-learning-7c.png'
+import movie_theater_img from '/public/imgs/projects/movie-theater-1a.png'
 
 export const localeList = [
   {
@@ -55,6 +57,25 @@ export const workList: I_Item_WorkList[] = [
     company: 'company-1',
     time: 'work-time-1',
     typeOfWork: 'job-type-1'
+  }
+]
+
+export const projectList: I_Item_ProjectList[] = [
+  {
+    index: 1,
+    number: '01',
+    url: 'www',
+    img: e_learning_img,
+    time: 'August 2024',
+    name: 'E-Learning'
+  },
+  {
+    index: 2,
+    number: '02',
+    url: 'www',
+    img: movie_theater_img,
+    time: 'June 2024',
+    name: 'Booking movie ticket'
   }
 ]
 
