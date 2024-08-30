@@ -37,13 +37,18 @@
     "work-intern-1": "Bootcamp - Full-Stack JavaScript from Zero to Job",
     "view-course": "View course",
     "academy": "CyberSoft Academy",
-    "internship-time": "July 2023 -  April 2024",
+    "study-course-time-1": "July 2023 - April 2024",
     "certifications": "Certifications.",
     "certification-1": "Professional Front-End Developer",
     "certification-2": "Professional Node JS Developer",
     "view-certificate": "View certificate",
-    "study-time-FE": "May 2024",
-    "study-time-node": "May 2024"
+    "FE-certificate-time": "May 2024",
+    "node-certificate-time": "May 2024",
+    "experience": "Experience",
+    "work-role-1": "Front-end developer",
+    "company-1": "Viet Tri Dao company",
+    "work-time-1": "July 2024 - August 2024",
+    "job-type-1": "Remote"
   },
   "NotFoundPage": {
     "title": "Not found page!"

@@ -73,6 +73,7 @@ interface SkillsProps extends I_Props_Translate {
 }
 interface I_Props_WorkList {
   workList: I_Item_WorkList[]
+  translate: (key: string) => string
 }
 
 // Write interface for object props.

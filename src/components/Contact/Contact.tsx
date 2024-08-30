@@ -3,7 +3,7 @@ import InvitationContact from '@/components/Contact/InvitationContact'
 import styles from '@/styles/styles'
 import React from 'react'
 
-const Contact = (): JSX.Element => {
+const Contact: React.FC<I_Props_Translate> = ({ translate }) => {
   return (
     <section id='contact'>
       <div className={styles.container}>

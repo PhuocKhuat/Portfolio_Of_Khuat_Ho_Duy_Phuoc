@@ -24,7 +24,7 @@ export const educationList = [
     url: FULL_STACK_COURSE,
     view: 'view-course',
     academy: 'academy',
-    time: 'internship-time'
+    time: 'study-course-time-1'
   }
 ]
 export const certificationList = [
@@ -34,7 +34,7 @@ export const certificationList = [
     url: FE_CERTIFICATION,
     view: 'view-certificate',
     academy: 'academy',
-    time: 'study-time-FE'
+    time: 'FE-certificate-time'
   },
   {
     value: 'item-2',
@@ -42,19 +42,19 @@ export const certificationList = [
     url: BE_CERTIFICATION,
     view: 'view-certificate',
     academy: 'academy',
-    time: 'study-time-node'
+    time: 'node-certificate-time'
   }
 ]
 
 export const workList: I_Item_WorkList[] = [
   {
     index: 1,
-    position: 'Front-End Developer',
+    position: 'work-role-1',
     url: 'www',
     view: 'View product',
-    company: 'Viet Tri Dao company',
-    time: 'July 2024 - August 2024',
-    typeOfWork: 'Remote'
+    company: 'company-1',
+    time: 'work-time-1',
+    typeOfWork: 'job-type-1'
   }
 ]
 
