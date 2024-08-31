@@ -1,12 +1,12 @@
 // md: min-width: 768px
 export const header: I_Style_Header = {
   circleImage: 'rounded-full w-16 h-14',
-  showMobileNav: 'md:hidden block',
-  hideItem: 'md:flex hidden',
-  hideNav: 'md:block hidden'
+  showMobileNav: 'lg:hidden block',
+  hideItem: 'lg:flex hidden',
+  hideNav: 'lg:block hidden'
 }
 export const navbar: I_Style_Navbar = {
-  handleFlex: 'flex md:flex-row flex-col',
+  handleFlex: 'flex lg:flex-row flex-col',
   handleGap: 'lg:gap-8 md:gap-5 gap-0'
 }
 export const themes: I_Style_Theme = {

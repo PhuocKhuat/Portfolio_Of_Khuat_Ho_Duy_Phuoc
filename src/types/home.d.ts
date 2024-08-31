@@ -1,58 +1,56 @@
-type type_string = string
-
 // Write interface for root layout.
 interface I_Props_RootLayout {
   children: React.ReactNode
   params: {
-    locale: type_string
+    locale: string
   }
 }
 
 // Write private interface for CSS style
 interface I_Style_Header {
-  circleImage: type_string
-  showMobileNav: type_string
-  hideItem: type_string
-  hideNav: type_string
+  circleImage: string
+  showMobileNav: string
+  hideItem: string
+  hideNav: string
 }
 interface I_Style_Navbar {
-  handleFlex: type_string
-  handleGap: type_string
+  handleFlex: string
+  handleGap: string
 }
 interface I_Style_Theme {
-  sizeSun: type_string
-  sizeMoon: type_string
-  hideItem: type_string
+  sizeSun: string
+  sizeMoon: string
+  hideItem: string
 }
 interface I_Style_Introduce {
-  parentItem: type_string
-  leftText: type_string
-  rightText: type_string
-  imgItem: type_string
-  avatarSize: type_string
-  hideItem: type_string
-  showItem: type_string
+  parentItem: string
+  leftText: string
+  rightText: string
+  imgItem: string
+  avatarSize: string
+  hideItem: string
+  showItem: string
 }
 interface I_Style_Skill {
-  customCategory: type_string
-  makeUpCategory: type_string
-  category: type_string
-  hoverSkill: type_string
-  customSkill: type_string
-  makeUpSkill: type_string
+  customCategory: string
+  makeUpCategory: string
+  category: string
+  hoverSkill: string
+  customSkill: string
+  makeUpSkill: string
 }
 interface I_Style_Loading {
-  screen: type_string
-  between: type_string
+  screen: string
+  between: string
 }
 
 // Write interface props.
 interface Skill {
-  name: type_string
-  img: type_string
+  name: string
+  img: string
 }
 interface SkillCategory {
-  category: type_string
+  category: string
   skills: Skill[]
 }
 interface SkillsData {
@@ -83,24 +81,24 @@ interface I_Props_ProjectItem {
 // Write interface for object props.
 // Translate props.
 interface I_Props_Translate {
-  translate: (key: type_string) => type_string
+  translate: (key: string) => string
   drawerClose?: () => void
 }
 // Locale props.
 interface I_Props_Item_Locale {
-  translate: (key: type_string) => type_string
+  translate: (key: string) => string
   isPending: boolean
   localeActive: string
 }
 
 // Information list props.
 interface I_Props_Information_Item {
-  value: type_string
-  title: type_string
-  url: type_string
-  view: type_string
-  academy: type_string
-  time: type_string
+  value: string
+  title: string
+  url: string
+  view: string
+  academy: string
+  time: string
 }
 interface I_Props_Information_List {
   list: I_Props_Information_Item[]

@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
         <div className={styles.containerWrapper}>
           <div className={styles.verticalWrapper}>
             <BigTitle text='Selected projects' className={`${styles.bigTitle} ${playfairDisplay.className}`} />
-            <div className='flex gap-7'>
+            <div className='block md:flex space-x-0 md:space-x-5 md:space-y-0 space-y-20 mt-12'>
               <ProjectItem list={projectList} />
             </div>
           </div>

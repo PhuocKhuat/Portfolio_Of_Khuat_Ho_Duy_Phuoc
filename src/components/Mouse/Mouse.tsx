@@ -20,39 +20,46 @@ const Mouse: FC = () => {
       setCursorText('')
     }
 
-    const handleMouseEnterScroll = () => {
+    const handleMouseEnter = (text: string) => () => {
       cursorRef.current?.classList.add(LINKSUPERLARGE)
-      setCursorText('scroll')
+      setCursorText(text)
     }
 
-    const handleMouseEnterOpen = () => {
-      cursorRef.current?.classList.add(LINKSUPERLARGE)
-      setCursorText('open')
-    }
-
-    const addListeners = (element: Element, handleMouseEnter: (event: Event) => void) => {
+    const addListeners = (element: Element, handleMouseEnter: () => void) => {
       element.addEventListener('mouseleave', handleMouseLeave)
       element.addEventListener('mouseenter', handleMouseEnter)
     }
 
-    const cursorScaleElementsScroll = document.querySelectorAll('.cursorScaleScroll')
-    const cursorScaleElementsOpen = document.querySelectorAll('.cursorScaleOpen')
+    if (window.innerWidth > 1024) {
+      const cursorScaleElementsScroll = document.querySelectorAll('.cursorScaleScroll')
+      const cursorScaleElementsOpen = document.querySelectorAll('.cursorScaleOpen')
+      const cursorScaleElementsView = document.querySelectorAll('.cursorScaleView')
 
-    cursorScaleElementsScroll.forEach((element) => addListeners(element, handleMouseEnterScroll))
-    cursorScaleElementsOpen.forEach((element) => addListeners(element, handleMouseEnterOpen))
+      cursorScaleElementsScroll.forEach((element) => addListeners(element, handleMouseEnter('scroll')))
+      cursorScaleElementsOpen.forEach((element) => addListeners(element, handleMouseEnter('open')))
+      cursorScaleElementsView.forEach((element) => addListeners(element, handleMouseEnter('view')))
+    }
 
     document.addEventListener('mousemove', updateCursorPosition)
 
     return () => {
       document.removeEventListener('mousemove', updateCursorPosition)
-      cursorScaleElementsScroll.forEach((element) => {
+      const removeListeners = (element: Element, handleMouseEnter: () => void) => {
         element.removeEventListener('mouseleave', handleMouseLeave)
-        element.removeEventListener('mouseenter', handleMouseEnterScroll)
-      })
-      cursorScaleElementsOpen.forEach((element) => {
-        element.removeEventListener('mouseleave', handleMouseLeave)
-        element.removeEventListener('mouseenter', handleMouseEnterOpen)
-      })
+        element.removeEventListener('mouseenter', handleMouseEnter)
+      }
+
+      if (window.innerWidth < 1024) {
+        document
+          .querySelectorAll('.cursorScaleScroll')
+          .forEach((element) => removeListeners(element, handleMouseEnter('scroll')))
+        document
+          .querySelectorAll('.cursorScaleOpen')
+          .forEach((element) => removeListeners(element, handleMouseEnter('open')))
+        document
+          .querySelectorAll('.cursorScaleView')
+          .forEach((element) => removeListeners(element, handleMouseEnter('view')))
+      }
     }
   }, [])
 

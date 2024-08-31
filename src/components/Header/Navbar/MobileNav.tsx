@@ -7,12 +7,12 @@ import MobiLocale from '@/components/Header/Locales/MobiLocale'
 
 const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-
   const drawerClose = () => {
     setIsDrawerOpen(false)
   }
   return (
-    <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction='bottom'>
+    // Muốn Drawer to ra thì tăng kích cỡ chữ, tăng margin, padding.
+    <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction='top' dismissible={false}>
       <DrawerTrigger>
         <Menu />
       </DrawerTrigger>

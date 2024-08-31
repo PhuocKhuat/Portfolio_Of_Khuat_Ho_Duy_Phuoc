@@ -12,7 +12,7 @@ const styles: I_Styles = {
   gap8: 'gap-8',
   textCenter: 'text-center',
   iconSize: 'w-4 h-4',
-  lineBottom: 'py-5 md:py-0 border-b-2 md:border-b-0',
+  lineBottom: 'py-4 md:py-2 lg:py-0 border-b-2 lg:border-b-0',
   pointer: 'cursor-pointer',
   notAllowed: 'cursor-not-allowed',
   secondAppears: 'mt-1 mb-3 text-slate-300',
