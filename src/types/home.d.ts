@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image'
+
 // Write interface for root layout.
 interface I_Props_RootLayout {
   children: React.ReactNode
@@ -76,6 +78,10 @@ interface I_Props_WorkList {
 interface I_Props_ProjectItem {
   list: I_Item_ProjectList[]
   translate: (key: string) => string
+}
+
+interface I_Props_NotFoundRight {
+  avatar_not_found: StaticImageData
 }
 
 // Write interface for object props.

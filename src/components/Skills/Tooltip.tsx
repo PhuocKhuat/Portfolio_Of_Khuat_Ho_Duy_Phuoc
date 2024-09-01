@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import { Tooltip as Tooltips, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { Skills } from '@/components/Custom'
 import { skills } from '@/styles/body'
+import { I_Props_Skill_Tooltip } from '@/types/home'
 
 const Tooltip: FC<I_Props_Skill_Tooltip> = ({ skill }) => {
   return (

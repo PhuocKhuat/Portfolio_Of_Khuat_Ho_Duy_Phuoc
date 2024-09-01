@@ -7,6 +7,7 @@ import {
   CarouselNext
 } from '@/components/ui/carousel'
 import Tooltip from '@/components/Skills/Tooltip'
+import { I_Props_Skill_Carousel } from '@/types/home'
 
 const Carousel: FC<I_Props_Skill_Carousel> = ({ item }) => {
   return (

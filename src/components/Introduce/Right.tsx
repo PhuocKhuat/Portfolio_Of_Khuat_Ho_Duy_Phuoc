@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { introduce } from '@/styles/body'
 import { FirstAppears, SecondAppears, ThirdAppears, Title } from '@/components/Custom'
+import { I_Props_Translate } from '@/types/home'
 
 const Right: FC<I_Props_Translate> = ({ translate }) => {
   return (

@@ -3,6 +3,7 @@ import { Scroll } from '@/components/Custom'
 import styles from '@/styles/styles'
 import waitLoading from '@/lib/loading'
 import Item from '@/components/Introduce/Item'
+import { I_Props_Translate } from '@/types/home'
 
 const Introduce: FC<I_Props_Translate> = async ({ translate }) => {
   await waitLoading(1000)

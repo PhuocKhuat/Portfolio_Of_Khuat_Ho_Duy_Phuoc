@@ -1,3 +1,5 @@
+import { I_Style_Header, I_Style_Navbar, I_Style_Theme } from '@/types/home'
+
 // md: min-width: 768px
 export const header: I_Style_Header = {
   circleImage: 'rounded-full w-16 h-14',

@@ -1,3 +1,4 @@
+import styles from '@/styles/styles'
 import Link from 'next/link'
 import { iconList } from 'public/data/list'
 import React from 'react'
@@ -9,7 +10,7 @@ const FooterContact: React.FC<I_Props_Translate> = ({ translate }) => {
     </Link>
   ))
   return (
-    <div className='flex justify-between items-center mt-14'>
+    <div className={`${styles.flexBetween} mt-14`}>
       <span className='xsn:text-base text-sm'>{translate('copyright')}</span>
       <div className='flex gap-2'>{renderIcon}</div>
     </div>

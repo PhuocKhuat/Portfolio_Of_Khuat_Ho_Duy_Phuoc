@@ -3,6 +3,7 @@ import { Accordion } from '@/components/ui/accordion'
 import { Open } from '@/components/Custom'
 import AccordionItem from '@/components/Information/AccordionItem'
 import { montserratNormal } from '@/fonts/font'
+import { I_Props_Information_List } from '@/types/home'
 
 const InformationItem: FC<I_Props_Information_List> = ({ list, translate }) => {
   const List = (): ReactElement[] =>

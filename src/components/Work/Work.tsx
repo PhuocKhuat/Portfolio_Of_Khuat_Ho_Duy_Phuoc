@@ -2,6 +2,7 @@ import { BigTitle } from '@/components/Custom'
 import WorkItem from '@/components/Work/WorkItem'
 import { playfairDisplay } from '@/fonts/font'
 import styles from '@/styles/styles'
+import { I_Props_Translate } from '@/types/home'
 import { workList } from 'public/data/list'
 import React from 'react'
 

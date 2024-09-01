@@ -4,6 +4,7 @@ import avatar_2 from 'public/imgs/introduce/avatar_portfolio_2.png'
 import { introduce } from '@/styles/body'
 import Left from '@/components/Introduce/Left'
 import Right from '@/components/Introduce/Right'
+import { I_Props_Translate } from '@/types/home'
 
 const Item: FC<I_Props_Translate> = ({ translate }) => {
   return (

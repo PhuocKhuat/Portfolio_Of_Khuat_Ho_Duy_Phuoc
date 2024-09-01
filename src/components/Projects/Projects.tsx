@@ -4,6 +4,7 @@ import { BigTitle } from '@/components/Custom'
 import { playfairDisplay } from '@/fonts/font'
 import styles from '@/styles/styles'
 import { projectList } from 'public/data/list'
+import { I_Props_Translate } from '@/types/home'
 
 const Projects: React.FC<I_Props_Translate> = ({ translate }) => {
   return (

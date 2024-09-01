@@ -3,6 +3,7 @@ import { AspectRatio } from '@/components/ui/aspect-ratio'
 import Image from 'next/image'
 import styles from '@/styles/styles'
 import Link from 'next/link'
+import { I_Props_ProjectItem } from '@/types/home'
 
 const ProjectItem: React.FC<I_Props_ProjectItem> = ({ list, translate }) => {
   const projectListRender = list.map((project) => (

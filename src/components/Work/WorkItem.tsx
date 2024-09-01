@@ -1,14 +1,12 @@
 import { FirstAppears } from '@/components/Custom'
 import { montserratNormal } from '@/fonts/font'
+import styles from '@/styles/styles'
 import React from 'react'
 
 const WorkItem = ({ workList, translate }: I_Props_WorkList): JSX.Element => {
   const work = () =>
     workList.map((work) => (
-      <div
-        key={work.index}
-        className={`flex justify-between items-center border-b-2 pb-4 mt-10 ${montserratNormal.className}`}
-      >
+      <div key={work.index} className={`${styles.flexBetween} border-b-2 pb-4 mt-10 ${montserratNormal.className}`}>
         <div>
           <strong className='text-2xl'>
             <FirstAppears text={translate(work.position)} />

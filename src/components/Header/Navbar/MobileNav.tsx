@@ -4,6 +4,7 @@ import { Menu, SquareX } from 'lucide-react'
 import Navbar from '@/components/Header/Navbar/Navbar'
 import MobiTheme from '@/components/Header/Themes/MobiTheme'
 import MobiLocale from '@/components/Header/Locales/MobiLocale'
+import { I_Props_Translate } from '@/types/home'
 
 const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)

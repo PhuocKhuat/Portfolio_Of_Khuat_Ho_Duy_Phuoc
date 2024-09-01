@@ -1,10 +1,12 @@
 import React, { FC } from 'react'
 import Item from '@/components/Skills/Item'
+// import {Item} from '../index'
 import { BigTitle } from '@/components/Custom'
 import styles from '@/styles/styles'
 import { montserrat, playfairDisplay } from '@/fonts/font'
 import waitLoading from '@/lib/loading'
 import { skillList } from 'public/data/skills'
+import { I_Props_Translate } from '@/types/home'
 
 const Skills: FC<I_Props_Translate> = async ({ translate }) => {
   await waitLoading(1000)

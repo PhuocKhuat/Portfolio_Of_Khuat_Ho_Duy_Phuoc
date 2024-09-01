@@ -4,6 +4,7 @@ import React, { FC, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
 import { useLocale } from 'next-intl'
 import { localeList } from 'public/data/list'
+import { I_Props_Translate } from '@/types/home'
 
 const MobiLocale: FC<I_Props_Translate> = ({ translate }) => {
   const [isPending, startTransiton] = useTransition()

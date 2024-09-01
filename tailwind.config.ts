@@ -54,11 +54,24 @@ const config: Config = {
       },
       keyframes: {
         'accordion-down': { from: { height: '0' }, to: { height: 'var(--radix-accordion-content-height)' } },
-        'accordion-up': { from: { height: 'var(--radix-accordion-content-height)' }, to: { height: '0' } }
+        'accordion-up': { from: { height: 'var(--radix-accordion-content-height)' }, to: { height: '0' } },
+        'color-slide': {
+          '0%': { backgroundColor: '#152a68' },
+          '25% ': { backgroundColor: 'royalblue' },
+          '50% ': { backgroundColor: 'seagreen' },
+          '75% ': { backgroundColor: 'tomato' },
+          '100%': { backgroundColor: '#152a68' }
+        },
+        'fade-in': {
+          from: { opacity: '0' },
+          '100%': { opacity: '1' }
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        'color-slide': 'color-slide 15s cubic-bezier(0.075, 0.82, 0.165, 1) infinite',
+        'fade-in': 'fade-in 2s ease infinite'
       },
       transitionTimingFunction: {
         'custom-ease': 'cubic-bezier(.44,.15,0,1.54)'

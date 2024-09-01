@@ -11,6 +11,7 @@ import {
 import { Moon, Sun } from 'lucide-react'
 import { DARK, LIGHT } from '@/constants/theme'
 import { themes } from '@/styles/header'
+import { I_Props_Translate } from '@/types/home'
 
 const Theme: FC<I_Props_Translate> = ({ translate }) => {
   const { theme, setTheme } = useTheme()

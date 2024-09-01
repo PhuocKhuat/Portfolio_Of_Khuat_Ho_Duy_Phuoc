@@ -3,6 +3,7 @@ import { skills } from '@/styles/body'
 import Carousel from '@/components/Skills/Carousel'
 import { FirstAppears } from '@/components/Custom'
 import { montserratNormal } from '@/fonts/font'
+import { I_Props_Skill_Item } from '@/types/home'
 
 const Item: FC<I_Props_Skill_Item> = ({ skillList, translate }) => {
   const renderSkills = () =>

@@ -1,15 +1,9 @@
 const NotFoundLayout = ({
   children
 }: Readonly<{
-  children: React.ReactNode
+  children: React.JSX.Element
 }>): JSX.Element => {
-  return (
-    <html lang='en'>
-      <body>
-        <main>{children}</main>
-      </body>
-    </html>
-  )
+  return children
 }
 
 export default NotFoundLayout

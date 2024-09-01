@@ -1,6 +1,7 @@
 import FooterContact from '@/components/Contact/FooterContact'
 import InvitationContact from '@/components/Contact/InvitationContact'
 import styles from '@/styles/styles'
+import { I_Props_Translate } from '@/types/home'
 import React from 'react'
 
 const Contact: React.FC<I_Props_Translate> = ({ translate }) => {

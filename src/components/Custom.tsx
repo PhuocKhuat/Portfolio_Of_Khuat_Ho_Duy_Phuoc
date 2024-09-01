@@ -19,6 +19,7 @@ import Image from 'next/image'
 import { ChevronsLeftIcon } from 'lucide-react'
 import styles from '@/styles/styles'
 import Link from 'next/link'
+import { I_Props_Skill_Tooltip, I_Props_Text, OpenProps, ScrollProps } from '@/types/home'
 
 export const Hover: FC<I_Props_Text> = ({ text, link, drawerClose }) => (
   <motion.div variants={hoverVariants} initial='hidden' whileHover='show'>

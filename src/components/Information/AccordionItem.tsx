@@ -3,6 +3,7 @@ import { ChevronsLeft } from '@/components/Custom'
 import { AccordionContent, AccordionTrigger, AccordionItem as AccordItem } from '@/components/ui/accordion'
 import { information } from '@/styles/body'
 import Link from 'next/link'
+import { I_Props_AccordionItem } from '@/types/home'
 
 const AccordionItem: FC<I_Props_AccordionItem> = ({ item, translate }) => {
   return (

@@ -1,6 +1,7 @@
 import { BigTitle } from '@/components/Custom'
 import { montserratExBold, playfairDisplayNormal } from '@/fonts/font'
 import styles from '@/styles/styles'
+import { I_Props_Translate } from '@/types/home'
 import React from 'react'
 
 const InvitationContact: React.FC<I_Props_Translate> = ({ translate }) => {

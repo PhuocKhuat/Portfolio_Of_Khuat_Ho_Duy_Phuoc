@@ -12,6 +12,7 @@ import { Languages } from 'lucide-react'
 import Item from './Item'
 import { useRouter } from 'next/navigation'
 import { useLocale } from 'next-intl'
+import { I_Props_Translate } from '@/types/home'
 
 const Locale: FC<I_Props_Translate> = ({ translate }) => {
   const [isPending, startTransiton] = useTransition()

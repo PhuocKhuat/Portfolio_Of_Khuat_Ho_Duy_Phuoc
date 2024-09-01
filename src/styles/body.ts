@@ -1,3 +1,5 @@
+import { I_Style_Introduce, I_Style_Skill } from '@/types/home'
+
 // mdn: min-width: 1200px
 export const introduce: I_Style_Introduce = {
   parentItem: 'mdn:flex justify-center items-center md:grid md:grid-cols-2 relative',
