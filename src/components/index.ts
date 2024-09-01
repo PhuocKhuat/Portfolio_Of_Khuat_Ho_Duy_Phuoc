@@ -10,11 +10,21 @@ import Introduce from '@/components/Introduce/Introduce'
 import IntroduceItem from '@/components/Introduce/Item'
 import IntroduceLeft from '@/components/Introduce/Left'
 import IntroduceRight from '@/components/Introduce/Right'
-import { Scroll, FirstAppears, SecondAppears, ThirdAppears } from '@/components/Custom'
 import Skills from '@/components/Skills/Skills'
 import SkillItem from '@/components/Skills/Item'
 import SkillCarousel from '@/components/Skills/Carousel'
 import SkillTooltip from '@/components/Skills/Tooltip'
+import Information from '@/components/Information/Information'
+import InformationItem from '@/components/Information/InformationItem'
+import AccordionItem from '@/components/Information/AccordionItem'
+import Projects from '@/components/Projects/Projects'
+import ProjectItem from '@/components/Projects/ProjectItem'
+import Work from '@/components/Work/Work'
+import WorkItem from '@/components/Work/WorkItem'
+import Contact from '@/components/Contact/Contact'
+import InvitationContact from '@/components/Contact/InvitationContact'
+import FooterContact from '@/components/Contact/FooterContact'
+import { Scroll, FirstAppears, SecondAppears, ThirdAppears } from '@/components/Custom'
 
 export {
   Header,
@@ -35,6 +45,20 @@ export {
   SkillItem,
   SkillCarousel,
   SkillTooltip,
+  // Information
+  Information,
+  InformationItem,
+  AccordionItem,
+  // Projects
+  Projects,
+  ProjectItem,
+  // Work
+  Work,
+  WorkItem,
+  // Contact
+  Contact,
+  InvitationContact,
+  FooterContact,
   // Custom
   Scroll,
   FirstAppears,

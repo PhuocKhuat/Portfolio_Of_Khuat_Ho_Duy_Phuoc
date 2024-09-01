@@ -8,14 +8,14 @@ const NotFound: FC = () => {
   return (
     <html lang='en'>
       <body>
-        <section className={`${styles.flexCenter} animate-color-slide text-white font-bold text-xl uppercase`}>
+        <section
+          className={`${styles.flexCenter} animate-color-slide text-white font-bold ${styles.textSize} uppercase`}
+        >
           <div className={styles.container}>
             <div className={styles.containerWrapper}>
-              <div className={styles.verticalWrapper}>
-                <div className={`${styles.flexBetween}`}>
-                  <NotFoundLeft />
-                  <NotFoundRight avatar_not_found={avatar_not_found} />
-                </div>
+              <div className={`${styles.flexCenter}`}>
+                <NotFoundLeft />
+                <NotFoundRight avatar_not_found={avatar_not_found} />
               </div>
             </div>
           </div>

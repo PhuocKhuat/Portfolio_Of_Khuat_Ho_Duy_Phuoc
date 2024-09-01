@@ -1,6 +1,7 @@
 import { FirstAppears } from '@/components/Custom'
 import { montserratNormal } from '@/fonts/font'
 import styles from '@/styles/styles'
+import { I_Props_WorkList } from '@/types/home'
 import React from 'react'
 
 const WorkItem = ({ workList, translate }: I_Props_WorkList): JSX.Element => {
