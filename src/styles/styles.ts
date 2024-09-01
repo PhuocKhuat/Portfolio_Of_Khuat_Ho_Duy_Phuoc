@@ -16,7 +16,7 @@ const styles: I_Styles = {
   pointer: 'cursor-pointer',
   notAllowed: 'cursor-not-allowed',
   secondAppears: 'mt-1 mb-3 text-slate-300',
-  thirdAppears: 'text-sm font-medium md:w-full w-[80vw]text-yellow-300',
+  thirdAppears: 'text-sm md:text-base font-medium md:w-full w-[80vw]text-yellow-300',
   // Font-size
   bigTitle: 'md:text-6xl sm:text-5xl text-4xl mb-8 uppercase',
   title: 'sm:text-3xl text-2xl font-bold mb-3 uppercase',

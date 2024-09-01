@@ -64,18 +64,18 @@ export const projectList: I_Item_ProjectList[] = [
   {
     index: 1,
     number: '01',
-    url: 'www',
+    url: 'https://e-learning-system-website.vercel.app/',
     img: e_learning_img,
-    time: 'August 2024',
-    name: 'E-Learning'
+    time: 'project-time-1',
+    name: 'project-name-1'
   },
   {
     index: 2,
     number: '02',
-    url: 'www',
+    url: 'https://movie-theater-flax.vercel.app/',
     img: movie_theater_img,
-    time: 'June 2024',
-    name: 'Booking movie ticket'
+    time: 'project-time-2',
+    name: 'project-name-2'
   }
 ]
 

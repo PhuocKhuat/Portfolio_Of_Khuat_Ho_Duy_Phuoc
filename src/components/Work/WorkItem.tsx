@@ -1,4 +1,4 @@
-import { Hover } from '@/components/Custom'
+import { FirstAppears } from '@/components/Custom'
 import { montserratNormal } from '@/fonts/font'
 import React from 'react'
 
@@ -7,11 +7,11 @@ const WorkItem = ({ workList, translate }: I_Props_WorkList): JSX.Element => {
     workList.map((work) => (
       <div
         key={work.index}
-        className={`flex justify-between items-center border-b-2 mt-10 ${montserratNormal.className}`}
+        className={`flex justify-between items-center border-b-2 pb-4 mt-10 ${montserratNormal.className}`}
       >
-        <div className='mb-5'>
+        <div>
           <strong className='text-2xl'>
-            <Hover text={translate(work.position)} />
+            <FirstAppears text={translate(work.position)} />
           </strong>
           <div>{translate(work.company)}</div>
         </div>

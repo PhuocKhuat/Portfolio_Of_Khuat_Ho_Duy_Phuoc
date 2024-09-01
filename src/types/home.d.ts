@@ -75,7 +75,7 @@ interface I_Props_WorkList {
 }
 interface I_Props_ProjectItem {
   list: I_Item_ProjectList[]
-  // translate: (key: string) => string
+  translate: (key: string) => string
 }
 
 // Write interface for object props.

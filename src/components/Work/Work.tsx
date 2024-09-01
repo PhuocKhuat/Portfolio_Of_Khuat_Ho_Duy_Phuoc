@@ -3,9 +3,9 @@ import WorkItem from '@/components/Work/WorkItem'
 import { playfairDisplay } from '@/fonts/font'
 import styles from '@/styles/styles'
 import { workList } from 'public/data/list'
-import React, { FC } from 'react'
+import React from 'react'
 
-const Work: FC<I_Props_Translate> = ({ translate }) => {
+const Work: React.FC<I_Props_Translate> = ({ translate }) => {
   return (
     <section id='work'>
       <div className={styles.container}>
