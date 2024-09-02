@@ -37,9 +37,18 @@ export const firstAppearVariants = variants(0, 20, '', 0, 0, 1, 0, '', 0, 0, 0.4
 export const secondAppearVariants = variants(0, 30, '', 0, 0, 1, 0, '', 0, 0, 0.8, 0.4)
 export const thirdAppearVariants = variants(0, 40, '', 0, 0, 1, 0, '', 0, 0, 1.2, 0.4)
 export const titleVariants = variants(0, 0, '', 0, 0, 1, 0, '', 0, 0, 0.4, 0.4)
-export const loadingVariants = variants(0, 200, 'spring', 800, 0, 1, 0, 'spring', 100, 10, 0, 0)
 export const shapeVariants = variants(0, 10, 'spring', 100, 0, 1, 0, 'spring', 100, 10, 0.3, 1)
 
+export const loadingVariants = {
+  hidden: { x: '-100vw' }, // Bắt đầu từ bên trái màn hình
+  show: {
+    x: 0, // Di chuyển vào vị trí giữa màn hình
+    transition: {
+      type: 'tween',
+      duration: 0.5
+    }
+  }
+}
 export const chevronsLeftVariants = {
   initial: { x: '100%' },
   animate: {

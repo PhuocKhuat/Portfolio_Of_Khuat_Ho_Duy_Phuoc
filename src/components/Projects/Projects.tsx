@@ -5,8 +5,10 @@ import { playfairDisplay } from '@/fonts/font'
 import styles from '@/styles/styles'
 import { projectList } from 'public/data/list'
 import { I_Props_Translate } from '@/types/home'
+import waitLoading from '@/lib/loading'
 
-const Projects: React.FC<I_Props_Translate> = ({ translate }) => {
+const Projects: React.FC<I_Props_Translate> = async ({ translate }) => {
+  await waitLoading(500)
   return (
     <section id='project'>
       <div className={styles.container}>

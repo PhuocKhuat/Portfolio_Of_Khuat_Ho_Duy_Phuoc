@@ -9,7 +9,7 @@ import { skillList } from 'public/data/skills'
 import { I_Props_Translate } from '@/types/home'
 
 const Skills: FC<I_Props_Translate> = async ({ translate }) => {
-  await waitLoading(1000)
+  await waitLoading(500)
   return (
     <section id='skills' className={montserrat.className}>
       <div className={styles.container}>

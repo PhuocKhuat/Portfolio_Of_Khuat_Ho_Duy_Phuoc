@@ -6,7 +6,7 @@ import Item from '@/components/Introduce/Item'
 import { I_Props_Translate } from '@/types/home'
 
 const Introduce: FC<I_Props_Translate> = async ({ translate }) => {
-  await waitLoading(1000)
+  await waitLoading(500)
   return (
     <section>
       <Scroll cursor={'cursorScaleScroll'}>

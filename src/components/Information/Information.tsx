@@ -9,7 +9,7 @@ import { playfairDisplay } from '@/fonts/font'
 import { I_Props_Translate } from '@/types/home'
 
 const Information: FC<I_Props_Translate> = async ({ translate }) => {
-  await waitLoading(1000)
+  await waitLoading(500)
   return (
     <section id='information' className='lg:h-[32.3rem] h-[36rem]'>
       <div className={styles.container}>

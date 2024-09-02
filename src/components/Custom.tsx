@@ -50,7 +50,7 @@ export const Open: FC<OpenProps> = ({ children, cursor }) => (
   <motion.div className={`${cursor} z-30 relative`}>{children}</motion.div>
 )
 export const FirstAppears: FC<I_Props_Text> = ({ text }) => (
-  <motion.p variants={firstAppearVariants} initial='hidden' whileInView='show' className='text-slate-300'>
+  <motion.p variants={firstAppearVariants} initial='hidden' whileInView='show' className='text-slate-400'>
     {text}
   </motion.p>
 )
