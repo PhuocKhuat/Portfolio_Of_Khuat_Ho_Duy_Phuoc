@@ -3,6 +3,11 @@ import NotFoundRight from '@/app/not-found-right'
 import styles from '@/styles/styles'
 import React, { FC } from 'react'
 import avatar_not_found from '/public/imgs/not-found/image_not_found_2.png'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Page not found'
+}
 
 const NotFound: FC = () => {
   return (

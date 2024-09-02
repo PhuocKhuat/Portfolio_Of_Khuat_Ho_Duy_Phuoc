@@ -36,7 +36,7 @@ export const LoadingUp: FC = () => (
     variants={loadingVariants}
     initial='hidden'
     whileInView='show'
-    className={`${loading.screen} ${loading.between}`}
+    className={`${loading.screen} ${loading.between} text-6xl`}
   >
     Loading
   </motion.section>
