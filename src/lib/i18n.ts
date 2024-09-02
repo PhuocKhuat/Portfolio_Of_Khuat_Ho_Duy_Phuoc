@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getRequestConfig } from 'next-intl/server'
-import { ENG, VIE } from '@/constants/locale'
+import { ENG, VIE } from '@/constants/constants'
 
 const locales = [ENG, VIE]
 
