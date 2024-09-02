@@ -1,4 +1,5 @@
 import styles from '@/styles/styles'
+import { I_Props_Translate } from '@/types/home'
 import Link from 'next/link'
 import { iconList } from 'public/data/list'
 import React from 'react'

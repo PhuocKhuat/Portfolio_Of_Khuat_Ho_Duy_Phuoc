@@ -1,10 +1,10 @@
 import { Facebook, Github, Linkedin } from 'lucide-react'
-import { BE_CERTIFICATION, FE_CERTIFICATION, FULL_STACK_COURSE } from '@/constants/certification'
-import { ENG, VIE } from '@/constants/locale'
 import englishFlag from '/public/imgs/header/englandFlag.png'
 import vietnamFlag from '/public/imgs/header/vietnamFlag.png'
 import e_learning_img from '/public/imgs/projects/e-learning-7c.png'
 import movie_theater_img from '/public/imgs/projects/movie-theater-1a.png'
+import { I_Item_ProjectList, I_Item_WorkList } from '@/types/home'
+import { BE_CERTIFICATION, ENG, FE_CERTIFICATION, FULL_STACK_COURSE, VIE } from '@/constants/constants'
 
 export const localeList = [
   {

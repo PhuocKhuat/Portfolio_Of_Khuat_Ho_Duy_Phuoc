@@ -1,4 +1,4 @@
-import { DARK, LIGHT } from '@/constants/theme'
+import { DARK, LIGHT } from '@/constants/constants'
 import styles from '@/styles/styles'
 import { I_Props_Translate } from '@/types/home'
 import { useTheme } from 'next-themes'

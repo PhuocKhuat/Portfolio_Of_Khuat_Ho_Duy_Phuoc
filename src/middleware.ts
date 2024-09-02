@@ -1,4 +1,4 @@
-import { ENG, VIE } from '@/constants/locale'
+import { ENG, VIE } from '@/constants/constants'
 import createMiddleware from 'next-intl/middleware'
 
 export default createMiddleware({

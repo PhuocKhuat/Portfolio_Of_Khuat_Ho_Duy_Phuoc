@@ -1,7 +1,7 @@
 'use client'
 
+import { LINKSUPERLARGE } from '@/constants/constants'
 import { FC, useEffect, useRef, useState } from 'react'
-import { LINKSUPERLARGE } from '@/constants/mouse'
 
 const Mouse: FC = () => {
   const cursorRef = useRef<HTMLDivElement | null>(null)

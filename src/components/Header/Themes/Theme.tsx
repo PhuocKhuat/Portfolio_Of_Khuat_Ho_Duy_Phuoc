@@ -9,9 +9,9 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 import { Moon, Sun } from 'lucide-react'
-import { DARK, LIGHT } from '@/constants/theme'
 import { themes } from '@/styles/header'
 import { I_Props_Translate } from '@/types/home'
+import { DARK, LIGHT } from '@/constants/constants'
 
 const Theme: FC<I_Props_Translate> = ({ translate }) => {
   const { theme, setTheme } = useTheme()

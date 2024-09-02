@@ -1,5 +1,5 @@
 import { DropdownMenuRadioItem } from '@/components/ui/dropdown-menu'
-import { ENG, VIE } from '@/constants/locale'
+import { ENG, VIE } from '@/constants/constants'
 import styles from '@/styles/styles'
 import { I_Props_Item_Locale } from '@/types/home'
 import React, { FC } from 'react'
