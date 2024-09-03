@@ -39,7 +39,7 @@ const Header: FC = () => {
                   <Locale translate={translate} />
                 </div>
                 {/* MOBILE NAV */}
-                <div className={header.showMobileNav}>
+                <div className={`${header.showMobileNav} text-2xl`}>
                   <MobileNav translate={translate} />
                 </div>
                 {/*  */}

@@ -5,7 +5,7 @@ export const introduce: I_Style_Introduce = {
   parentItem: 'mdn:flex justify-center items-center md:grid md:grid-cols-2 relative',
   leftText: 'col-span-1 absolute top-0 mdn:left-32 md:left-0 text-4xl font-bold mdn:w-80 xsm:w-3/5 w-64',
   imgItem: 'col-span-1 col-start-2 md:block hidden',
-  rightText: 'col-span-1 absolute mdm:top-[11rem] md:top-56 xsn:top-44 top-56 mdn:-right-6 xsm:w-96 w-80 leading-[1.3]',
+  rightText: 'col-span-1 absolute mdm:top-[9rem] md:top-56 xsn:top-44 top-56 mdn:-right-6 xsm:w-96 w-80 leading-[1.3]',
   avatarSize: 'w-[42.8rem] h-[30.8rem]',
   hideItem: 'md:block hidden',
   showItem: 'md:hidden block w-[80vw]'

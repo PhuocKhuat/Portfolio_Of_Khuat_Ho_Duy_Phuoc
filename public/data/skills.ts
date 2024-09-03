@@ -46,16 +46,20 @@ export const skillList = [
         img: '/imgs/skills/tailwind.png'
       },
       {
-        name: 'SASS/SCSS',
-        img: '/imgs/skills/sass.png'
-      },
-      {
         name: 'Ant Design',
         img: '/imgs/skills/ant-design.png'
       },
       {
         name: 'Material UI',
         img: '/imgs/skills/material-ui.png'
+      },
+      {
+        name: 'SASS/SCSS',
+        img: '/imgs/skills/sass.png'
+      },
+      {
+        name: 'Shadcn',
+        img: '/imgs/skills/shadcn.png'
       }
     ]
   },
@@ -79,6 +83,10 @@ export const skillList = [
         img: '/imgs/skills/mysql.png'
       },
       {
+        name: 'SQL Server',
+        img: '/imgs/skills/sql-server.png'
+      },
+      {
         name: 'Socket IO',
         img: '/imgs/skills/socket-io.png'
       },
@@ -96,12 +104,20 @@ export const skillList = [
     category: 'tools&software',
     skills: [
       {
+        name: 'Github',
+        img: '/imgs/skills/github.png'
+      },
+      {
         name: 'Postman',
         img: '/imgs/skills/postman.png'
       },
       {
         name: 'Docker',
         img: '/imgs/skills/docker.png'
+      },
+      {
+        name: 'Figma',
+        img: '/imgs/skills/figma.png'
       },
       {
         name: 'Swagger',

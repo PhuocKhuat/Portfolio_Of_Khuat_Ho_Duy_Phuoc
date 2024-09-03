@@ -27,10 +27,10 @@ const Theme: FC<I_Props_Translate> = ({ translate }) => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
         <DropdownMenuLabel>{translate('choose-theme')}</DropdownMenuLabel>
-        <DropdownMenuItem onClick={() => setTheme(LIGHT)} disabled={theme === LIGHT}>
+        <DropdownMenuItem onClick={() => setTheme(LIGHT)} disabled={theme === LIGHT} className='cursor-pointer'>
           {translate(LIGHT)}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme(DARK)} disabled={theme === DARK}>
+        <DropdownMenuItem onClick={() => setTheme(DARK)} disabled={theme === DARK} className='cursor-pointer'>
           {translate(DARK)}
         </DropdownMenuItem>
       </DropdownMenuContent>

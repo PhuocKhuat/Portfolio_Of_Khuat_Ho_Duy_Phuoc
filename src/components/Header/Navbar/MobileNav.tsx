@@ -22,7 +22,7 @@ const MobileNav: FC<I_Props_Translate> = ({ translate }) => {
           <SquareX size={32} color='#ff0000' onClick={drawerClose} className='cursor-pointer' />
         </DrawerHeader>
         <DrawerFooter>
-          <DrawerTitle>
+          <DrawerTitle className='text-xl'>
             <Navbar translate={translate} drawerClose={drawerClose} />
             <MobiTheme translate={translate} />
             <MobiLocale translate={translate} />

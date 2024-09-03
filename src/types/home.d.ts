@@ -131,6 +131,24 @@ interface I_Item_ProjectList {
   time: string
   name: string
 }
+interface I_Item_LocaleList {
+  lang: string
+  alt: string
+  img: StaticImageData
+}
+interface I_Item_EducateACertificateList {
+  value: string
+  title: string
+  url: string
+  view: string
+  academy: string
+  time: string
+}
+interface I_Item_IconList {
+  index: number
+  name: ForwardRefExoticComponent<Omit<LucideProps, 'ref'>>
+  link: string
+}
 
 // Framer motion props.
 interface ScrollProps {

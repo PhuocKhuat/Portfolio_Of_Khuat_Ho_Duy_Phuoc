@@ -1,15 +1,16 @@
-export const FE_CERTIFICATION =
+export const FE_CERTIFICATION: string =
   'https://login.cybersoft.edu.vn/certification/?inf=eyJob1RlbiI6IktodeG6pXQgSOG7kyBEdXkgUGjGsOG7m2MiLCJ0ZW5Mb3AiOiJCb290Y2FtcCA1OCIsInRlbkxvVHJpbmgiOiJQUk9GRVNTSU9OQUwgRlJPTlQtRU5EIERFVkVMT1BFUiIsImRpZW1DdW9pS2hvYSI6OC45LCJpc1h1YXRTYWMiOmZhbHNlLCJtYUNodW5nTmhhbiI6IkZFIiwiaXNJbkNodW5nTmhhbiI6ZmFsc2UsIm1hU29DaHVuZ05oYW4iOjIwMDIsInNvVGhhbmdIb2MiOiI2IiwibmdheUNhcENodW5nTmhhbiI6IjIwMjQtMDUtMDlUMDM6MDA6MDMiLCJmdWxsTWFDaHVuZ05oYW4iOiJGRS8yMDI0LzIwMjQyMDAyIiwibWFUaG9uZ1RpbkhvY1RhcCI6NDA4OSwiaXNCYW9WZUN1b2lLaG9hIjp0cnVlfQ=='
 
-export const BE_CERTIFICATION =
+export const BE_CERTIFICATION: string =
   'https://login.cybersoft.edu.vn/certification/?inf=eyJob1RlbiI6IktodeG6pXQgSOG7kyBEdXkgUGjGsOG7m2MiLCJ0ZW5Mb3AiOiJOb2RlSlMgNDAiLCJ0ZW5Mb1RyaW5oIjoiUFJPRkVTU0lPTkFMIE5PREUgSlMgREVWRUxPUEVSIiwiZGllbUN1b2lLaG9hIjo5LjYsImlzWHVhdFNhYyI6dHJ1ZSwibWFDaHVuZ05oYW4iOiJORSIsImlzSW5DaHVuZ05oYW4iOmZhbHNlLCJtYVNvQ2h1bmdOaGFuIjoyMDQzLCJzb1RoYW5nSG9jIjoiMyIsIm5nYXlDYXBDaHVuZ05oYW4iOiIyMDI0LTA2LTA1VDAzOjAwOjA5IiwiZnVsbE1hQ2h1bmdOaGFuIjoiTkUvMjAyNC8yMDI0MjA0MyIsIm1hVGhvbmdUaW5Ib2NUYXAiOjQ3NDUsImlzQmFvVmVDdW9pS2hvYSI6ZmFsc2V9'
 
-export const FULL_STACK_COURSE = 'https://cybersoft.edu.vn/bootcamp-lap-trinh-fullstack-javascript-tu-zero-co-viec-lam/'
+export const FULL_STACK_COURSE: string =
+  'https://cybersoft.edu.vn/bootcamp-lap-trinh-fullstack-javascript-tu-zero-co-viec-lam/'
 
-export const ENG = 'en'
-export const VIE = 'vie'
+export const ENG: string = 'en'
+export const VIE: string = 'vie'
 
-export const LINKSUPERLARGE = 'linkSuperLarge'
+export const LINKSUPERLARGE: string = 'linkSuperLarge'
 
-export const LIGHT = 'light'
-export const DARK = 'dark'
+export const LIGHT: string = 'light'
+export const DARK: string = 'dark'

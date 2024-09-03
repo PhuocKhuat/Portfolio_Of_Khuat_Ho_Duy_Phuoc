@@ -3,10 +3,16 @@ import englishFlag from '/public/imgs/header/englandFlag.png'
 import vietnamFlag from '/public/imgs/header/vietnamFlag.png'
 import e_learning_img from '/public/imgs/projects/e-learning-7c.png'
 import movie_theater_img from '/public/imgs/projects/movie-theater-1a.png'
-import { I_Item_ProjectList, I_Item_WorkList } from '@/types/home'
+import {
+  I_Item_EducateACertificateList,
+  I_Item_IconList,
+  I_Item_LocaleList,
+  I_Item_ProjectList,
+  I_Item_WorkList
+} from '@/types/home'
 import { BE_CERTIFICATION, ENG, FE_CERTIFICATION, FULL_STACK_COURSE, VIE } from '@/constants/constants'
 
-export const localeList = [
+export const localeList: I_Item_LocaleList[] = [
   {
     lang: ENG,
     alt: 'england flag',
@@ -19,7 +25,7 @@ export const localeList = [
   }
 ]
 
-export const educationList = [
+export const educationList: I_Item_EducateACertificateList[] = [
   {
     value: 'item-1',
     title: 'work-intern-1',
@@ -29,7 +35,7 @@ export const educationList = [
     time: 'study-course-time-1'
   }
 ]
-export const certificationList = [
+export const certificationList: I_Item_EducateACertificateList[] = [
   {
     value: 'item-1',
     title: 'certification-1',
@@ -79,7 +85,7 @@ export const projectList: I_Item_ProjectList[] = [
   }
 ]
 
-export const iconList = [
+export const iconList: I_Item_IconList[] = [
   {
     index: 1,
     name: Github,
